@@ -1,0 +1,1 @@
+To update your files to match those on githug, using the gui, simply go to remote-->fetch from-->origin.  Then Merge-->Local Merge-->
