@@ -1,0 +1,5 @@
+1. Create your ruby on rails application for this course in the directory which git will be accessing.
+
+	In my case is it C:/users/doug/mis438/mis438
+
+C:/users/doug/mis438 is the directory git is accessing, and C:/users/doug/mis438/mis438 is the directory for the ruby on rails application.
