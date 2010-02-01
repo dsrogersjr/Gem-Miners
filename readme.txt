@@ -12,11 +12,11 @@ Note: the key is the entire block of text.
 
 Once you have done this email me your username(to: dsrogersjr@gmail.com) so I can add you to the list of committers(people who can work on the project)
 
-3. Using the Git gui go to edit--> options and put your github username and email address in both the MIS438 repository and global repository fields.
-
 *At this point wait until I have added you as a committer.*
 
 4. Open the git gui and click "clone existing repository" enter "git@github.com:dsrogersjr/MIS438.git"  For the target directory, browse to where you want this project to be stored on your computer.
+
+3. Using the Git gui go to edit--> options and put your github username and email address in both the MIS438 repository and global repository fields.
 
 This will take all the files that are currently stored on github and put them into the directory you just specified.
 
