@@ -8,4 +8,8 @@ class PublicController < ApplicationController
   def search
     
   end
+  
+  def test
+  
+  end
 end
