@@ -12,3 +12,5 @@ Note: the key is the entire block of text.
 5. Open the git gui and click "clone existing repository" enter "git@github.com:dsrogersjr/MIS438.git" For the target directory, browse to where you want this project to be stored on your computer. (I created an MIS438 folder in my documents)
  
 6. Using the Git gui go to edit--> options and put your github username and email address in both the MIS438 repository and global repository fields.
+
+Please read the rest of the Git Tutorial for more information.
