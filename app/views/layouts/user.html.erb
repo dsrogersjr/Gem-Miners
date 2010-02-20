@@ -1,0 +1,80 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+       "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+  <title>Home</title>
+  <%= stylesheet_link_tag 'scaffold', 'mis438' %>
+</head>
+<body>
+    <div id="outer">
+
+    	<div id="upbg"></div>
+
+    	<div id="inner">
+
+    		<div id="header">
+    			<h1><span>MIS</span>438<sup>1.0</sup></h1>
+    		</div>
+
+    		<div id="splash"></div>
+
+    		<div id="menu">
+    			<ul>
+    				<li class="first"><a href="#">Home</a></li>
+    				<li><a href="#">Archives</a></li>
+    				<li><a href="#">Links</a></li>
+    				<li><a href="#">Resources</a></li>
+    				<li><a href="#">Contact</a></li>
+    			</ul>
+
+    		<div id="date"><%= @time %></div>
+    		</div>
+          
+        	<div id="secondarycontent">
+
+      			<!-- secondary content start -->
+
+      			<h3><%= session[:user_id] %></h3>
+      			
+      			<% if flash[:notice] %>
+            <div style="font-family:'Trebuchet MS'; color:#FF0000; font-size:14px;">
+            <%= flash[:notice] %>
+            </div>
+            <% end %>
+      			
+      		<div class="content">
+			<p><%= link_to "profile", :controller=> "user", :action => "account" %></p>
+            <p><%= link_to "logout", :controller => "user", :action => "logout" %></p>
+      			</div>
+
+      			<h3>Topics</h3>
+      			<div class="content">
+      				<ul class="linklist">
+      					<li class="first"><a href="#">Accumsan congue (32)</a></li>
+      					<li><a href="#">Dignissim nec augue (14)</a></li>
+      					<li><a href="#">Nunc ante elit nulla (83)</a></li>
+      					<li><a href="#">Aliquam suscipit (74)</a></li>
+      					<li><a href="#">Cursus sed arcu sed (14)</a></li>
+      					<li><a href="#">Eu ante cras at risus (24)</a></li>
+      					<li><a href="#">Donec mollis dolore (39)</a></li>
+      					<li><a href="#">Aliquam suscipit (74)</a></li>
+      				</ul>
+      			</div>
+
+      			<!-- secondary content end -->
+
+      		</div>
+          <%= yield %>
+          
+        <div id="footer">
+			&copy; <a href="http://www.iastate.edu">Iowa State University</a> - MIS 438.
+        </div>
+
+      </div>
+
+    </div>
+  
+</body>
+</html>
