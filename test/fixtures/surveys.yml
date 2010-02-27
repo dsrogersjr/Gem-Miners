@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  survey_name: MyText
+  survey_date: 2010-02-25
+  survey_creator: MyString
+
+two:
+  survey_name: MyText
+  survey_date: 2010-02-25
+  survey_creator: MyString

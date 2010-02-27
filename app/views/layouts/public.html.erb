@@ -1,0 +1,122 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Everyday Series
+Description: A three-column, fixed-width blog design.
+Version    : 1.0
+Released   : 20090617
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<%= stylesheet_link_tag "default" %>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Public Course Site</title>
+<meta name="keywords" content="" />
+<meta name="Everyday Series" content="" />
+<link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<!-- start header -->
+<div id="header">
+	<div id="logo">
+		<h1><a href="#"><span>application_name:</span></a>public</h1>
+		<p>Designed By Free CSS Templates</p>
+	</div>
+</div>
+<!-- end header -->
+<div id="wrapper">
+	<!-- start page -->
+	<div id="page">
+	<div id="page-bg">
+		<div id="sidebar1" class="sidebar">
+			<ul>
+				<li>
+					<h2>Class Links</h2>
+					<ul>
+						<li><a href="#"><%= link_to "Course Calendar", "/" %></a></li>
+						<li><a href="#"><%= link_to "Course Calendar", "/" %></a></li>
+						<li><a href="#"><%= link_to "Course Calendar", "/" %></a></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Recent Comments</h2>
+					<ul>
+						<li><a href="#">Free CSS Templates</a> on <a href="#">Aliquam libero</a></li>
+						<li><a href="#">Free CSS Templates</a> on <a href="#">Consectetuer adipiscing elit</a></li>
+						<li><a href="#">Free CSS Templates</a> on <a href="#">Metus aliquam pellentesque</a></li>
+						<li><a href="#">Free CSS Templates</a> on <a href="#">Suspendisse iaculis mauris</a></li>
+						<li><a href="#">Free CSS Templates</a> on <a href="#">Urnanet non molestie semper</a></li>
+						<li><a href="#">Free CSS Templates</a> on <a href="#">Proin gravida orci porttitor</a></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Categories</h2>
+					<ul>
+						<li><a href="#">Aliquam libero</a></li>
+						<li><a href="#">Consectetuer adipiscing elit</a></li>
+						<li><a href="#">Metus aliquam pellentesque</a></li>
+						<li><a href="#">Suspendisse iaculis mauris</a></li>
+						<li><a href="#">Urnanet non molestie semper</a></li>
+						<li><a href="#">Proin gravida orci porttitor</a></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Archives</h2>
+					<ul>
+						<li><a href="#">September</a> (23)</li>
+						<li><a href="#">August</a> (31)</li>
+						<li><a href="#">July</a> (31)</li>
+						<li><a href="#">June</a> (30)</li>
+						<li><a href="#">May</a> (31)</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+		<div id="content">
+			<%= yield %>
+		</div>
+		<!-- start sidebars -->
+		<div id="sidebar2" class="sidebar">
+			<ul>
+				<li>
+					<% if logged_in? %>
+						<h2> User Logged In </h2>
+						<p><%= link_to "Logout User", "logout" %></p>
+						<h2> Private Course Site</h2>
+						<p><%= link_to "Enter Private Page", :controller => 'surveys', :view => 'index' %></p>
+					<% else %>
+						<h2>Log In</h2>
+						<% form_tag session_path do-%>
+							<p><%= label_tag 'login' %><br />
+							<%= text_field_tag 'login', @login %></p>
+
+							<p><%= label_tag 'password' %><br/>
+							<%= password_field_tag 'password', @password %></p>
+
+							<!-- Uncomment this if you want this functionality
+							<p><%= label_tag 'remember_me', 'Remember me' %>
+							<%= check_box_tag 'remember_me', '1', @remember_me %></p>
+							-->
+					
+							<p><%= submit_tag 'Log in' %></p>
+						<% end -%>
+					<% end %>
+				</li>	
+			</ul>
+		</div>
+		<!-- end sidebars -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	<!-- end page -->
+</div>
+<div id="footer">
+	<p class="copyright">&copy;&nbsp;&nbsp;2009 All Rights Reserved &nbsp;&bull;&nbsp; Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+	<p class="link"><a href="#">Privacy Policy</a>&nbsp;&#8226;&nbsp;<a href="#">Terms of Use</a></p>
+</div>
+</body>
+</html>

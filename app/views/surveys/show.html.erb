@@ -1,0 +1,50 @@
+<h2>Design Survey</h2>
+<p>
+  <b>Survey name:</b>
+  <%=h @survey.survey_name %>
+</p>
+
+<p>
+  <b>Survey date:</b>
+  <%=h @survey.survey_date %>
+</p>
+
+<p>
+  <b>Survey creator:</b>
+  <%=h @survey.survey_creator %>
+</p>
+
+<h1>Questions:</h1>
+
+<% @survey.questions.each do |question| %>
+	<p>
+		<b>Question Number:</b><%=h question.question_number %><br />
+		<b>Question Text:</b><br /><%=h question.question_text %> <br />
+		<b>Question Comment:</b><br /><%=h question.question_comment %> <br />
+		<%= link_to 'Edit Question', edit_question_path(question) %> |
+    	<%= link_to 'Delete', question, :confirm => 'Are you sure?', :method => :delete %>
+	</p>
+<% end %>
+
+<% form_for [@survey, Question.new] do |f| %>
+	<p>
+		<%= f.label :question_number, "Question Number"%><br />
+		<%= f.text_field :question_number %><br />
+		<%= f.label :question_text, "Question Text"%><br />
+		<%= f.text_field :question_text %><br />
+		<%= f.label :question_comment, "Question Comment"%><br />
+		<%= f.text_field :question_comment %><br />
+		<%= f.label :question_type, "Question Type"%><br />
+		<%= f.radio_button :question_type, "m" %>Multiple Choice<br />
+		<%= f.radio_button :question_type, "e" %>Essay<br />
+	</p>
+
+	<p>
+		<%= f.submit "Add Question" %>
+	</p>
+<% end %>
+
+<p>
+	<%= link_to 'Edit Survey', edit_survey_path(@survey) %> |
+	<%= link_to 'Back', surveys_path %>
+</p>

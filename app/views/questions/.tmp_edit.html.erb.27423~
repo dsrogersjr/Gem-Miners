@@ -1,0 +1,29 @@
+<h1>Editing question</h1>
+
+<% form_for(@question) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :question_number %><br />
+    <%= f.text_field :question_number %>
+  </p>
+  <p>
+    <%= f.label :question_text %><br />
+    <%= f.text_area :question_text %>
+  </p>
+  <p>
+    <%= f.label :question_comment %><br />
+    <%= f.text_area :question_comment %>
+  </p>
+  <p>
+    <%= f.label :question_type %><br />
+    <%= f.radio_button :question_type, "m" %>Multiple Choice<br />
+	<%= f.radio_button :question_type, "e" %>Essay<br />
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @question %> |
+<%= link_to 'Back', questions_path %>

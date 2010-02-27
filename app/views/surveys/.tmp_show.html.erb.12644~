@@ -1,0 +1,18 @@
+<p>
+  <b>Survey name:</b>
+  <%=h @survey.survey_name %>
+</p>
+
+<p>
+  <b>Survey date:</b>
+  <%=h @survey.survey_date %>
+</p>
+
+<p>
+  <b>Survey creator:</b>
+  <%=h @survey.survey_creator %>
+</p>
+
+
+<%= link_to 'Edit', edit_survey_path(@survey) %> |
+<%= link_to 'Back', surveys_path %>
