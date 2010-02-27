@@ -76919,3 +76919,4195 @@ ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg"
   C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
 
 Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 14:59:51) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 95ms (View: 91, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:52) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:52) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 14:59:56) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 18ms (View: 16, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:56) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:57) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#calendar (for 127.0.0.1 at 2010-02-27 14:59:58) [GET]
+Rendering template within layouts/public
+Rendering public/calendar
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 22ms (View: 20, DB: 1) | 200 OK [http://localhost/public/calendar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:58) [GET]
+
+ActionController::RoutingError (No route matches "/public/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#syllabus (for 127.0.0.1 at 2010-02-27 14:59:59) [GET]
+Rendering template within layouts/public
+Rendering public/syllabus
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 22ms (View: 19, DB: 2) | 200 OK [http://localhost/public/syllabus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:59) [GET]
+
+ActionController::RoutingError (No route matches "/public/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 14:59:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:00:01) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 18ms (View: 16, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:00:01) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:00:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:00:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:00:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:00:02) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:00:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:01:16) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 24ms (View: 21, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:01:17) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:01:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:01:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:01:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:01:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:01:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:02:06) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 24ms (View: 22, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:07) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:02:23) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 24ms (View: 21, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:23) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:02:42) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 24ms (View: 22, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:42) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:42) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:02:54) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 24ms (View: 21, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:54) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:54) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:02:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:03:10) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 23ms (View: 22, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:10) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:10) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:03:17) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 18ms (View: 16, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:17) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:18) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:03:23) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 18ms (View: 15, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:23) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:24) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:03:40) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 24ms (View: 22, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:40) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:03:49) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 24ms (View: 22, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:49) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:03:49) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:05:04) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 24ms (View: 21, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:05:05) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:05:05) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:05:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:05:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:05:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:05:06) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:05:31) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 24ms (View: 22, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:05:31) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:05:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:05:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:05:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:05:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:05:31) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:05:59) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 24ms (View: 22, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:05:59) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:05:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:05:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:05:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:05:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:05:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:06:03) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 23ms (View: 21, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:06:03) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:06:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:06:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:06:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:06:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:06:03) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrivateController#index (for 127.0.0.1 at 2010-02-27 15:06:15) [GET]
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+  [4;36;1mroles_users Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.0ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 12346 ) [0m
+  [4;36;1mRole Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+Rendering template within layouts/private
+Rendering private/index
+Completed in 53ms (View: 16, DB: 3) | 200 OK [http://localhost/private]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:06:16) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:06:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:06:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:06:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:06:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:06:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrivateController#index (for 127.0.0.1 at 2010-02-27 15:07:13) [GET]
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+  [4;35;1mroles_users Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.0ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 12346 ) [0m
+  [4;35;1mRole Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+Rendering template within layouts/private
+Rendering private/index
+Completed in 22ms (View: 2, DB: 3) | 200 OK [http://localhost/private]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:14) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:07:14) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 23ms (View: 22, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:14) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:14) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:07:16) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 17ms (View: 15, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:16) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:16) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:17) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:07:23) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 40ms (View: 37, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:23) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:07:45) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 23ms (View: 22, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:46) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:07:53) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 25ms (View: 23, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:53) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:53) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:07:58) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 24ms (View: 22, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:59) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:07:59) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:08:26) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 24ms (View: 21, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:08:26) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:08:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:08:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:08:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:08:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:08:26) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:09:05) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 24ms (View: 22, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:09:07) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:09:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:09:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:09:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:09:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:09:08) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:09:27) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 24ms (View: 23, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:09:27) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:09:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:09:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:09:27) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:09:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:09:28) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:09:47) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 24ms (View: 22, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:09:47) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:09:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:09:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:09:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:09:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:09:47) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:10:15) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 24ms (View: 22, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:15) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:15) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:10:22) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 41ms (View: 40, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:22) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:23) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:10:32) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 24ms (View: 23, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:33) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:33) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:10:46) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 24ms (View: 21, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:46) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:10:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:11:07) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 24ms (View: 21, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:07) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:07) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:11:22) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 24ms (View: 22, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:22) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:22) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:11:40) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 25ms (View: 23, DB: 1) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:40) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:40) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:11:49) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 24ms (View: 21, DB: 3) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:50) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:11:50) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrivateController#index (for 127.0.0.1 at 2010-02-27 15:12:09) [GET]
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+  [4;36;1mroles_users Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.0ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 12346 ) [0m
+  [4;36;1mRole Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+Rendering template within layouts/private
+Rendering private/index
+Completed in 22ms (View: 3, DB: 5) | 200 OK [http://localhost/private]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:09) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:09) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:12:18) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 41ms (View: 39, DB: 1) | 200 OK [http://localhost/]
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:19) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:19) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrivateController#index (for 127.0.0.1 at 2010-02-27 15:12:20) [GET]
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+  [4;35;1mroles_users Columns (0.0ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.0ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 12346 ) [0m
+  [4;35;1mRole Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+Rendering template within layouts/private
+Rendering private/index
+Completed in 22ms (View: 2, DB: 2) | 200 OK [http://localhost/private]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:20) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:20) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#index (for 127.0.0.1 at 2010-02-27 15:12:44) [GET]
+Rendering template within layouts/public
+Rendering public/index
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 18ms (View: 15, DB: 2) | 200 OK [http://localhost/]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:45) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:45) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (1.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#calendar (for 127.0.0.1 at 2010-02-27 15:12:46) [GET]
+Rendering template within layouts/public
+Rendering public/calendar
+  [4;36;1mUser Columns (2.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 17ms (View: 15, DB: 3) | 200 OK [http://localhost/public/calendar]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:46) [GET]
+
+ActionController::RoutingError (No route matches "/public/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:46) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#syllabus (for 127.0.0.1 at 2010-02-27 15:12:47) [GET]
+Rendering template within layouts/public
+Rendering public/syllabus
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 18ms (View: 16, DB: 1) | 200 OK [http://localhost/public/syllabus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:48) [GET]
+
+ActionController::RoutingError (No route matches "/public/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:48) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PublicController#syllabus (for 127.0.0.1 at 2010-02-27 15:12:55) [GET]
+Rendering template within layouts/public
+Rendering public/syllabus
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (1.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+Completed in 17ms (View: 14, DB: 2) | 200 OK [http://localhost/public/syllabus]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:55) [GET]
+
+ActionController::RoutingError (No route matches "/public/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:55) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (1.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:56) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing PrivateController#index (for 127.0.0.1 at 2010-02-27 15:12:58) [GET]
+  [4;36;1mUser Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `users`[0m
+  [4;35;1mUser Load (0.0ms)[0m   [0mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+  [4;36;1mroles_users Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `roles_users`[0m
+  [4;35;1mRole Load (0.0ms)[0m   [0mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 12346 ) [0m
+  [4;36;1mRole Columns (1.0ms)[0m   [0;1mSHOW FIELDS FROM `roles`[0m
+Rendering template within layouts/private
+Rendering private/index
+Completed in 39ms (View: 19, DB: 3) | 200 OK [http://localhost/private]
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:58) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (1.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:12:58) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;35;1mSQL (0.0ms)[0m   [0mSET NAMES 'utf8'[0m
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing SurveysController#index (for 127.0.0.1 at 2010-02-27 15:13:00) [GET]
+  [4;35;1mUser Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `users`[0m
+  [4;36;1mUser Load (0.0ms)[0m   [0;1mSELECT * FROM `users` WHERE (`users`.`id` = 12346) LIMIT 1[0m
+  [4;35;1mroles_users Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `roles_users`[0m
+  [4;36;1mRole Load (0.0ms)[0m   [0;1mSELECT * FROM `roles` INNER JOIN `roles_users` ON `roles`.id = `roles_users`.role_id WHERE (`roles_users`.user_id = 12346 ) [0m
+  [4;35;1mRole Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `roles`[0m
+  [4;36;1mSurvey Load (0.0ms)[0m   [0;1mSELECT * FROM `surveys` [0m
+Rendering template within layouts/private
+Rendering surveys/index
+  [4;35;1mSurvey Columns (1.0ms)[0m   [0mSHOW FIELDS FROM `surveys`[0m
+Completed in 45ms (View: 13, DB: 4) | 200 OK [http://localhost/surveys]
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:13:00) [GET]
+
+ActionController::RoutingError (No route matches "/default.css" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:13:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img05.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:13:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:13:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img03.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:13:00) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img02.jpg" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)
+  [4;36;1mSQL (0.0ms)[0m   [0;1mSET NAMES 'utf8'[0m
+  [4;35;1mSQL (0.0ms)[0m   [0mSET SQL_AUTO_IS_NULL=0[0m
+
+
+Processing ApplicationController#index (for 127.0.0.1 at 2010-02-27 15:13:01) [GET]
+
+ActionController::RoutingError (No route matches "/stylesheets/images/img04.gif" with {:method=>:get}):
+  <internal:prelude>:8:in `synchronize'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:111:in `service'
+  C:/Ruby/lib/ruby/1.9.1/webrick/httpserver.rb:70:in `run'
+  C:/Ruby/lib/ruby/1.9.1/webrick/server.rb:183:in `block in start_thread'
+
+Rendering rescues/layout (not_found)

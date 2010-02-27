@@ -64,22 +64,28 @@ Released   : 20090617
 		</div>
 		<!-- start sidebars -->
 		<div id="sidebar2" class="sidebar">
-			<ul>
-				<li>
 					<% if logged_in? %>
-					<h2>Signed In</h2>
 						<ul>
 							<li>
-								<h3>Current User: </h3>
-								<%= render :text => current_user.login %>
+								<h2>Signed In</h2>
+								<ul>
+									<li>
+										<h3>Current User: </h3>
+										<%= render :text => current_user.login %>
+									</li>
+									<li>
+										<%= link_to 'Log Out', 'logout'%>
+									</li>
+								</ul>
 							</li>
 							<li>
-								<%= link_to 'Log Out', 'logout'%>
+								<h2> Private Course Site</h2>
+								<ul>
+									<li>
+										<%= link_to "Enter Private Page", "/private"%>
+									</li>
+								</ul>
 							</li>
-						</ul>
-						<h2> Private Course Site</h2>
-						<ul>
-							<li><%= link_to "Enter Private Page", "/private"%></li>	
 						</ul>
 					<% else %>
 						<h2>Log In</h2>
@@ -98,8 +104,6 @@ Released   : 20090617
 							<p><%= submit_tag 'Log in' %></p>
 						<% end -%>
 					<% end %>
-				</li>	
-			</ul>
 		</div>
 		<!-- end sidebars -->
 		<div style="clear: both;">&nbsp;</div>
