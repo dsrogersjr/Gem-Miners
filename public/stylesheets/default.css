@@ -73,7 +73,7 @@ img.right {
 	margin: 0 auto;
 	padding-top: 20px;
 	padding-left: 20px;
-	background: url(images/img01.gif) no-repeat left top;
+	background: url(/images/img01.gif) no-repeat left top;
 }
 
 #logo h1, #logo p {
