@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  require_role "admin"
+
   # Be sure to include AuthenticationSystem in Application Controller instead
   # include AuthenticatedSystem
   
