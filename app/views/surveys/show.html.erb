@@ -14,33 +14,125 @@
   <%=h @survey.survey_creator %>
 </p>
 
-<h1>Questions:</h1>
-
-<% @survey.questions.each do |question| %>
+<h1>Essay/Short Answer Questions:</h1>
+<% @survey.textquestions.each do |textquestion| %>
 	<p>
-		<b>Question Number:</b><%=h question.question_number %><br />
-		<b>Question Text:</b><br /><%=h question.question_text %> <br />
-		<b>Question Comment:</b><br /><%=h question.question_comment %> <br />
-		<%= link_to 'Edit Question', edit_question_path(question) %> |
-    	<%= link_to 'Delete', question, :confirm => 'Are you sure?', :method => :delete %>
+	  <b>Question text:</b>
+	  <%=h textquestion.question_text %>
 	</p>
+	
+	<p>
+	  <b>Question comment:</b>
+	  <%=h textquestion.question_comment %>
+	</p>
+	
+	<p>
+	<%= link_to 'Edit Question', edit_textquestion_path(textquestion) %> |
+    <%= link_to 'Delete', textquestion, :confirm => 'Are you sure?', :method => :delete %>
+	</p>	
 <% end %>
 
-<% form_for [@survey, Question.new] do |f| %>
+<% form_for [@survey, Textquestion.new] do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :question_text %><br />
+    <%= f.text_area :question_text, :cols => "50", :rows => "3"  %>
+  </p>
+  <p>
+    <%= f.label :question_comment %><br />
+    <%= f.text_area :question_comment, :cols => "50", :rows => "3"  %>
+  </p>
+  <p>
+  <%= f.submit 'Submit Multiple Choice Question' %>
+  </p>
+<% end %>
+	
+
+<h1>Multiple Choice Questions:</h1>
+
+<% @survey.mcquestions.each do |mcquestion| %>
 	<p>
-		<%= f.label :question_number, "Question Number"%><br />
-		<%= f.text_field :question_number %><br />
-		<%= f.label :question_text, "Question Text"%><br />
-		<%= f.text_field :question_text %><br />
-		<%= f.label :question_comment, "Question Comment"%><br />
-		<%= f.text_field :question_comment %><br />
-		<%= f.label :question_type, "Question Type"%><br />
-		<%= f.radio_button :question_type, "m" %>Multiple Choice<br />
-		<%= f.radio_button :question_type, "e" %>Essay<br />
+	  <b>Question Text:</b>
+	  <%=h mcquestion.question_text %>
 	</p>
+	
+	<p>
+	  <b>Question comment:</b>
+	  <%=h mcquestion.question_comment %>
+	</p>
+	
+	<p>
+	  <b>Answer 1:</b>
+	  <%=h mcquestion.answer_1 %>
+	</p>
+	
+	<p>
+	  <b>Answer 2:</b>
+	  <%=h mcquestion.answer_2 %>
+	</p>
+	
+	<p>
+	  <b>Answer 3:</b>
+	  <%=h mcquestion.answer_3 %>
+	</p>
+	
+	<p>
+	  <b>Answer 4:</b>
+	  <%=h mcquestion.answer_4 %>
+	</p>
+	
+	<p>
+	  <b>Answer 5:</b>
+	  <%=h mcquestion.answer_5 %>
+	</p>
+	
+	<p>
+	  <b>Allow Multiple Answers:</b>
+	  <%=h mcquestion.multipleanswers %>
+	</p>
+	
+	<%= link_to 'Edit Question', edit_mcquestion_path(mcquestion) %> |
+    <%= link_to 'Delete', mcquestion, :confirm => 'Are you sure?', :method => :delete %>
+	</p>	
+<% end %>
+
+<% form_for [@survey, Mcquestion.new] do |f| %>
+	<%= f.error_messages %>
 
 	<p>
-		<%= f.submit "Add Question" %>
+	<%= f.label :question_text %><br />
+	<%= f.text_area :question_text, :cols => "50", :rows => "3" %>
+	</p>
+	<p>
+	<%= f.label :question_comment %><br />
+	<%= f.text_area :question_comment, :cols => "50", :rows => "3" %>
+	</p>
+	<p>
+	<%= f.label :answer_1 %><br />
+	<%= f.text_field :answer_1 %>
+	</p>
+	<p>
+	<%= f.label :answer_2 %><br />
+	<%= f.text_field :answer_2 %>
+	</p>
+	<p>
+	<%= f.label :answer_3 %><br />
+	<%= f.text_field :answer_3 %>
+	</p>
+	<p>
+	<%= f.label :answer_4 %><br />
+	<%= f.text_field :answer_4 %>
+	</p>
+	<p>
+	<%= f.label :answer_5 %><br />
+	<%= f.text_field :answer_5 %>
+	</p>
+	<p>
+	<%= f.label :multipleanswers %><br />
+	<%= f.check_box :multipleanswers %>
+	</p>
+	<p>
+	<%= f.submit 'Submit Multiple Choice Question' %>
 	</p>
 <% end %>
 

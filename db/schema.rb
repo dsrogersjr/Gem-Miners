@@ -9,7 +9,39 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100226042333) do
+ActiveRecord::Schema.define(:version => 20100302223103) do
+
+  create_table "answers", :force => true do |t|
+    t.string   "answer_type"
+    t.text     "theanswer"
+    t.integer  "user_id"
+    t.integer  "mcquestion_id"
+    t.integer  "textqeustion_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "mcquestions", :force => true do |t|
+    t.text     "question_text"
+    t.text     "question_comment"
+    t.string   "question_type",    :default => "mc"
+    t.text     "answer_1"
+    t.text     "answer_2"
+    t.text     "answer_3"
+    t.text     "answer_4"
+    t.text     "answer_5"
+    t.boolean  "multipleanswers",  :default => false
+    t.integer  "survey_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "question360s", :force => true do |t|
+    t.text     "question_text"
+    t.integer  "question_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "questions", :force => true do |t|
     t.string   "question_number"
@@ -37,6 +69,15 @@ ActiveRecord::Schema.define(:version => 20100226042333) do
     t.text     "survey_name"
     t.date     "survey_date"
     t.string   "survey_creator"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "textquestions", :force => true do |t|
+    t.text     "question_text"
+    t.text     "question_comment"
+    t.string   "question_type",    :default => "text"
+    t.integer  "survey_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

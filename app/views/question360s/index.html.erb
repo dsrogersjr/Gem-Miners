@@ -1,0 +1,22 @@
+<h1>Listing question360s</h1>
+
+<table>
+  <tr>
+    <th>Question text</th>
+    <th>Question</th>
+  </tr>
+
+<% @question360s.each do |question360| %>
+  <tr>
+    <td><%=h question360.question_text %></td>
+    <td><%=h question360.question %></td>
+    <td><%= link_to 'Show', question360 %></td>
+    <td><%= link_to 'Edit', edit_question360_path(question360) %></td>
+    <td><%= link_to 'Destroy', question360, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New question360', new_question360_path %>

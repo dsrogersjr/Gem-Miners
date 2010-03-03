@@ -1,9 +1,16 @@
 class SurveysController < ApplicationController
-
-  
   layout 'private'
   # permissions
   require_role "admin"
+  
+  def take
+    @survey = Survey.find(params[:id])
+    
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @survey }
+    end
+  end
   
   # GET /surveys
   # GET /surveys.xml

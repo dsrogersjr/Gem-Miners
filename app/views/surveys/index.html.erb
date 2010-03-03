@@ -11,8 +11,9 @@
     <td><%=h survey.survey_name %></td>
     <td><%=h survey.survey_date %></td>
     <td><%=h survey.survey_creator %></td>
-    <td><%= link_to 'Design Survey', survey %> | </td>
-    <td><%= link_to 'Edit Survey Details', edit_survey_path(survey) %> | </td>
+	<td><%= link_to 'Take', :action => 'take', :id => survey%> | </td>
+    <td><%= link_to 'Design', survey %> | </td>
+    <td><%= link_to 'Edit Details', edit_survey_path(survey) %> | </td>
     <td><%= link_to 'Delete', survey, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>

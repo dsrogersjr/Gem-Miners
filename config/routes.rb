@@ -1,15 +1,18 @@
 ActionController::Routing::Routes.draw do |map|
+
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'public', :action => 'index'
   map.register '/register', :controller => 'users', :action => 'create'
   map.signup '/signup', :controller => 'users', :action => 'new'
-  map.resources :users
 
+  map.resources :users
   map.resource :session
   map.resource :publics
 
-  map.resources :questions, :has_one => :surveys
-  map.resources :surveys, :has_many => :questions
+  map.resources :surveys, :has_many => :textquestions
+  map.resources :surveys, :has_many => :mcquestions
+  map.resources :mcquestions, :has_many => :answers
+  map.resources :textquestions, :has_many => :answers
   
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'

@@ -1,0 +1,78 @@
+<body>
+	Testing
+
+	<h1>Essay/Short Answer Questions:</h1>
+	<% @survey.textquestions.each do |textquestion| %>
+		<h1>Question: <%= textquestion.id %></h1>
+		<p>
+		  <b>Question text:</b>
+		  <%=h textquestion.question_text %>
+		</p>
+		<% if textquestion.question_comment.length >= 1 %>
+			<p>
+			  <b>Comment:</b>
+			  <%=h textquestion.question_comment %>
+			</p>
+		<% end %>	
+		<% @user = current_user %>
+		<% remote_form_for [textquestion, @user, Answer.new] do |f| %>
+		  <%= textquestion.survey_id %>
+		  <%= f.error_messages %>
+		  <p>
+		    <%= f.label "Your Answer:" %><br />
+		    <%= f.text_area :theanswer %>
+		  </p>
+		  <p>
+		  <%= f.submit 'Submit Answer' %>
+		  </p>
+		<% end %>
+	<% end %>
+	
+	<h1>Multiple Choice Questions:</h1>
+	
+	<% @survey.mcquestions.each do |mcquestion| %>
+		<p>
+		  <b><%=h mcquestion.question_text %></b>
+		</p>
+		
+		<% if mcquestion.question_comment.length >= 1 %>
+		<p>
+		  <b>Comment:</b>
+		  <%=h mcquestion.question_comment %>
+		</p>
+		<% end %>
+		
+		<p>
+		  <b>Answer 1:</b>
+		  <%=h mcquestion.answer_1 %>
+		</p>
+		
+		<p>
+		  <b>Answer 2:</b>
+		  <%=h mcquestion.answer_2 %>
+		</p>
+		
+		<p>
+		  <b>Answer 3:</b>
+		  <%=h mcquestion.answer_3 %>
+		</p>
+		
+		<p>
+		  <b>Answer 4:</b>
+		  <%=h mcquestion.answer_4 %>
+		</p>
+		
+		<p>
+		  <b>Answer 5:</b>
+		  <%=h mcquestion.answer_5 %>
+		</p>
+		
+		<p>
+		  <b>Allow Multiple Answers:</b>
+		  <%=h mcquestion.multipleanswers %>
+		</p>
+	<% end %>
+	<p>
+		<%= link_to 'Back', surveys_path %>
+	</p>
+</body>

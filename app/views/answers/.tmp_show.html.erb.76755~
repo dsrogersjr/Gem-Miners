@@ -1,0 +1,28 @@
+<p>
+  <b>Answer type:</b>
+  <%=h @answer.answer_type %>
+</p>
+
+<p>
+  <b>Theanswer:</b>
+  <%=h @answer.theanswer %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @answer.user %>
+</p>
+
+<p>
+  <b>Mcquestion:</b>
+  <%=h @answer.mcquestion %>
+</p>
+
+<p>
+  <b>Textqeustion:</b>
+  <%=h @answer.textqeustion %>
+</p>
+
+
+<%= link_to 'Edit', edit_answer_path(@answer) %> |
+<%= link_to 'Back', answers_path %>
