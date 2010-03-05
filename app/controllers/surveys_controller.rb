@@ -3,13 +3,20 @@ class SurveysController < ApplicationController
   # permissions
   require_role "admin"
   
+  def results
+    @survey = Survey.find(params[:id])
+  end
+  
   def take
     @survey = Survey.find(params[:id])
+    @user = current_user
     
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @survey }
     end
+    
+    
   end
   
   # GET /surveys

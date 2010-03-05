@@ -14,15 +14,48 @@
   <%=h @survey.survey_creator %>
 </p>
 
+<h1>360 Feedback Questions:</h1>
+<% @survey.tsquestions.each do |t| %>
+	<p>
+	  <b>Question Text:</b>
+	  <%=h t.question_text %>
+	</p>
+	
+	<p>
+	  <b>Question Comment:</b>
+	  <%=h t.question_comment %>
+	</p>
+	
+	<p>
+	<%= link_to 'Edit Question', edit_tsquestion_path(t) %> |
+    <%= link_to 'Delete', t, :confirm => 'Are you sure?', :method => :delete %>
+	</p>	
+<% end %>
+
+<% form_for [@survey, Tsquestion.new] do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :question_text %><br />
+    <%= f.text_area :question_text, :cols => "50", :rows => "3"  %>
+  </p>
+  <p>
+    <%= f.label :question_comment %><br />
+    <%= f.text_area :question_comment, :cols => "50", :rows => "3"  %>
+  </p>
+  <p>
+  <%= f.submit 'Submit 360 Question' %>
+  </p>
+<% end %>
+
 <h1>Essay/Short Answer Questions:</h1>
 <% @survey.textquestions.each do |textquestion| %>
 	<p>
-	  <b>Question text:</b>
+	  <b>Question Text:</b>
 	  <%=h textquestion.question_text %>
 	</p>
 	
 	<p>
-	  <b>Question comment:</b>
+	  <b>Question Comment:</b>
 	  <%=h textquestion.question_comment %>
 	</p>
 	
@@ -43,7 +76,7 @@
     <%= f.text_area :question_comment, :cols => "50", :rows => "3"  %>
   </p>
   <p>
-  <%= f.submit 'Submit Multiple Choice Question' %>
+  <%= f.submit 'Submit Text/360 Question' %>
   </p>
 <% end %>
 	
@@ -100,36 +133,36 @@
 	<%= f.error_messages %>
 
 	<p>
-	<%= f.label :question_text %><br />
-	<%= f.text_area :question_text, :cols => "50", :rows => "3" %>
+		<%= f.label :question_text %><br />
+		<%= f.text_area :question_text, :cols => "50", :rows => "3" %>
 	</p>
 	<p>
-	<%= f.label :question_comment %><br />
-	<%= f.text_area :question_comment, :cols => "50", :rows => "3" %>
+		<%= f.label :question_comment %><br />
+		<%= f.text_area :question_comment, :cols => "50", :rows => "3" %>
 	</p>
 	<p>
-	<%= f.label :answer_1 %><br />
-	<%= f.text_field :answer_1 %>
+		<%= f.label :answer_1 %><br />
+		<%= f.text_field :answer_1 %>
 	</p>
 	<p>
-	<%= f.label :answer_2 %><br />
-	<%= f.text_field :answer_2 %>
+		<%= f.label :answer_2 %><br />
+		<%= f.text_field :answer_2 %>
 	</p>
 	<p>
-	<%= f.label :answer_3 %><br />
-	<%= f.text_field :answer_3 %>
+		<%= f.label :answer_3 %><br />
+		<%= f.text_field :answer_3 %>
 	</p>
 	<p>
-	<%= f.label :answer_4 %><br />
-	<%= f.text_field :answer_4 %>
+		<%= f.label :answer_4 %><br />
+		<%= f.text_field :answer_4 %>
 	</p>
 	<p>
-	<%= f.label :answer_5 %><br />
-	<%= f.text_field :answer_5 %>
+		<%= f.label :answer_5 %><br />
+		<%= f.text_field :answer_5 %>
 	</p>
 	<p>
-	<%= f.label :multipleanswers %><br />
-	<%= f.check_box :multipleanswers %>
+		<%= f.check_box :multipleanswers %>
+		<%= f.label :multipleanswers, "Allow multiple answers?" %><br />
 	</p>
 	<p>
 	<%= f.submit 'Submit Multiple Choice Question' %>

@@ -1,0 +1,24 @@
+<h1>Editing tsanswer</h1>
+
+<% form_for(@tsanswer) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :theanswer %><br />
+    <%= f.text_field :theanswer %>
+  </p>
+  <p>
+    <%= f.label :user %><br />
+    <%= f.text_field :user %>
+  </p>
+  <p>
+    <%= f.label :tsquestion %><br />
+    <%= f.text_field :tsquestion %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @tsanswer %> |
+<%= link_to 'Back', tsanswers_path %>

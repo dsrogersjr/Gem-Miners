@@ -1,0 +1,24 @@
+<h1>Editing textanswer</h1>
+
+<% form_for(@textanswer) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :theanswer %><br />
+    <%= f.text_area :theanswer %>
+  </p>
+  <p>
+    <%= f.label :user %><br />
+    <%= f.text_field :user %>
+  </p>
+  <p>
+    <%= f.label :textquestion %><br />
+    <%= f.text_field :textquestion %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @textanswer %> |
+<%= link_to 'Back', textanswers_path %>

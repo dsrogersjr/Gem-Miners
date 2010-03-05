@@ -1,0 +1,24 @@
+<h1>Editing tsquestion</h1>
+
+<% form_for(@tsquestion) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :question_text %><br />
+    <%= f.text_area :question_text %>
+  </p>
+  <p>
+    <%= f.label :question_comment %><br />
+    <%= f.text_area :question_comment %>
+  </p>
+  <p>
+    <%= f.label :survey %><br />
+    <%= f.text_field :survey %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @tsquestion %> |
+<%= link_to 'Back', tsquestions_path %>

@@ -1,2 +1,0 @@
-module Question360sHelper
-end

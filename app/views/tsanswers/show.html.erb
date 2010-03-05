@@ -1,0 +1,18 @@
+<p>
+  <b>Theanswer:</b>
+  <%=h @tsanswer.theanswer %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @tsanswer.user %>
+</p>
+
+<p>
+  <b>Tsquestion:</b>
+  <%=h @tsanswer.tsquestion %>
+</p>
+
+
+<%= link_to 'Edit', edit_tsanswer_path(@tsanswer) %> |
+<%= link_to 'Back', tsanswers_path %>

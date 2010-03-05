@@ -9,14 +9,27 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100302223103) do
+ActiveRecord::Schema.define(:version => 20100305063352) do
 
   create_table "answers", :force => true do |t|
     t.string   "answer_type"
     t.text     "theanswer"
     t.integer  "user_id"
     t.integer  "mcquestion_id"
-    t.integer  "textqeustion_id"
+    t.integer  "textquestion_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "mcanswers", :force => true do |t|
+    t.boolean  "answered",      :default => false
+    t.boolean  "theanswer_1",   :default => false
+    t.boolean  "theanswer_2",   :default => false
+    t.boolean  "theanswer_3",   :default => false
+    t.boolean  "theanswer_4",   :default => false
+    t.boolean  "theanswer_5",   :default => false
+    t.integer  "user_id"
+    t.integer  "mcquestion_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -73,10 +86,34 @@ ActiveRecord::Schema.define(:version => 20100302223103) do
     t.datetime "updated_at"
   end
 
+  create_table "textanswers", :force => true do |t|
+    t.text     "theanswer"
+    t.integer  "user_id"
+    t.integer  "textquestion_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "textquestions", :force => true do |t|
     t.text     "question_text"
     t.text     "question_comment"
     t.string   "question_type",    :default => "text"
+    t.integer  "survey_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tsanswers", :force => true do |t|
+    t.integer  "theanswer",     :limit => 10, :precision => 10, :scale => 0
+    t.integer  "user_id"
+    t.integer  "tsquestion_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tsquestions", :force => true do |t|
+    t.text     "question_text"
+    t.text     "question_comment"
     t.integer  "survey_id"
     t.datetime "created_at"
     t.datetime "updated_at"

@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  theanswer: 9.99
+  user: 
+  tsquestion: 
+
+two:
+  theanswer: 9.99
+  user: 
+  tsquestion: 

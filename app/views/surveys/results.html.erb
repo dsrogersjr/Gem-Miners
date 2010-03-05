@@ -1,0 +1,69 @@
+<h2>Survey Results</h2>
+<% @counter = 0 %>
+<% @survey.tsquestions.each do |t|%>
+	<h1>Question Number: <%=  @counter += 1%></h1>
+	<h4>Question Text:</h4> 
+	<%= t.question_text%>
+	<h4>Question Answer:</h4>
+	<% if Tsanswer.exists?(:tsquestion_id => t)%>
+		<% @showanswer = Tsanswer.find(:first, :conditions => {:tsquestion_id => t.id})%>
+		<%= @showanswer.theanswer %>
+	<% else %>
+		<h3>The user has not answered this question yet.</h3>
+	<% end %>
+<% end %>
+<% @survey.textquestions.each do |t|%>
+	<h1>Question Number: <%=  @counter += 1%></h1>
+	<h4>Question Text:</h4> 
+	<%= t.question_text%>
+	<h4>Question Answer:</h4>
+	<% if Textanswer.exists?(:textquestion_id => t)%>
+		<% @showanswer = Textanswer.find(:first, :conditions => {:textquestion_id => t.id})%>
+		<%= @showanswer.theanswer %>
+	<% else %>
+		<h3>The user has not answered this question yet.</h3>
+	<% end %>
+<% end %>
+<% @survey.mcquestions.each do |t|%>
+	<h1>Question Number: <%=  @counter += 1%></h1>
+	<h4>Question Text:</h4> 
+	<%= t.question_text%>
+	<h4>Question Answer(s):</h4>
+	<% if Mcanswer.exists?(:mcquestion_id => t)%>
+		<% @showanswer = Mcanswer.find(:first, :conditions => {:mcquestion_id => t.id})%>
+		<% if @showanswer.theanswer_1%>
+			<p>
+			  <%=h t.answer_1 %>
+			</p>
+		<% end %>
+			
+		<% if @showanswer.theanswer_2%>
+			<p>
+			  <%=h t.answer_2 %>
+			</p>
+		<% end %>
+			
+		<% if @showanswer.theanswer_3%>
+			<p>
+			  <%=h t.answer_3 %>
+			</p>
+		<% end %>
+			
+		<% if @showanswer.theanswer_4%>
+			<p>
+			  <%=h t.answer_4 %>
+			</p>
+		<% end %>
+			
+		<% if @showanswer.theanswer_5%>
+			<p>
+			  <%=h t.answer_5 %>
+			</p>
+		<% end %>
+	<% else %>
+		<h3>The user has not answered this question yet.</h3>
+	<% end %>
+<% end %>
+<p>
+	<%= link_to 'Back', surveys_path %>
+</p>
