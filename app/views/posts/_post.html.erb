@@ -1,0 +1,13 @@
+<div id="primarycontent">
+
+	<div class="post">
+		<div class="header">
+			<h2><%= link_to post.title, :controller => 'posts', :action => 'show', :id => post %></h2>
+			<div class="date"><%= post.created_at.to_s %></div>
+		</div>
+		<div class="content">
+			<p><%= post.body %></p>
+		</div>			
+	</div>
+	
+</div>

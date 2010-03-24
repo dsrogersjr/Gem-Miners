@@ -1,0 +1,14 @@
+<h1>Editing document</h1>
+
+<% form_for @document, :html => { :multipart => true } do |f| %>
+  <%= f.error_messages %>
+  <p>
+	<%=  f.file_field :file %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @document %> |
+<%= link_to 'Back', documents_path %>

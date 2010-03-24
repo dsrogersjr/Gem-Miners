@@ -39,8 +39,8 @@ Released   : 20090617
 					<h2>Public Links</h2>
 					<ul>
 						<li><a href="#"><%= link_to "Home", "/" %></a></li>
-						<li><a href="#"><%= link_to "Course Calendar", "/public/calendar" %></a></li>
-						<li><a href="#"><%= link_to "Course Syllabus", "/public/syllabus" %></a></li>
+						<li><%= link_to 'Course Calendar', :controller => 'home', :action => 'calendar' %></li>
+						<li><%= link_to 'Course Syllabus', :controller => 'home', :action => 'syllabus' %></li>
 					</ul>
 				</li>
 				<li>
@@ -68,10 +68,26 @@ Released   : 20090617
 			<ul>
 				<li>
 					<h2>Private Links</h2>
-					<ul>
-						<li>Future Link to Surveys</li>
-						<!-- <li><a href="#"><%= link_to "Surveys", "/surveys" %></a></li> --> 
-					</ul>
+						<% if current_user.has_role?("admin") %>
+						<ul>
+							<li><%= link_to 'Group Section', :controller => 'private', :action => 'admin' %></li>
+							<li><%= link_to 'Public Home', :controller => 'home' %></li>
+							<li><%= link_to 'Edit Posts', :controller => 'posts', :action => 'index' %></li>
+							<li><%= link_to 'Add New User', :controller => 'users', :action => 'new' %></li>
+							<li><%= link_to 'Surveys', :controller => 'surveys', :action => 'index' %></li>
+							<li><%= link_to 'Upload', :controller => 'documents', :action => 'index' %></li>
+							<li><%= link_to 'List of Of Users', :controller => 'private', :action => 'list' %></li>
+						</ul>
+						<% else %>
+						<ul>
+							<li><%= link_to 'Group Section', :controller => 'private', :action => 'group' %></li>
+							<li><%= link_to 'Home', :controller => 'home' %></li>
+							<li><%= link_to 'Surveys' %></li>
+							<li><%= link_to 'Upload' %></li>
+							<li><%= link_to 'Communication' %></li>
+							<li><%= link_to 'Groups' %></li>
+						</ul>
+						<% end %>
 				</li>
 				<li>
 					<h2>Signed In</h2>
@@ -81,7 +97,7 @@ Released   : 20090617
 							<%= render :text => current_user.login %>
 						</li>
 						<li>
-							<%= link_to 'Log Out', 'logout'%>
+							<%= link_to 'Logout', logout_path %>
 						</li>
 					</ul>
 				</li>

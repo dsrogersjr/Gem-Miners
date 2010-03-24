@@ -1,13 +1,11 @@
-
 <h1>Log In</h1>
 
 <% form_tag session_path do -%>
-<h1>This area of the site requires you to log in.</h1>
 <p><%= label_tag 'login' %><br />
 <%= text_field_tag 'login', @login %></p>
 
 <p><%= label_tag 'password' %><br/>
-<%= password_field_tag 'password', @password %></p>
+<%= password_field_tag 'password', nil %></p>
 
 <!-- Uncomment this if you want this functionality
 <p><%= label_tag 'remember_me', 'Remember me' %>

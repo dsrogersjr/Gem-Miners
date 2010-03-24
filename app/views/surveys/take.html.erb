@@ -1,0 +1,196 @@
+<%# There is a lot of code here which could be put into helper methods.
+	This will be done in the future because of time constraints in getting
+	the first iteration out the door. %>
+
+<body>
+	<% @countert = 0 %>
+	
+	<h2>360 Feedback Questions:</h2>
+	<% @survey.tsquestions.each do |t| %>
+		<h1>Question: <%= @countert += 1%></h1>
+		<p>
+		  <h3>Question Text:</h3>
+		  <%=h t.question_text %>
+		</p>
+		
+		<% if t.question_comment.length >= 1 %>
+			<p>
+			  <h3>Comment:</h3>
+			  <%=h t.question_comment %>
+			</p>
+		<% end %>	
+		<% if Tsanswer.exists?(:tsquestion_id => t)%>
+			<p>
+			  <% @showanswer = Tsanswer.find(:first, :conditions => {:tsquestion_id => t.id})%>
+
+			  <h3> Your Answer:</h3>
+
+			  <%=h @showanswer.theanswer %>
+
+    		<%= button_to 'Redo', @showanswer, :confirm => 'Are you sure?', :method => :delete %>
+			</p>			
+		<% else %>
+			<% remote_form_for [t, Tsanswer.new] do |f| %>
+			  
+			  <p>
+			    <h3><%= f.label "Your Answer:" %></h3><br />
+			    <%= f.text_field :theanswer %>
+			  </p>
+			  <p>
+			  	<%= f.hidden_field( "user_id", :value => @user.id )%>
+			  </p>
+			  <p>
+			  <%= f.submit 'Submit Answer' %>
+			  </p>
+			<% end %>
+		<% end %>
+	<% end %>
+
+	<h2>Essay/Short Answer Questions:</h2>
+
+	<% @survey.textquestions.each do |textquestion|%>
+		<h1>Question: <%= @countert += 1%></h1>
+		<p>
+		  <h3>Question text:</h3>
+		  <%=h textquestion.question_text %>
+		</p>
+		<% if textquestion.question_comment.length >= 1 %>
+			<p>
+			  <h3>Comment:</h3>
+			  <%=h textquestion.question_comment %>
+			</p>
+		<% end %>
+		<% if Textanswer.exists?(:textquestion_id => textquestion)%>
+			<p>
+			  <% @showanswer = Textanswer.find(:first, :conditions => {:textquestion_id => textquestion.id})%>
+			  
+			  <h3> Your Answer:</h3>
+			  <p>
+				  <%=h @showanswer.theanswer %>
+			  </p>
+    			<%= button_to 'Redo', @showanswer, :confirm => 'Are you sure?', :method => :delete %>
+			</p>			
+		<% else %>
+			<% remote_form_for [textquestion, Textanswer.new] do |f| %>
+			  <%= f.error_messages %>
+			  <p>
+			    <h3><%= f.label "Your Answer:" %></h3><br />
+			    <%= f.text_area :theanswer, :cols => "50", :rows => "3" %>
+			  </p>
+			  <p>
+			  	<%= f.hidden_field( "user_id", :value => @user.id )%>
+			  </p>
+			  <p>
+			  <%= f.submit 'Submit Answer' %>
+			  </p>
+			<% end %>
+		<% end %>
+	<% end %>
+	
+	<h2>Multiple Choice Questions:</h2>
+	
+	<% @survey.mcquestions.each do |mcquestion| %>
+		<h1>Question: <%= @countert += 1 %></h1>
+
+		<% unless Mcanswer.exists?(:mcquestion_id => mcquestion)%>
+			<% remote_form_for [mcquestion, Mcanswer.new] do |f| %>
+			  <%= f.error_messages %>
+
+			  <%= mcquestion.question_text %>
+			  <p>
+			  	<% if mcquestion.multipleanswers %>
+					<%= f.check_box :theanswer_1 %>
+				<% else %>
+					<%= f.radio_button :theanswer_1, true %>
+				<% end %>
+
+			    <%= f.label :theanswer_1, mcquestion.answer_1 %>
+			  </p>
+			  <p>
+			  	<% if mcquestion.multipleanswers %>
+					<%= f.check_box :theanswer_2 %>
+				<% else %>
+					<%= f.radio_button :theanswer_2, true %>
+				<% end %>
+
+			    <%= f.label :theanswer_2, mcquestion.answer_2 %>
+			  </p>
+			  <p>
+			  	<% if mcquestion.multipleanswers %>
+					<%= f.check_box :theanswer_3 %>
+				<% else %>
+					<%= f.radio_button :theanswer_3, true %>
+				<% end %>
+
+			    <%= f.label :theanswer_3, mcquestion.answer_3 %>
+			  </p>
+			  <p>
+			  	<% if mcquestion.multipleanswers %>
+					<%= f.check_box :theanswer_4 %>
+				<% else %>
+					<%= f.radio_button :theanswer_4, true %>
+				<% end %>
+				
+			    <%= f.label :theanswer_4, mcquestion.answer_4 %>
+			  </p>
+			  <p>
+			  	<% if mcquestion.multipleanswers %>
+					<%= f.check_box :theanswer_5 %>
+				<% else %>
+					<%= f.radio_button :theanswer_5, true%>
+				<% end %>
+				
+			    <%= f.label :theanswer_5, mcquestion.answer_5 %>
+			  </p>
+			  <p>
+			  	<%= f.hidden_field( "user_id", :value => @user.id )%>
+			  </p>
+			  <p>
+			    <%= f.submit 'Submit Answer' %>
+			  </p>
+			<% end %>
+		<% else %>
+			<% @showanswer = Mcanswer.find(:first, :conditions => {:mcquestion_id => mcquestion.id})%>
+			<p>
+				<%= mcquestion.question_text %>
+			</p>
+			<h3> Your Answer(s):</h3>
+			
+			<% if @showanswer.theanswer_1%>
+			<p>
+			  <%=h mcquestion.answer_1 %>
+			</p>
+			<% end %>
+			
+			<% if @showanswer.theanswer_2%>
+			<p>
+			  <%=h mcquestion.answer_2 %>
+			</p>
+			<% end %>
+			
+			<% if @showanswer.theanswer_3%>
+			<p>
+			  <%=h mcquestion.answer_3 %>
+			</p>
+			<% end %>
+			
+			<% if @showanswer.theanswer_4%>
+			<p>
+			  <%=h mcquestion.answer_4 %>
+			</p>
+			<% end %>
+			
+			<% if @showanswer.theanswer_5%>
+			<p>
+			  <%=h mcquestion.answer_5 %>
+			</p>
+			<% end %>
+			<p>
+    			<%= button_to 'Redo', @showanswer, :confirm => 'Are you sure?', :method => :delete %>
+			</p>	
+		<% end %>
+	<% end %>
+	<p>
+		<%= link_to 'Back', surveys_path %>
+	</p>
+</body>

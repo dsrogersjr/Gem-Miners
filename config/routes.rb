@@ -1,19 +1,28 @@
 ActionController::Routing::Routes.draw do |map|
+
+  map.resources :tsanswers
+  map.resources :textanswers
+  map.resources :mcanswers
+  map.resources :surveys, :has_many => :tsquestions
+  map.resources :surveys, :has_many => :textquestions
+  map.resources :surveys, :has_many => :mcquestions
+  map.resources :tsquestions, :has_many => :tsanswers
+  map.resources :mcquestions, :has_many => :mcanswers
+  map.resources :textquestions, :has_many => :textanswers
+  map.resources :documents
+  
+  map.resources :posts, :has_many => :comments
+
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
-  map.login '/login', :controller => 'public', :action => 'index'
+  map.login '/login', :controller => 'sessions', :action => 'new'
   map.register '/register', :controller => 'users', :action => 'create'
   map.signup '/signup', :controller => 'users', :action => 'new'
+
   map.resources :users
-
   map.resource :session
-  map.resource :publics
-
-  map.resources :questions, :has_one => :surveys
-  map.resources :surveys, :has_many => :questions
-  
-  map.connect ':controller/:action/:id'
-  map.connect ':controller/:action/:id.:format'
-  map.root :controller => "public", :action => "index"
+  # makes home controller the default when uncommented
+  # map.root :controller => "home"
+  map.root :controller => "home", :action => "index"  
 
   # The priority is based upon order of creation: first created -> highest priority.
 
@@ -54,5 +63,6 @@ ActionController::Routing::Routes.draw do |map|
   # Install the default routes as the lowest priority.
   # Note: These default routes make all actions in every controller accessible via GET requests. You should
   # consider removing or commenting them out if you're using named routes and resources.
-
+  map.connect ':controller/:action/:id'
+  map.connect ':controller/:action/:id.:format'
 end

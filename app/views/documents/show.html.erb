@@ -1,0 +1,5 @@
+
+<%= link_to 'Edit', edit_document_path(@document) %> |
+<%= link_to 'Back', documents_path %> |
+<%= link_to 'Open', @document.file.url %>
+<%= image_tag @document.file.url %>

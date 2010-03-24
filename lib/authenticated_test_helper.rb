@@ -8,5 +8,4 @@ module AuthenticatedTestHelper
     @request.env["HTTP_AUTHORIZATION"] = user ? ActionController::HttpAuthentication::Basic.encode_credentials(users(user).login, 'monkey') : nil
   end
   
-
 end

@@ -1,0 +1,44 @@
+<h1>Editing mcquestion</h1>
+
+<% form_for(@mcquestion) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :question_text %><br />
+    <%= f.text_area :question_text, :cols => "50", :rows => "3" %>
+  </p>
+  <p>
+    <%= f.label :question_comment %><br />
+    <%= f.text_area :question_comment, :cols => "50", :rows => "3" %>
+  </p>
+  <p>
+    <%= f.label :answer_1 %><br />
+    <%= f.text_area :answer_1, :cols => "50", :rows => "2" %>
+  </p>
+  <p>
+    <%= f.label :answer_2 %><br />
+    <%= f.text_area :answer_2, :cols => "50", :rows => "2" %>
+  </p>
+  <p>
+    <%= f.label :answer_3 %><br />
+    <%= f.text_area :answer_3, :cols => "50", :rows => "2" %>
+  </p>
+  <p>
+    <%= f.label :answer_4 %><br />
+    <%= f.text_area :answer_4, :cols => "50", :rows => "2" %>
+  </p>
+  <p>
+    <%= f.label :answer_5 %><br />
+    <%= f.text_area :answer_5, :cols => "50", :rows => "2" %>
+  </p>
+  <p>
+    <%= f.label :multipleanswers, "Allow multiple answers:" %><br />
+    <%= f.check_box :multipleanswers %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @mcquestion %> |
+<%= link_to 'Back', :controller => "surveys", :action => @mcquestion.survey_id %>

@@ -9,14 +9,56 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100226042333) do
+ActiveRecord::Schema.define(:version => 20100306181906) do
 
-  create_table "questions", :force => true do |t|
-    t.string   "question_number"
-    t.string   "question_type"
-    t.text     "question_comment"
+  create_table "comments", :force => true do |t|
+    t.string   "name"
+    t.text     "body"
+    t.integer  "post_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "documents", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "file_file_name"
+    t.string   "file_content_type"
+    t.integer  "file_file_size"
+    t.datetime "file_updated_at"
+  end
+
+  create_table "mcanswers", :force => true do |t|
+    t.boolean  "answered",      :default => false
+    t.boolean  "theanswer_1",   :default => false
+    t.boolean  "theanswer_2",   :default => false
+    t.boolean  "theanswer_3",   :default => false
+    t.boolean  "theanswer_4",   :default => false
+    t.boolean  "theanswer_5",   :default => false
+    t.integer  "user_id"
+    t.integer  "mcquestion_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "mcquestions", :force => true do |t|
     t.text     "question_text"
+    t.text     "question_comment"
+    t.string   "question_type",    :default => "mc"
+    t.text     "answer_1"
+    t.text     "answer_2"
+    t.text     "answer_3"
+    t.text     "answer_4"
+    t.text     "answer_5"
+    t.boolean  "multipleanswers",  :default => false
     t.integer  "survey_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "posts", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -37,6 +79,39 @@ ActiveRecord::Schema.define(:version => 20100226042333) do
     t.text     "survey_name"
     t.date     "survey_date"
     t.string   "survey_creator"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "textanswers", :force => true do |t|
+    t.text     "theanswer"
+    t.integer  "user_id"
+    t.integer  "textquestion_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "textquestions", :force => true do |t|
+    t.text     "question_text"
+    t.text     "question_comment"
+    t.string   "question_type",    :default => "text"
+    t.integer  "survey_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tsanswers", :force => true do |t|
+    t.integer  "theanswer",     :limit => 10, :precision => 10, :scale => 0
+    t.integer  "user_id"
+    t.integer  "tsquestion_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "tsquestions", :force => true do |t|
+    t.text     "question_text"
+    t.text     "question_comment"
+    t.integer  "survey_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
