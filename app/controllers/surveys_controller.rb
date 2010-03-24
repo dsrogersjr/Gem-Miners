@@ -1,7 +1,5 @@
 class SurveysController < ApplicationController
   layout 'private'
-  # permissions
-  require_role "admin"
   
   def results
     @survey = Survey.find(params[:id])
