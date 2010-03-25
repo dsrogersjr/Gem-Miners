@@ -1,7 +1,7 @@
 class CreateTsanswers < ActiveRecord::Migration
   def self.up
     create_table :tsanswers do |t|
-      t.decimal :theanswer
+      t.decimal :theanswer, :precision => 8, :scale => 2
       t.references :user
       t.references :tsquestion
 

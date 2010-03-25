@@ -47,38 +47,7 @@
   </p>
 <% end %>
 
-<h1>Essay/Short Answer Questions:</h1>
-<% @survey.textquestions.each do |textquestion| %>
-	<p>
-	  <b>Question Text:</b>
-	  <%=h textquestion.question_text %>
-	</p>
-	
-	<p>
-	  <b>Question Comment:</b>
-	  <%=h textquestion.question_comment %>
-	</p>
-	
-	<p>
-	<%= link_to 'Edit Question', edit_textquestion_path(textquestion) %> |
-    <%= link_to 'Delete', textquestion, :confirm => 'Are you sure?', :method => :delete %>
-	</p>	
-<% end %>
 
-<% form_for [@survey, Textquestion.new] do |f| %>
-  <%= f.error_messages %>
-  <p>
-    <%= f.label :question_text %><br />
-    <%= f.text_area :question_text, :cols => "50", :rows => "3"  %>
-  </p>
-  <p>
-    <%= f.label :question_comment %><br />
-    <%= f.text_area :question_comment, :cols => "50", :rows => "3"  %>
-  </p>
-  <p>
-  <%= f.submit 'Submit Text/360 Question' %>
-  </p>
-<% end %>
 	
 
 <h1>Multiple Choice Questions:</h1>
@@ -167,6 +136,39 @@
 	<p>
 	<%= f.submit 'Submit Multiple Choice Question' %>
 	</p>
+<% end %>
+
+<h1>Essay/Short Answer Questions:</h1>
+<% @survey.textquestions.each do |textquestion| %>
+	<p>
+	  <b>Question Text:</b>
+	  <%=h textquestion.question_text %>
+	</p>
+	
+	<p>
+	  <b>Question Comment:</b>
+	  <%=h textquestion.question_comment %>
+	</p>
+	
+	<p>
+	<%= link_to 'Edit Question', edit_textquestion_path(textquestion) %> |
+    <%= link_to 'Delete', textquestion, :confirm => 'Are you sure?', :method => :delete %>
+	</p>	
+<% end %>
+
+<% form_for [@survey, Textquestion.new] do |f| %>
+  <%= f.error_messages %>
+  <p>
+    <%= f.label :question_text %><br />
+    <%= f.text_area :question_text, :cols => "50", :rows => "3"  %>
+  </p>
+  <p>
+    <%= f.label :question_comment %><br />
+    <%= f.text_area :question_comment, :cols => "50", :rows => "3"  %>
+  </p>
+  <p>
+  <%= f.submit 'Submit Text/360 Question' %>
+  </p>
 <% end %>
 
 <p>

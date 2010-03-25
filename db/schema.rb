@@ -9,16 +9,23 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100305063352) do
+ActiveRecord::Schema.define(:version => 20100306181906) do
 
-  create_table "answers", :force => true do |t|
-    t.string   "answer_type"
-    t.text     "theanswer"
-    t.integer  "user_id"
-    t.integer  "mcquestion_id"
-    t.integer  "textquestion_id"
+  create_table "comments", :force => true do |t|
+    t.string   "name"
+    t.text     "body"
+    t.integer  "post_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+  end
+
+  create_table "documents", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "file_file_name"
+    t.string   "file_content_type"
+    t.integer  "file_file_size"
+    t.datetime "file_updated_at"
   end
 
   create_table "mcanswers", :force => true do |t|
@@ -49,19 +56,9 @@ ActiveRecord::Schema.define(:version => 20100305063352) do
     t.datetime "updated_at"
   end
 
-  create_table "question360s", :force => true do |t|
-    t.text     "question_text"
-    t.integer  "question_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "questions", :force => true do |t|
-    t.string   "question_number"
-    t.string   "question_type"
-    t.text     "question_comment"
-    t.text     "question_text"
-    t.integer  "survey_id"
+  create_table "posts", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -104,7 +101,7 @@ ActiveRecord::Schema.define(:version => 20100305063352) do
   end
 
   create_table "tsanswers", :force => true do |t|
-    t.integer  "theanswer",     :limit => 10, :precision => 10, :scale => 0
+    t.decimal  "theanswer",     :precision => 8, :scale => 2
     t.integer  "user_id"
     t.integer  "tsquestion_id"
     t.datetime "created_at"
@@ -112,7 +109,7 @@ ActiveRecord::Schema.define(:version => 20100305063352) do
   end
 
   create_table "tsquestions", :force => true do |t|
-    t.text     "question_text"
+    t.string   "question_text",    :default => "On a scale of zero to 3"
     t.text     "question_comment"
     t.integer  "survey_id"
     t.datetime "created_at"

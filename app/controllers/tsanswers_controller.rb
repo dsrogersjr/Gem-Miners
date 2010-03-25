@@ -45,7 +45,17 @@ class TsanswersController < ApplicationController
     @survey = Survey.find(@sid)
     @skid = params[:tsquestion_id].to_i
     @tsanswer = @tsquestion.tsanswers.create!params[:tsanswer]
-    redirect_to '/surveys/take/' + @sid.to_s
+
+    respond_to do |format|
+      if @tsanswer.save
+        flash[:notice] = 'Product was successfully created.'
+        format.html { redirect_to('/surveys/take/' + @sid.to_s) }
+        format.xml  { render :xml => @tsanswer, :status => :created, :location => @tsanswer }
+      else
+        format.html { redirect_to('/surveys/take/' + @sid.to_s) }
+        format.xml  { render :xml => @tsanswer.errors, :status => :unprocessable_entity }
+      end
+    end
   end
 
   # PUT /tsanswers/1
