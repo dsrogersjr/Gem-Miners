@@ -38,7 +38,6 @@
 			<% else %>
 				<% form_for [t, Tsanswer.new] do |f| %>
 				  <%= f.error_messages %>
-				  <div>flash[:key]</div>
 				  <p>
 				    <h3><%= f.label "Your Answer:" %></h3><br />
 				    <%= f.text_field :theanswer %>
