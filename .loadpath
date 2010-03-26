@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<loadpath>
+	<pathentry path="" type="src"/>
+	<pathentry path="GEM_LIB/rack-1.0.1/lib" type="var"/>
+	<pathentry path="GEM_LIB/sqlite3-ruby-1.2.5-x86-mingw32/lib" type="var"/>
+	<pathentry path="GEM_LIB/actionmailer-2.3.5/lib" type="var"/>
+	<pathentry path="GEM_LIB/activesupport-2.3.5/lib" type="var"/>
+</loadpath>

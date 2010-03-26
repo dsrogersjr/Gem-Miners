@@ -1,0 +1,22 @@
+<h1>Listing threesixties</h1>
+
+<table>
+  <tr>
+    <th>Threesixty name</th>
+    <th>Threesixty intro</th>
+  </tr>
+
+<% @threesixties.each do |threesixty| %>
+  <tr>
+    <td><%=h threesixty.threesixty_name %></td>
+    <td><%=h threesixty.threesixty_intro %></td>
+    <td><%= link_to 'Show', threesixty %></td>
+    <td><%= link_to 'Edit', edit_threesixty_path(threesixty) %></td>
+    <td><%= link_to 'Destroy', threesixty, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New threesixty', new_threesixty_path %>
