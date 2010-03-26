@@ -1,9 +1,12 @@
 class ThreesixtiesController < ApplicationController
+  layout 'private'
+    
   # GET /threesixties
   # GET /threesixties.xml
   def index
     @threesixties = Threesixty.all
-
+    @user = current_user
+  
     respond_to do |format|
       format.html # index.html.erb
       format.xml  { render :xml => @threesixties }

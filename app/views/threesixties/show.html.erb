@@ -1,13 +1,35 @@
+<h2>Design 360 Feedback Form</h2>
+
 <p>
   <b>Threesixty name:</b>
   <%=h @threesixty.threesixty_name %>
 </p>
 
-<p>
-  <b>Threesixty intro:</b>
-  <%=h @threesixty.threesixty_intro %>
-</p>
+<% if @threesixty.threesixty_intro == "" %>
+	<% form_for(@threesixty) do |f| %>
+	  <%= f.error_messages %>
+	
+	  <p>
+	    <%= f.text_area :threesixty_intro %>
+	  </p>
+	  <p>
+	    <%= f.submit 'Create Intro' %>
+	  </p>
+	<% end %>
+<% else%>
 
-
+	<% form_for(@threesixty) do |f| %>
+	  <%= f.error_messages %>
+	
+	  <p>
+	  	<b><%= f.label :threesixty_intro%>:</b><br />
+	    <%= f.text_area :threesixty_intro %>
+	  </p>
+	  <p>
+	    <%= f.submit 'Update Intro' %>
+	  </p>
+	<% end %>
+<% end %>
+ 
 <%= link_to 'Edit', edit_threesixty_path(@threesixty) %> |
 <%= link_to 'Back', threesixties_path %>

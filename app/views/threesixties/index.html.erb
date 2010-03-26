@@ -1,22 +1,28 @@
-<h1>Listing threesixties</h1>
+<h1>List of 360 Feedback</h1>
 
 <table>
   <tr>
-    <th>Threesixty name</th>
-    <th>Threesixty intro</th>
+    <th>Name</th>
+    <th>Date</th>
+    <th>Creator</th>
   </tr>
-
-<% @threesixties.each do |threesixty| %>
+<% @threesixties.each do |t| %>
   <tr>
-    <td><%=h threesixty.threesixty_name %></td>
-    <td><%=h threesixty.threesixty_intro %></td>
-    <td><%= link_to 'Show', threesixty %></td>
-    <td><%= link_to 'Edit', edit_threesixty_path(threesixty) %></td>
-    <td><%= link_to 'Destroy', threesixty, :confirm => 'Are you sure?', :method => :delete %></td>
+    <td><%=h t.threesixty_name %></td>
+    <td><%=h t.threesixty_date %></td>
+    <td><%=h t.threesixty_creator %></td>
+	<td><%= link_to 'Take|', :action => 'take', :id => t%></td>
+    <td><%= link_to 'Design|', t %></td>
+    <td><%= link_to 'Edit|', edit_threesixty_path(t) %></td>
+	<td><%= link_to 'Results|', :action => 'results', :id => t %></td>
+    <td><%= link_to 'Delete', t, :confirm => 'Are you sure?', :method => :delete %></td>
   </tr>
 <% end %>
 </table>
 
 <br />
 
-<%= link_to 'New threesixty', new_threesixty_path %>
+<%= link_to 'New 360 Feedback', new_threesixty_path %>
+
+
+<br />
