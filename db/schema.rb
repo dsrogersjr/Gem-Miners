@@ -9,24 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100306181906) do
-
-  create_table "comments", :force => true do |t|
-    t.string   "name"
-    t.text     "body"
-    t.integer  "post_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "documents", :force => true do |t|
-    t.datetime "created_at"
-    t.datetime "updated_at"
-    t.string   "file_file_name"
-    t.string   "file_content_type"
-    t.integer  "file_file_size"
-    t.datetime "file_updated_at"
-  end
+ActiveRecord::Schema.define(:version => 20100305063352) do
 
   create_table "mcanswers", :force => true do |t|
     t.boolean  "answered",      :default => false
@@ -52,13 +35,6 @@ ActiveRecord::Schema.define(:version => 20100306181906) do
     t.text     "answer_5"
     t.boolean  "multipleanswers",  :default => false
     t.integer  "survey_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "posts", :force => true do |t|
-    t.string   "title"
-    t.text     "body"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -109,7 +85,7 @@ ActiveRecord::Schema.define(:version => 20100306181906) do
   end
 
   create_table "tsquestions", :force => true do |t|
-    t.string   "question_text",    :default => "On a scale of zero to 3"
+    t.string   "question_text",    :default => "On a scale of zero to 3 "
     t.text     "question_comment"
     t.integer  "survey_id"
     t.datetime "created_at"
