@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-
   # Be sure to include AuthenticationSystem in Application Controller instead
   # include AuthenticatedSystem
   
@@ -29,5 +28,4 @@ class UsersController < ApplicationController
       render :action => 'new'
     end
   end
-
 end

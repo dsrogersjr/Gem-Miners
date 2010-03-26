@@ -1,4 +1,10 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :threesixty_textqs
+
+  map.resources :threesixty_qs
+
+  map.resources :threesixties
+
 
 
 

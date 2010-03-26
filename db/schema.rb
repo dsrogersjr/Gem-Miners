@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100306181906) do
+ActiveRecord::Schema.define(:version => 20100326042947) do
 
   create_table "comments", :force => true do |t|
     t.string   "name"
@@ -96,6 +96,32 @@ ActiveRecord::Schema.define(:version => 20100306181906) do
     t.text     "question_comment"
     t.string   "question_type",    :default => "text"
     t.integer  "survey_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "threesixties", :force => true do |t|
+    t.string   "threesixty_name"
+    t.text     "threesixty_intro"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "threesixty_qs", :force => true do |t|
+    t.text     "question_text"
+    t.text     "question_comment"
+    t.text     "answer_1"
+    t.text     "answer_2"
+    t.text     "answer_3"
+    t.text     "answer_4"
+    t.integer  "threesixty_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "threesixty_textqs", :force => true do |t|
+    t.text     "question_text"
+    t.integer  "threesixty_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
