@@ -1,14 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
-  map.resources :threesixty_textqs
 
-  map.resources :threesixty_qs
-
-  map.resources :threesixties
-
-
-
-
-  
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'public', :action => 'index'
   map.register '/register', :controller => 'users', :action => 'create'
@@ -21,9 +12,15 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :tsanswers
   map.resources :textanswers
   map.resources :mcanswers
+  map.resources :threesixtytextqs
+  map.resources :threesixtyqs
+  
+  map.resources :threesixties, :has_many => :threesixtyqs
+  map.resources :threesixties, :has_many => :threesixtytextqs
   map.resources :surveys, :has_many => :tsquestions
   map.resources :surveys, :has_many => :textquestions
   map.resources :surveys, :has_many => :mcquestions
+  
   map.resources :tsquestions, :has_many => :tsanswers
   map.resources :mcquestions, :has_many => :mcanswers
   map.resources :textquestions, :has_many => :textanswers

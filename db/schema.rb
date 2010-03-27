@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100326042947) do
+ActiveRecord::Schema.define(:version => 20100327015707) do
 
   create_table "mcanswers", :force => true do |t|
     t.boolean  "answered",      :default => false
@@ -85,20 +85,21 @@ ActiveRecord::Schema.define(:version => 20100326042947) do
     t.datetime "updated_at"
   end
 
-  create_table "threesixty_qs", :force => true do |t|
+  create_table "threesixtyqs", :force => true do |t|
     t.text     "question_text"
-    t.text     "question_comment"
-    t.text     "answer_1"
-    t.text     "answer_2"
-    t.text     "answer_3"
-    t.text     "answer_4"
+    t.string   "question_comment", :default => "0 = Minimal Effort, 3 = Exemplary"
+    t.string   "answer_1",         :default => "0"
+    t.string   "answer_2",         :default => "1"
+    t.string   "answer_3",         :default => "2"
+    t.string   "answer_4",         :default => "3"
     t.integer  "threesixty_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
 
-  create_table "threesixty_textqs", :force => true do |t|
+  create_table "threesixtytextqs", :force => true do |t|
     t.text     "question_text"
+    t.text     "question_comment"
     t.integer  "threesixty_id"
     t.datetime "created_at"
     t.datetime "updated_at"

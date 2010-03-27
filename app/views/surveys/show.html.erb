@@ -14,42 +14,6 @@
   <%=h @survey.survey_creator %>
 </p>
 
-<h1>360 Feedback Questions:</h1>
-<% @survey.tsquestions.each do |t| %>
-	<p>
-	  <b>Question Text:</b>
-	  <%=h t.question_text %>
-	</p>
-	
-	<p>
-	  <b>Question Comment:</b>
-	  <%=h t.question_comment %>
-	</p>
-	
-	<p>
-	<%= link_to 'Edit Question', edit_tsquestion_path(t) %> |
-    <%= link_to 'Delete', t, :confirm => 'Are you sure?', :method => :delete %>
-	</p>	
-<% end %>
-
-<% form_for [@survey, Tsquestion.new] do |f| %>
-  <%= f.error_messages %>
-  <p>
-    <%= f.label :question_text %><br />
-    <%= f.text_area :question_text, :cols => "50", :rows => "3"  %>
-  </p>
-  <p>
-    <%= f.label :question_comment %><br />
-    <%= f.text_area :question_comment, :cols => "50", :rows => "3"  %>
-  </p>
-  <p>
-  <%= f.submit 'Submit 360 Question' %>
-  </p>
-<% end %>
-
-
-	
-
 <h1>Multiple Choice Questions:</h1>
 
 <% @survey.mcquestions.each do |mcquestion| %>
@@ -172,6 +136,5 @@
 <% end %>
 
 <p>
-	<%= link_to 'Edit Survey', edit_survey_path(@survey) %> |
 	<%= link_to 'Back', surveys_path %>
 </p>

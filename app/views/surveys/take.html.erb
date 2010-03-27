@@ -5,53 +5,10 @@
 <body>
 	<% @countert = 0 %>
 	
-	<% unless @survey.tsquestions.exists? || @survey.textquestions.exists? || @survey.mcquestions.exists? %>
+	<% unless @survey.textquestions.exists? || @survey.mcquestions.exists? %>
 		<p>No questions have been added.  This survey is empty!</p>
 	<% end %>
 	
-	<% if @survey.tsquestions.exists? %>	
-		<h2>360 Feedback Questions:</h2>
-
-		<% @survey.tsquestions.each do |t| %>
-			<h1>Question: <%= @countert += 1%></h1>
-			<p>
-			  <h3>Question Text:</h3>
-			  <%=h t.question_text %>
-			</p>
-			
-			<% if t.question_comment.length >= 1 %>
-				<p>
-				  <h3>Comment:</h3>
-				  <%=h t.question_comment %>
-				</p>
-			<% end %>	
-			<% if Tsanswer.exists?(:tsquestion_id => t)%>
-				<p>
-				  <% @showanswer = Tsanswer.find(:first, :conditions => {:tsquestion_id => t.id})%>
-	
-				  <h3> Your Answer:</h3>
-	
-				  <%=h @showanswer.theanswer %>
-	
-	    		<%= button_to 'Redo', @showanswer, :confirm => 'Are you sure?', :method => :delete %>
-				</p>			
-			<% else %>
-				<% form_for [t, Tsanswer.new] do |f| %>
-				  <%= f.error_messages %>
-				  <p>
-				    <h3><%= f.label "Your Answer:" %></h3><br />
-				    <%= f.text_field :theanswer %>
-				  </p>
-				  <p>
-				  	<%= f.hidden_field( "user_id", :value => @user.id )%>
-				  </p>
-				  <p>
-				  <%= f.submit 'Submit Answer' %>
-				  </p>
-				<% end %>
-			<% end %>
-		<% end %>	
-	<% end %>	
 	
 	<% if @survey.mcquestions.exists? %>
 		<h2>Multiple Choice Questions:</h2>
