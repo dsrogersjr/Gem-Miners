@@ -1,0 +1,24 @@
+<h1>Editing usersurvey</h1>
+
+<% form_for(@usersurvey) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :taken %><br />
+    <%= f.check_box :taken %>
+  </p>
+  <p>
+    <%= f.label :user %><br />
+    <%= f.text_field :user %>
+  </p>
+  <p>
+    <%= f.label :survey %><br />
+    <%= f.text_field :survey %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @usersurvey %> |
+<%= link_to 'Back', usersurveys_path %>

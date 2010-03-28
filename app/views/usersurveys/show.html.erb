@@ -1,0 +1,18 @@
+<p>
+  <b>Taken:</b>
+  <%=h @usersurvey.taken %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%=h @usersurvey.user %>
+</p>
+
+<p>
+  <b>Survey:</b>
+  <%=h @usersurvey.survey %>
+</p>
+
+
+<%= link_to 'Edit', edit_usersurvey_path(@usersurvey) %> |
+<%= link_to 'Back', usersurveys_path %>

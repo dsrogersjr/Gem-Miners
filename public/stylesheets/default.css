@@ -62,7 +62,7 @@ img.right {
 	width: 1000px;
 	margin: 0 auto;
 	height: 130px;
-	background: url(images/img02.jpg) repeat-x left top;
+	background: url(/images/img02.jpg) repeat-x left top;
 }
 
 /* Header */

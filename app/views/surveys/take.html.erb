@@ -3,6 +3,10 @@
 	the first iteration out the door. %>
 
 <body>
+	
+	
+	
+	
 	<% @countert = 0 %>
 	
 	<% unless @survey.textquestions.exists? || @survey.mcquestions.exists? %>
@@ -11,7 +15,8 @@
 	
 	
 	<% if @survey.mcquestions.exists? %>
-		<h2>Multiple Choice Questions:</h2>
+		<h1>Multiple Choice Questions:</h1>
+		<hr>
 	
 		<% @survey.mcquestions.each do |mcquestion| %>
 			<h1>Question: <%= @countert += 1 %></h1>
@@ -131,8 +136,9 @@
 	<% end %>
 	
 	<% if @survey.textquestions.exists? %>
-		<h2>Essay/Short Answer Questions:</h2>
+		<h1>Essay/Short Answer Questions:</h1>
 
+		<hr>
 		<% @survey.textquestions.each do |textquestion|%>
 			<h1>Question: <%= @countert += 1%></h1>
 			<p>
@@ -173,7 +179,9 @@
 		<% end %>
 	<% end %>
 	
+	<hr>
+	
 	<p>
-		<%= link_to 'Back', surveys_path %>
+		<%= button_to 'Finish and Submit Survey', "/surveys/index" %>
 	</p>
 </body>

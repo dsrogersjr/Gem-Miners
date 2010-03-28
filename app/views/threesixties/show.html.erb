@@ -11,31 +11,26 @@
 <p>
 	<b>360 Feedback Form Creator:</b>
 	<%= @threesixty.threesixty_creator%>
+</p>
 
-<% if @threesixty.threesixty_intro == "" %>
-	<% form_for(@threesixty) do |f| %>
-	  <%= f.error_messages %>
-	
-	  <p>
-	    <%= f.text_area :threesixty_intro %>
-	  </p>
+
+<% form_for(@threesixty) do |f| %>
+  <%= f.error_messages %>
+  <p>
+  	<b>360 Feedback Form Information and Instructions:</b><br />
+    <%= f.text_area :threesixty_intro, :cols => "50", :rows => "3" %>
+  </p>
+  <% if @threesixty.threesixty_intro == "" %>
 	  <p>
 	    <%= f.submit 'Create Intro' %>
 	  </p>
-	<% end %>
-<% else%>
-	<% form_for(@threesixty) do |f| %>
-	  <%= f.error_messages %>
-	
-	  <p>
-	  	<b>360 Feedback Form Information and Instructions:</b><br />
-	    <%= f.text_area :threesixty_intro, :cols => "50", :rows => "3"  %>
-	  </p>
+  <% else %>
 	  <p>
 	    <%= f.submit 'Update Intro' %>
 	  </p>
-	<% end %>
+  <% end %>
 <% end %>
+
 
 <% @countert = 0 %>
 

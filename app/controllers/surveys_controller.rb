@@ -5,16 +5,22 @@ class SurveysController < ApplicationController
     @survey = Survey.find(params[:id])
   end
   
+  def administer
+    @survey = Survey.find(params[:id])
+    @user = current_user
+    @users = User.all
+  end
+  
+  
   def take
     @survey = Survey.find(params[:id])
     @user = current_user
+    
     
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @survey }
     end
-    
-    
   end
   
   # GET /surveys

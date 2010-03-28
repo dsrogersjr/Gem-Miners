@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100327015707) do
+ActiveRecord::Schema.define(:version => 20100327222411) do
 
   create_table "mcanswers", :force => true do |t|
     t.boolean  "answered",      :default => false
@@ -53,6 +53,7 @@ ActiveRecord::Schema.define(:version => 20100327015707) do
 
   create_table "surveys", :force => true do |t|
     t.text     "survey_name"
+    t.text     "survey_intro"
     t.date     "survey_date"
     t.string   "survey_creator"
     t.datetime "created_at"
@@ -85,6 +86,17 @@ ActiveRecord::Schema.define(:version => 20100327015707) do
     t.datetime "updated_at"
   end
 
+  create_table "threesixtyanswers", :force => true do |t|
+    t.boolean  "theanswer_1"
+    t.boolean  "theanswer_2"
+    t.boolean  "theanswer_3"
+    t.boolean  "theanswer_4"
+    t.integer  "user_id"
+    t.integer  "threesixtyq_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "threesixtyqs", :force => true do |t|
     t.text     "question_text"
     t.string   "question_comment", :default => "0 = Minimal Effort, 3 = Exemplary"
@@ -93,6 +105,14 @@ ActiveRecord::Schema.define(:version => 20100327015707) do
     t.string   "answer_3",         :default => "2"
     t.string   "answer_4",         :default => "3"
     t.integer  "threesixty_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "threesixtytextas", :force => true do |t|
+    t.text     "theanswer"
+    t.integer  "user_id"
+    t.integer  "threesixtytextq_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -134,5 +154,13 @@ ActiveRecord::Schema.define(:version => 20100327015707) do
   end
 
   add_index "users", ["login"], :name => "index_users_on_login", :unique => true
+
+  create_table "usersurveys", :force => true do |t|
+    t.boolean  "taken"
+    t.integer  "user_id"
+    t.integer  "survey_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

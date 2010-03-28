@@ -1,6 +1,17 @@
 class ThreesixtiesController < ApplicationController
   layout 'private'
     
+    
+  def take
+    @threesixty = Threesixty.find(params[:id])
+    @user = current_user
+    
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @threesixty }
+    end
+  end
+  
   # GET /threesixties
   # GET /threesixties.xml
   def index

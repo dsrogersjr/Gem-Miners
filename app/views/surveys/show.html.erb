@@ -14,6 +14,23 @@
   <%=h @survey.survey_creator %>
 </p>
 
+<% form_for(@survey) do |f| %>
+  <%= f.error_messages %>
+  <p>
+  	<b>360 Feedback Form Information and Instructions:</b><br />
+    <%= f.text_area :survey_intro, :cols => "50", :rows => "3" %>
+  </p>
+  <% if @survey.survey_intro == "" %>
+	  <p>
+	    <%= f.submit 'Create Intro' %>
+	  </p>
+  <% else %>
+	  <p>
+	    <%= f.submit 'Update Intro' %>
+	  </p>
+  <% end %>
+<% end %>
+
 <h1>Multiple Choice Questions:</h1>
 
 <% @survey.mcquestions.each do |mcquestion| %>
@@ -135,6 +152,9 @@
   </p>
 <% end %>
 
+
+
 <p>
-	<%= link_to 'Back', surveys_path %>
+	<hr>
+	<%= button_to 'Back', "/surveys/index" %>
 </p>

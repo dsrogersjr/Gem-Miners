@@ -1,0 +1,24 @@
+<h1>Listing usersurveys</h1>
+
+<table>
+  <tr>
+    <th>Taken</th>
+    <th>User</th>
+    <th>Survey</th>
+  </tr>
+
+<% @usersurveys.each do |usersurvey| %>
+  <tr>
+    <td><%=h usersurvey.taken %></td>
+    <td><%=h usersurvey.user %></td>
+    <td><%=h usersurvey.survey %></td>
+    <td><%= link_to 'Show', usersurvey %></td>
+    <td><%= link_to 'Edit', edit_usersurvey_path(usersurvey) %></td>
+    <td><%= link_to 'Destroy', usersurvey, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New usersurvey', new_usersurvey_path %>

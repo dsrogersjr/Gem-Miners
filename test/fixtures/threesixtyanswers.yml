@@ -1,0 +1,17 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  theanswer_1: false
+  theanswer_2: false
+  theanser_3: false
+  theanswer_4: false
+  user: 
+  threesixtyq: 
+
+two:
+  theanswer_1: false
+  theanswer_2: false
+  theanser_3: false
+  theanswer_4: false
+  user: 
+  threesixtyq: 

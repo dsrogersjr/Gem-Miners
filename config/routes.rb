@@ -1,4 +1,7 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :usersurveys
+
+
 
   map.logout '/logout', :controller => 'sessions', :action => 'destroy'
   map.login '/login', :controller => 'public', :action => 'index'
@@ -9,21 +12,21 @@ ActionController::Routing::Routes.draw do |map|
   map.resource :session
   map.resource :publics
 
-  map.resources :tsanswers
   map.resources :textanswers
   map.resources :mcanswers
-  map.resources :threesixtytextqs
-  map.resources :threesixtyqs
+  map.resources :threesixtyas
+  map.resources :threesixtytextas
   
   map.resources :threesixties, :has_many => :threesixtyqs
   map.resources :threesixties, :has_many => :threesixtytextqs
-  map.resources :surveys, :has_many => :tsquestions
   map.resources :surveys, :has_many => :textquestions
   map.resources :surveys, :has_many => :mcquestions
   
-  map.resources :tsquestions, :has_many => :tsanswers
+
   map.resources :mcquestions, :has_many => :mcanswers
   map.resources :textquestions, :has_many => :textanswers
+  map.resources :threesixtytextqs, :has_many => :threesixtytextas
+  map.resources :threesixtyqs, :has_many => :threesixtyanswers
   
   map.connect ':controller/:action/:id'
   map.connect ':controller/:action/:id.:format'

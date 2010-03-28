@@ -1,0 +1,24 @@
+<h1>Listing threesixtytextas</h1>
+
+<table>
+  <tr>
+    <th>Theanswer</th>
+    <th>User</th>
+    <th>Threesixtytextq</th>
+  </tr>
+
+<% @threesixtytextas.each do |threesixtytexta| %>
+  <tr>
+    <td><%=h threesixtytexta.theanswer %></td>
+    <td><%=h threesixtytexta.user %></td>
+    <td><%=h threesixtytexta.threesixtytextq %></td>
+    <td><%= link_to 'Show', threesixtytexta %></td>
+    <td><%= link_to 'Edit', edit_threesixtytexta_path(threesixtytexta) %></td>
+    <td><%= link_to 'Destroy', threesixtytexta, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New threesixtytexta', new_threesixtytexta_path %>

@@ -1,0 +1,40 @@
+<p>
+  <b>Survey name:</b>
+  <%=h @survey.survey_name %>
+</p>
+
+<p>
+  <b>Survey date:</b>
+  <%=h @survey.survey_date %>
+</p>
+
+<p>
+  <b>Survey creator:</b>
+  <%=h @survey.survey_creator %>
+</p>
+<p>
+	<b>Survey Intro</b>
+	<%= @survey.survey_intro %>
+</p>
+
+<h1>List of Users</h1>
+	<hr>
+	These are the users you can currently administer the survey to. 
+	<br />
+	<br />
+	<table>
+	  <tr>
+	    <th>User Name | </th>
+	    <th>User Email</th>
+		<th>Administer Survey</th>
+	  </tr>
+	<% @users.each do |s| %>
+	  <tr>
+	    <td><%=h s.login %></td>
+	    <td><%=h s.email %></td>
+		<td>
+			
+		</td>
+	  </tr>
+	<% end %>
+	</table>
