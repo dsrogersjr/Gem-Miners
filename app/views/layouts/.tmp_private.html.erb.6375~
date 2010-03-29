@@ -1,0 +1,125 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<!--
+Design by Free CSS Templates
+http://www.freecsstemplates.org
+Released for free under a Creative Commons Attribution 2.5 License
+
+Name       : Everyday Series
+Description: A three-column, fixed-width blog design.
+Version    : 1.0
+Released   : 20090617
+
+-->
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<%= stylesheet_link_tag "default" %>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>Private Course Site</title>
+<meta name="keywords" content="" />
+<meta name="Everyday Series" content="" />
+<link href="default.css" rel="stylesheet" type="text/css" media="screen" />
+</head>
+<body>
+<!-- start header -->
+<div id="header">
+	<div id="logo">
+		<h1><a href="#"><span>application_name:</span></a>private</h1>
+		<p>Designed By Free CSS Templates</p>
+	</div>
+</div>
+
+<!-- end header -->
+<div id="wrapper">
+	<!-- start page -->
+	<div id="page">
+	<div id="page-bg">
+		<div id="sidebar1" class="sidebar">
+			<ul>
+				<li>
+					<h2>Public Links</h2>
+					<ul>
+						<li><a href="#"><%= link_to "Home", "/" %></a></li>
+						<li><a href="#"><%= link_to "Course Calendar", "/public/calendar" %></a></li>
+						<li><a href="#"><%= link_to "Course Syllabus", "/public/syllabus" %></a></li>
+					</ul>
+				</li>
+				<li>
+					<h2>External Links</h2>
+					<ul>
+						<li><a href="#"><%= link_to "Professor's Website", "http://bus01.bus.iastate.edu/" %></a></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Recent Comments</h2>
+				</li>
+				<li>
+					<h2>Categories</h2>
+				</li>
+				<li>
+					<h2>Archives</h2>
+				</li>
+			</ul>
+		</div>
+		<div id="content">
+			<%= yield %>
+		</div>
+		<!-- start sidebars -->
+		<div id="sidebar2" class="sidebar">
+			<ul>
+				<li>
+					<h2>Private Links</h2>
+					<ul>
+						<li><a href="#"><%= link_to "Surveys", "/surveys" %></a></li>
+					</ul>
+				</li>
+				<li>
+					<h2>Signed In</h2>
+					<ul>
+						<li>
+							<h3>Current User: </h3>
+							<%= render :text => current_user.login %>
+						</li>
+						<li>
+							<%= link_to 'Log Out', 'logout'%>
+						</li>
+					</ul>
+				</li>
+				<li>
+					<h2>Calendar</h2>
+					<p><iframe src="http://www.google.com/calendar/embed?" style="border: 0" width="215" height="280" frameborder="0" scrolling="no"></iframe></p>
+				</li>
+				<li>
+					<h2>Tags</h2>
+					<p class="tag">
+						<a href="#">dolor</a> 
+						<a href="#">ipsum</a> 
+						<a href="#">lorem</a> 
+						<a href="#">sit amet</a> 
+						<a href="#">dolor</a> 
+						<a href="#">ipsum</a> 
+						<a href="#">lorem</a> 
+						<a href="#">sit amet</a>
+					</p>
+				</li>
+				<li>
+					<form id="searchform" method="get" action="#">
+						<div>
+							<h2>Site Search</h2>
+							<input type="text" name="s" id="s" size="15" value="" />
+						</div>
+					</form>
+				</li>
+			</ul>
+		</div>
+		<!-- end sidebars -->
+		<div style="clear: both;">&nbsp;</div>
+	</div>
+	</div>
+	<!-- end page -->
+</div>
+<div id="footer">
+	<p class="copyright">&copy;&nbsp;&nbsp;2009 All Rights Reserved &nbsp;&bull;&nbsp; Design by <a href="http://www.freecsstemplates.org/">Free CSS Templates</a>.</p>
+	<p class="link"><a href="#">Privacy Policy</a>&nbsp;&#8226;&nbsp;<a href="#">Terms of Use</a></p>
+</div>
+</body>
+</html>
