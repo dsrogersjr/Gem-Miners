@@ -1,0 +1,50 @@
+<h1>Editing <%= h(@group.name) %></h1>
+
+<% form_for(@group) do |f| %>
+  <%= f.error_messages %>
+  
+	<h2>Change Group Name</h2>
+	<p>
+    	<%= f.label :name %><br />
+    	<%= f.text_field :name %>
+  	</p>
+
+	<h2>Assigned Users</h2>
+	<p>
+		<% if @group.users.any? %>
+		<table>
+			<tr>
+				<th>User</th>
+			</tr>
+			<% @group.users.each do |user| %>
+			<tr>
+				<td><%= user.login %></td>
+				<td>
+				   	<%= link_to 'Delete', :controller => 'groups', :action => 'remove_user', :id => @group, :user_id => user %>
+				</td>
+			</tr>
+			<% end %>
+		</table>
+		<% else %>
+		
+		<% end %>
+	</p>
+	
+	<h2>Assign New Users</h2>
+	<p>
+		<% label_tag 'role' %>
+		<% for user in User.find(:all) - @group.users %>
+		<div>
+			<%= check_box_tag "group[user_ids][]", user.id, @group.users.include?(user) %>
+			<%= user.login %>
+		</div>
+		<% end %>
+	</p>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @group %> |
+<%= link_to 'Back', groups_path %>
