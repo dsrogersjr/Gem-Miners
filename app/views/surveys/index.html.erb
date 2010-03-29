@@ -33,10 +33,10 @@
 	    <td><%=h survey.survey_name %></td>
 	    <td><%=h survey.survey_date %></td>
 	    <td><%=h survey.survey_creator %></td>
-	    <td><%= link_to 'Design', survey %> | </td>
-		<td><%= link_to 'Administer', :action => 'administer', :id => survey %> | </td>
-	    <td><%= link_to 'Edit', edit_survey_path(survey) %> | </td>
-		<td><%= link_to 'Results', :action => 'results', :id => survey %> | </td>
+	    <td><%= link_to 'Design', survey %></td>
+		<td><%= link_to 'Administer', :action => 'administer', :id => survey %></td>
+	    <td><%= link_to 'Edit', edit_survey_path(survey) %></td>
+		<td><%= link_to 'Results', :action => 'results', :id => survey %></td>
 	    <td><%= link_to 'Delete', survey, :confirm => 'Are you sure?', :method => :delete %></td>
 	  </tr>
 	<% end %>
