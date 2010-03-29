@@ -1,0 +1,2 @@
+module McanswersHelper
+end

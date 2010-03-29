@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  name: MyString
+  last_poster_id: 1
+  last_post_at: 2010-03-28 01:56:32
+
+two:
+  name: MyString
+  last_poster_id: 1
+  last_post_at: 2010-03-28 01:56:32

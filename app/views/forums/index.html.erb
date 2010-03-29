@@ -1,0 +1,20 @@
+<h2>Forums</h2>
+  
+<table>  
+  <tr>  
+    <th width="70%">Forum</th>  
+    <th width="30%">Last Post</th>  
+  </tr>  
+  <% for forum in @forums %>  
+    <tr>  
+      <td><h4><%= link_to h(forum.name), forum_path(forum.id) %></h4>  
+        <small><%= forum.topics.count %> topics</small><br />  
+        <%=h forum.description %></td>  
+<td class="right"><% if forum.most_recent_post %><%= distance_of_time_in_words_to_now forum.most_recent_post.last_post_at %> ago by <%= link_to forum.most_recent_post.user.login, "/users/#{forum.most_recent_post.last_poster_id}" %><% else %>no posts<% end %></td>
+      <% if current_user.has_role?("admin") %><td><%= link_to "Edit", edit_forum_path(forum) %></td><% end %>
+      <% if current_user.has_role?("admin") %><td><%= link_to "Destroy", forum, :confirm => 'Are you sure?', :method => :delete %></td><% end %>  
+    </tr>  
+  <% end %>  
+</table>  
+  
+<p><% if current_user.has_role?("admin") %><%= link_to "New Forum", new_forum_path %><% end %></p>

@@ -1,0 +1,32 @@
+<h1>Listing mcanswers</h1>
+
+<table>
+  <tr>
+    <th>Theanswer 1</th>
+    <th>Theanswer 2</th>
+    <th>Theanswer 3</th>
+    <th>Theanswer 4</th>
+    <th>Theanswer 5</th>
+    <th>User</th>
+    <th>Mcquestion</th>
+  </tr>
+
+<% @mcanswers.each do |mcanswer| %>
+  <tr>
+    <td><%=h mcanswer.theanswer_1 %></td>
+    <td><%=h mcanswer.theanswer_2 %></td>
+    <td><%=h mcanswer.theanswer_3 %></td>
+    <td><%=h mcanswer.theanswer_4 %></td>
+    <td><%=h mcanswer.theanswer_5 %></td>
+    <td><%=h mcanswer.user %></td>
+    <td><%=h mcanswer.mcquestion %></td>
+    <td><%= link_to 'Show', mcanswer %></td>
+    <td><%= link_to 'Edit', edit_mcanswer_path(mcanswer) %></td>
+    <td><%= link_to 'Destroy', mcanswer, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New mcanswer', new_mcanswer_path %>

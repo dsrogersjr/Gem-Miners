@@ -1,0 +1,27 @@
+<h1>New survey</h1>
+
+<% form_for(@survey) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :survey_name %><br />
+    <%= f.text_field :survey_name %>
+  </p>
+  <p>
+    <%= f.label :survey_date %><br />
+    <%= f.date_select :survey_date %>
+  </p>
+  <p>
+    <%= f.label :survey_creator %><br />
+    <%= f.text_field :survey_creator %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<p> 
+	You can add questions to this survey after it has been created.
+</p>
+
+<%= link_to 'Back', surveys_path %>

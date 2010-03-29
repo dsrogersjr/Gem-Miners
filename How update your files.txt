@@ -1,7 +1,0 @@
-To update your files to match those on githug, using the gui, simply:
-
-go to remote-->fetch from-->origin.  
-
-Then Merge-->Local Merge-->origin/master-->merge
-
-If there are no new changes origin/master will not show up, and you do not have to update your files.

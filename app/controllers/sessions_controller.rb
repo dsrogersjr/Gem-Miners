@@ -1,19 +1,12 @@
 # This controller handles the login/logout function of the site.  
 class SessionsController < ApplicationController
 
-  layout 'public'
-  # include AuthenticatedSystem
-  # Be sure to include AuthenticationSystem in Application Controller instead
-  # include AuthenticatedSystem
-
   # render new.rhtml
   def new
-    
   end
 
   def create
     logout_keeping_session!
-    
     user = User.authenticate(params[:login], params[:password])
     if user
       # Protects against session fixation attacks, causes request forgery
@@ -23,13 +16,17 @@ class SessionsController < ApplicationController
       self.current_user = user
       new_cookie_flag = (params[:remember_me] == "1")
       handle_remember_cookie! new_cookie_flag
-      redirect_back_or_default('/')
+      # redirect_back_or_default('/')
+      if current_user.has_role?('admin')
+        redirect_to :controller => 'private', :action => 'admin'
+      else
+        redirect_to :controller => 'private', :action => 'group'
+      end
       flash[:notice] = "Logged in successfully"
     else
       note_failed_signin
       @login       = params[:login]
       @remember_me = params[:remember_me]
-      flash[:notice] = "Incorrect Login"
       render :action => 'new'
     end
   end
@@ -37,7 +34,8 @@ class SessionsController < ApplicationController
   def destroy
     logout_killing_session!
     flash[:notice] = "You have been logged out."
-    redirect_to('/')
+    # redirect_back_or_default('/')
+    redirect_to :controller => 'home', :action => 'index'
   end
 
 protected

@@ -1,0 +1,23 @@
+<h1>New tsanswer</h1>
+
+<% form_for(@tsanswer) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :theanswer %><br />
+    <%= f.text_field :theanswer %>
+  </p>
+  <p>
+    <%= f.label :user_id %><br />
+    <%= f.text_field :user_id %>
+  </p>
+  <p>
+    <%= f.label :tsquestion_id %><br />
+    <%= f.text_field :tsquestion_id %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', tsanswers_path %>

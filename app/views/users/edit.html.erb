@@ -1,0 +1,51 @@
+<h1>Editing User</h1>
+
+<% form_for(@user) do |f| %>
+  <%= f.error_messages %>
+  
+  <h2>General Information</h2>
+  <p>
+    <%= f.label :login %><br />
+    <%= f.text_field :login %>
+  </p>
+	<p>
+		<%= f.label :name %> <br />
+		<%= f.text_field :name %>
+	</p>
+	<p>
+		<%= f.label :email %><br />
+		<%= f.text_field :email %>
+	</p>
+	
+	<h2>Authentication</h2>
+	<p><%= f.label :password %><br/>
+	<%= f.password_field :password %></p>
+
+	<p><%= f.label :password_confirmation, 'Confirm Password' %><br/>
+	<%= f.password_field :password_confirmation %></p>
+	<h2>Assign Role</h2>
+	<p>
+		<% label_tag 'role' %>
+		<% for role in Role.find(:all) %>
+		<div>
+			<%= check_box_tag "user[role_ids][]", role.id, @user.roles.include?(role) %>
+			<%= role.name %>	
+		</div>
+		<% end %>
+	</p>
+	
+	<h2>Assign Group</h2>
+	<p>
+		<% label_tag 'group' %>
+		<% for group in Group.find(:all) %>
+		<div>
+			<%= check_box_tag "user[group_ids][]", group.id, @user.groups.include?(group) %>
+			<%= group.name %>
+		</div>
+		<% end %>
+	</p>
+	
+	<p>
+    <%= f.submit 'Update' %>
+  	</p>
+<% end %>

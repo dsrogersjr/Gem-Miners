@@ -1,0 +1,14 @@
+<% @topic.name %>  
+  
+<% for message in @topic.messages %>  
+<div class="post">  
+  <span class="left"><%= link_to message.user.login, user_url(message.user) %><br /><%= link_to "Edit", edit_message_path(message) %><br /><%= link_to "Delete", message, :confirm => 'Are you sure?', :method => :delete %></span>  
+  <span class="right"><%= message.content %></span>  
+</div>  
+<% end %>  
+  
+<p>  
+  <%= link_to "Reply", "#{new_message_path}?topic=#{@topic.id}" %> |  
+   <% if current_user.has_role?("admin") %><%= link_to "Destroy Topic", @topic, :confirm => 'Are you sure?', :method => :delete %><% end %> |  
+  <%= link_to "View All", forum_path(@topic.forum_id) %>  
+</p>

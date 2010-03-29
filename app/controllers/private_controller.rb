@@ -1,7 +1,12 @@
 class PrivateController < ApplicationController
-  require_role "admin"
+  require_role "admin", :except => :group
   
-  def public
-    @username = current_user.id
+  def group
+    @posts = Post.find(:all)
   end
+  
+  def admin
+    @posts = Post.find(:all)
+  end
+  
 end

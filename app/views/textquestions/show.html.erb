@@ -1,0 +1,13 @@
+<p>
+  <b>Question text:</b>
+  <%=h @textquestion.question_text %>
+</p>
+
+<p>
+  <b>Question comment:</b>
+  <%=h @textquestion.question_comment %>
+</p>
+
+
+<%= link_to 'Edit', edit_textquestion_path(@textquestion) %> |
+<%= link_to 'Back', edit_textquestion_path(@textquestion) %>

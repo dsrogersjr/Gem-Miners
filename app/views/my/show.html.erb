@@ -1,0 +1,28 @@
+<h1>My Account</h1>
+<h2>Information</h2>
+<%  form_for :user, @user do |f| %>
+<p>
+	<%= f.label :name %> <br />
+	<%= f.text_field :name %>
+</p>
+<p>
+	<%= f.label :email %><br />
+	<%= f.text_field :email %>
+</p>
+
+<h2>Change Password</h2>
+	<div>	
+		<p><label for="password">Password</label>
+		<%= password_field_tag 'password', nil, :size => 25 %></p>
+
+		<p><label for="new_password">New Password</label>
+		<%= password_field_tag 'new_password', nil, :size => 25 %><br /></p>
+
+		<p><label for="new_password_confirmation">Confirm New Password</label>
+		<%= password_field_tag 'new_password_confirmation', nil, :size => 25 %></p>
+	</div>
+	
+	<p>
+    <%= f.submit 'Update' %>
+  	</p>
+<% end %>

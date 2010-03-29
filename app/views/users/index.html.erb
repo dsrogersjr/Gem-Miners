@@ -1,0 +1,23 @@
+<h1>List of Users</h1>
+
+<table>
+  <tr>
+    <th>Login</th>
+	<th>Name</th>
+    <th>Email</th>
+	<th>Date Created</th>
+	<th>Date Updated</th>
+  </tr>
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%= link_to h(user.login), :controller => 'users', :action => 'edit', :id => user %></td>
+    <td><%= h user.name %></td>
+	<td><%= h user.email %></td>
+	<td><%= h display_date(user.created_at) %></td>
+	<td><%= h display_date(user.updated_at) %></td>
+  </tr>
+<% end %>
+</table>
+
+<%= link_to 'New User', new_user_path %>

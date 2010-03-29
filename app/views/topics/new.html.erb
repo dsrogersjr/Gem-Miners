@@ -1,0 +1,11 @@
+<h1>New Topic</h1>
+
+<% form_for @topic do |f| %>  
+  <%= f.error_messages %>  
+  <% if params[:forum] %><input type="hidden" id="topic_forum_id" name="topic[forum_id]" value="<%= params[:forum] %>" /><% end %>  
+  <p>  
+    <%= f.label :name %><br />  
+    <%= f.text_field :name %>  
+  </p>   
+  <p><%= f.submit "Create" %></p>  
+<% end %>

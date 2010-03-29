@@ -1,4 +1,4 @@
-<h1>Sign up a new user</h1>
+<h1>Sign up as a new user</h1>
 <% @user.password = @user.password_confirmation = nil %>
 
 <%= error_messages_for :user %>
@@ -14,6 +14,28 @@
 
 <p><%= label_tag 'password_confirmation', 'Confirm Password' %><br/>
 <%= f.password_field :password_confirmation %></p>
+
+<h3>Assign Role</h3>
+<p>
+	<% label_tag 'role' %>
+	<% for role in Role.find(:all) %>
+	<div>
+		<%= check_box_tag "user[role_ids][]", role.id, @user.roles.include?(role) %>
+		<%= role.name %>	
+	</div>
+	<% end %>
+</p>
+
+<h3>Assign Group</h3>
+<p>
+	<% label_tag 'group' %>
+	<% for group in Group.find(:all) %>
+	<div>
+		<%= check_box_tag "user[group_ids][]", group.id, @user.groups.include?(group) %>
+		<%= group.name %>
+	</div>
+	<% end %>
+</p>
 
 <p><%= submit_tag 'Sign up' %></p>
 <% end -%>

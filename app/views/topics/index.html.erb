@@ -1,0 +1,24 @@
+<h1>Listing topics</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Last poster</th>
+    <th>Last post at</th>
+  </tr>
+
+<% @topics.each do |topic| %>
+  <tr>
+    <td><%=h topic.name %></td>
+    <td><%=h topic.last_poster_id %></td>
+    <td><%=h topic.last_post_at %></td>
+    <td><%= link_to 'Show', topic %></td>
+    <td><%= link_to 'Edit', edit_topic_path(topic) %></td>
+    <td><%= link_to 'Destroy', topic, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New topic', new_topic_path %>

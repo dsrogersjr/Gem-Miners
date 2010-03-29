@@ -1,0 +1,27 @@
+<h1>Editing document</h1>
+
+<% form_for @document, :html => { :multipart => true } do |f| %>
+  <%= f.error_messages %>
+  <p>
+	<%=  f.file_field :file %>
+  </p>
+  <p>
+    <%= f.submit "Update" %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @document %> |
+<%= link_to 'Back', documents_path %>
+
+ps -acux | head -n 11
+USER       PID  %CPU %MEM      VSZ    RSS   TT  STAT STARTED      TIME COMMAND
+root      1314   5.9 32.9  4242536 1377872   ??  Ss    6:04PM  14:05.02 vmware-vmx
+dmarcella   393   2.5  1.1   520752  45460   ??  S     1:34PM   1:08.53 TextMate
+dmarcella   941   0.8  1.5  2500544  63784 s000  R+    2:44PM   2:16.99 ruby
+root        15   0.6  0.1  2452680   4744   ??  Ss    1:05PM   0:04.02 DirectoryService
+_windowserver   110   0.4  2.5  3167264 103596   ??  Ss    1:06PM   4:36.96 WindowServer
+dmarcella  1292   0.3  0.9   533440  37548   ??  S     6:04PM   0:35.07 vmware
+dmarcella   204   0.2  2.7   586912 112252   ??  S     1:06PM   9:13.75 Google Chrome
+dmarcella   237   0.2  0.3   449644  10592   ??  S     1:06PM   0:44.61 Google Chrome Helper
+dmarcella   234   0.1  0.5   489440  19432   ??  S     1:06PM   0:08.63 Google Chrome Helper
+dmarcella  1322   0.0  0.0    77988    308   ??  S     6:04PM   0:00.00 thnuclnt

@@ -1,0 +1,12 @@
+<h1>Editing tsquestion</h1>
+
+<% form_for(@tsquestion) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @tsquestion %> |
+<%= link_to 'Back', tsquestions_path %>

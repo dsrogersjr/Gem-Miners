@@ -390,3 +390,14 @@ img.right {
 #footer .copyright {
 	float: left;
 }
+
+
+table tr th {background:#222; color:#fff; padding:0; border:#111 solid 1px;}  
+table tr td {border:1px #ccc solid; padding:5px;}  
+table tr td.rightright {background: #eee;}  
+table tr td h4 {margin:0; padding:0; font-weight:normal;}
+
+.post {width:100%; display:table;}  
+.post span {padding:5px; border:3px solid #eee; margin:0;}  
+.post span.left {width:150px; background:#eee; border:3px solid #eee; display:table-cell;}  
+.post span.rightright { border:3px solid #eee; display:table-cell;}
