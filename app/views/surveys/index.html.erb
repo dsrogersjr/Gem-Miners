@@ -1,28 +1,50 @@
-<h1>List of Surveys</h1>
+<h2>Surveys</h2>
 
-<table>
-  <tr>
-    <th>Survey name</th>
-    <th>Survey date</th>
-    <th>Survey creator</th>
-  </tr>
-<% @surveys.each do |survey| %>
-  <tr>
-    <td><%=h survey.survey_name %></td>
-    <td><%=h survey.survey_date %></td>
-    <td><%=h survey.survey_creator %></td>
-	<td><%= link_to 'Take', :action => 'take', :id => survey%> | </td>
-    <td><%= link_to 'Design', survey %> | </td>
-    <td><%= link_to 'Edit', edit_survey_path(survey) %> | </td>
-	<td><%= link_to 'Results', :action => 'results', :id => survey %> | </td>
-    <td><%= link_to 'Delete', survey, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-<%= link_to 'New survey', new_survey_path %>
-
-
-<br />
+<body>
+	<h1>Surveys for you to Take</h1>	
+	<hr>
+	<table>
+	  <tr>
+	    <th>Survey name</th>
+	    <th>Survey date</th>
+	    <th>Survey creator</th>
+	  </tr>
+	<% @surveys.each do |survey| %>
+	  <tr>
+	    <td><%=h survey.survey_name %></td>
+	    <td><%=h survey.survey_date %></td>
+	    <td><%=h survey.survey_creator %></td>
+		<td><%= button_to 'Take Survey', :action => 'take', :id => survey%> </td>
+	  </tr>
+	<% end %>
+	</table>
+	
+	
+	<h1>Surveys you have Created</h1>
+	<hr>
+	<table>
+	  <tr>
+	    <th>Survey name</th>
+	    <th>Survey date</th>
+	    <th>Survey creator</th>
+	  </tr>
+	<% @surveys.each do |survey| %>
+	  <tr>
+	    <td><%=h survey.survey_name %></td>
+	    <td><%=h survey.survey_date %></td>
+	    <td><%=h survey.survey_creator %></td>
+	    <td><%= link_to 'Design', survey %> | </td>
+		<td><%= link_to 'Administer', :action => 'administer', :id => survey %> | </td>
+	    <td><%= link_to 'Edit', edit_survey_path(survey) %> | </td>
+		<td><%= link_to 'Results', :action => 'results', :id => survey %> | </td>
+	    <td><%= link_to 'Delete', survey, :confirm => 'Are you sure?', :method => :delete %></td>
+	  </tr>
+	<% end %>
+	</table>
+	
+	<br />
+	
+	<%= button_to 'New survey', new_survey_path %>
+	
+	<br />
+</body>

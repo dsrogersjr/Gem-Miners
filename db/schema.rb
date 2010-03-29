@@ -104,6 +104,7 @@ ActiveRecord::Schema.define(:version => 20100328071517) do
 
   create_table "surveys", :force => true do |t|
     t.text     "survey_name"
+    t.text     "survey_intro"
     t.date     "survey_date"
     t.string   "survey_creator"
     t.datetime "created_at"
@@ -127,6 +128,54 @@ ActiveRecord::Schema.define(:version => 20100328071517) do
     t.datetime "updated_at"
   end
 
+  create_table "threesixties", :force => true do |t|
+    t.string   "threesixty_name"
+    t.text     "threesixty_intro"
+    t.string   "threesixty_creator"
+    t.date     "threesixty_date"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "threesixtyanswers", :force => true do |t|
+    t.boolean  "theanswer_1"
+    t.boolean  "theanswer_2"
+    t.boolean  "theanswer_3"
+    t.boolean  "theanswer_4"
+    t.integer  "user_id"
+    t.integer  "threesixtyq_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "threesixtyqs", :force => true do |t|
+    t.text     "question_text"
+    t.string   "question_comment", :default => "0 = Minimal Effort, 3 = Exemplary"
+    t.string   "answer_1",         :default => "0"
+    t.string   "answer_2",         :default => "1"
+    t.string   "answer_3",         :default => "2"
+    t.string   "answer_4",         :default => "3"
+    t.integer  "threesixty_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "threesixtytextas", :force => true do |t|
+    t.text     "theanswer"
+    t.integer  "user_id"
+    t.integer  "threesixtytextq_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "threesixtytextqs", :force => true do |t|
+    t.text     "question_text"
+    t.text     "question_comment"
+    t.integer  "threesixty_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "topics", :force => true do |t|
     t.string   "name"
     t.integer  "last_poster_id"
@@ -135,22 +184,6 @@ ActiveRecord::Schema.define(:version => 20100328071517) do
     t.datetime "updated_at"
     t.integer  "forum_id"
     t.integer  "user_id"
-  end
-
-  create_table "tsanswers", :force => true do |t|
-    t.integer  "theanswer",     :limit => 10, :precision => 10, :scale => 0
-    t.integer  "user_id"
-    t.integer  "tsquestion_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  create_table "tsquestions", :force => true do |t|
-    t.text     "question_text"
-    t.text     "question_comment"
-    t.integer  "survey_id"
-    t.datetime "created_at"
-    t.datetime "updated_at"
   end
 
   create_table "users", :force => true do |t|
@@ -166,5 +199,13 @@ ActiveRecord::Schema.define(:version => 20100328071517) do
   end
 
   add_index "users", ["login"], :name => "index_users_on_login", :unique => true
+
+  create_table "usersurveys", :force => true do |t|
+    t.boolean  "taken"
+    t.integer  "user_id"
+    t.integer  "survey_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
 end

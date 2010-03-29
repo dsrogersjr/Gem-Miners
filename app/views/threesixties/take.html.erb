@@ -1,0 +1,136 @@
+<%# There is a lot of code here which could be put into helper methods.
+	This will be done in the future because of time constraints in getting
+	the first iteration out the door. %>
+
+<body>
+	<h2>
+		You are Taking 360 Feedback Form:
+		<%= @threesixty.threesixty_name %>
+		<hr>
+	</h2>
+	<p> 
+		<%= @threesixty.threesixty_intro %> 
+	</p
+
+	<% @countert = 0 %>
+	
+	<% unless @threesixty.threesixtyqs.exists? || @threesixty.threesixtytextqs.exists? %>
+		<p>No questions have been added.  This survey is empty!</p>
+	<% end %>
+	
+	<% if @threesixty.threesixtyqs.exists? %>
+		<h1>360 Feedback Scale Questions:</h1>
+		<hr>
+	
+		<% @threesixty.threesixtyqs.each do |g| %>
+			<h1>Question: <%= @countert += 1 %></h1>
+			<h3>Question Text:</h3>
+			<p><%= g.question_text %></p>
+			<% if g.question_comment.length >= 1 %>
+				<p>
+				  <h3>Comment:</h3>
+				  <%=h g.question_comment %>
+				</p>
+			<% end %>
+			
+			<% unless Threesixtyanswer.exists?(:threesixtyq_id => g) %>
+				<h3>Select Your Answer</h3>
+				<% remote_form_for [g, Threesixtyanswer.new] do |f| %>
+				  <%= f.error_messages %>
+				
+				  <p>
+				    <%= f.radio_button :theanswer_1, true %>
+					<%= g.answer_1 %>
+				  </p>
+				  <p>
+				    <%= f.radio_button :theanswer_2, true %>
+				    <%= g.answer_2 %>
+				  </p>
+				  <p>
+				    <%= f.radio_button :theanswer_3, true %>
+				    <%= g.answer_3 %>
+				  </p>
+				  <p>
+				    <%= f.radio_button :theanswer_4, true %>
+				    <%= g.answer_4 %>
+				  </p>
+				  <p>
+				    <%= f.hidden_field( "user_id", :value => @user.id )%>
+				  </p>
+				  <p>
+				    <%= f.submit 'Submit your answer' %>
+				  </p>
+				<% end %>
+			<% else %>
+				<h3>Your Answer: </h3>
+				<% @showanswer = Threesixtyanswer.find(:first, :conditions => {:threesixtyq_id => g.id})%>
+				<% if @showanswer.theanswer_1%>
+					<p>
+					  <%=h g.answer_1 %>
+					</p>
+				<% elsif @showanswer.theanswer_2 %>
+					<p>
+						<%= g.answer_2 %>
+					</p>
+				<% elsif @showanswer.theanswer_3 %>
+					<p>
+						<%= g.answer_3 %>
+					</p>
+				<% elsif @showanswer.theanswer_4 %>
+					<p>
+						<%= g.answer_4 %>
+					</p>
+				<% end %>
+				<%= button_to 'Redo', @showanswer, :confirm => 'Are you sure?', :method => :delete %>
+			<% end %>
+		<% end %>
+	<% end %>
+	<% if @threesixty.threesixtytextqs.exists? %>
+		<h1>Essay/Short Answer Questions:</h1>
+		<hr>
+		<% @threesixty.threesixtytextqs.each do |q|%>
+			<h1>Question: <%= @countert += 1%></h1>
+			<p>
+			  <h3>Question text:</h3>
+			  <%=h q.question_text %>
+			</p>
+			<% if q.question_comment.length >= 1 %>
+				<p>
+				  <h3>Comment:</h3>
+				  <%=h q.question_comment %>
+				</p>
+			<% end %>
+			<% if Threesixtytexta.exists?(:threesixtytextq_id => q)%>
+				<p>
+				  <% @showanswer = Threesixtytexta.find(:first, :conditions => {:threesixtytextq_id => q.id})%>
+				  
+				  <h3> Your Answer:</h3>
+				  <p>
+					  <%=h @showanswer.theanswer %>
+				  </p>
+	    			<%= button_to 'Redo', @showanswer, :confirm => 'Are you sure?', :method => :delete %>
+				</p>			
+			<% else %>
+				<% form_for [q, Threesixtytexta.new] do |f| %>
+				  <%= f.error_messages %>
+				  <p>
+				    <h3><%= f.label "Your Answer:" %></h3><br />
+				    <%= f.text_area :theanswer, :cols => "50", :rows => "3" %>
+				  </p>
+				  <p>
+				  	<%= f.hidden_field( "user_id", :value => @user.id )%>
+				  </p>
+				  <p>
+				  <%= f.submit 'Submit Answer' %>
+				  </p>
+				<% end %>
+			<% end %>
+		<% end %>
+	<% end %>
+	
+	<hr>
+	
+	<p>
+		<%= button_to 'Finish and Submit Survey', "/threesixties/index" %>
+	</p>
+</body>

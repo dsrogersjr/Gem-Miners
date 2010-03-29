@@ -1,0 +1,144 @@
+<h2>Design 360 Feedback Form</h2>
+
+<p>
+  <b>360 Feedback Form Name:</b>
+  <%= @threesixty.threesixty_name %>
+</p>
+<p>
+  <b>360 Feedback Form Date:</b>
+  <%= @threesixty.threesixty_date%>
+</p>
+<p>
+	<b>360 Feedback Form Creator:</b>
+	<%= @threesixty.threesixty_creator%>
+</p>
+
+
+<% form_for(@threesixty) do |f| %>
+  <%= f.error_messages %>
+  <p>
+  	<b>360 Feedback Form Information and Instructions:</b><br />
+    <%= f.text_area :threesixty_intro, :cols => "50", :rows => "3" %>
+  </p>
+  <% if @threesixty.threesixty_intro == "" %>
+	  <p>
+	    <%= f.submit 'Create Intro' %>
+	  </p>
+  <% else %>
+	  <p>
+	    <%= f.submit 'Update Intro' %>
+	  </p>
+  <% end %>
+<% end %>
+
+
+<% @countert = 0 %>
+
+<h1>360 Feedback Scale Questions:</h1>
+
+<% @threesixty.threesixtyqs.each do |f| %>
+	<p>
+	  <b>Question Text:</b>
+	  <%=h f.question_text %>
+	</p>
+	
+	<p>
+	  <b>Question comment:</b>
+	  <%=h f.question_comment %>
+	</p>
+	
+	<p>
+	  <b>Answer 1:</b>
+	  <%=h f.answer_1 %>
+	</p>
+	
+	<p>
+	  <b>Answer 2:</b>
+	  <%=h f.answer_2 %>
+	</p>
+	
+	<p>
+	  <b>Answer 3:</b>
+	  <%=h f.answer_3 %>
+	</p>
+	
+	<p>
+	  <b>Answer 4:</b>
+	  <%=h f.answer_4 %>
+	</p>
+	
+	<%= link_to 'Edit Question', edit_threesixtyq_path(f) %> |
+    <%= link_to 'Delete', f, :confirm => 'Are you sure?', :method => :delete %>
+	</p>	
+<% end %>
+
+<% form_for [@threesixty, Threesixtyq.new] do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :question_text %><br />
+    <%= f.text_area :question_text, :cols => "50", :rows => "3" %>
+  </p>
+  <p>
+    <%= f.label :question_comment %><br />
+    <%= f.text_area :question_comment, :cols => "50", :rows => "1" %>
+  </p>
+  <p>
+    <%= f.label :answer_1 %><br />
+    <%= f.text_area :answer_1, :cols => "1", :rows => "1" %>
+  </p>
+  <p>
+    <%= f.label :answer_2 %><br />
+    <%= f.text_area :answer_2, :cols => "1", :rows => "1" %>
+  </p>
+  <p>
+    <%= f.label :answer_3 %><br />
+    <%= f.text_area :answer_3, :cols => "1", :rows => "1" %>
+  </p>
+  <p>
+    <%= f.label :answer_4 %><br />
+    <%= f.text_area :answer_4, :cols => "1", :rows => "1" %>
+  </p>
+  <p>
+    <%= f.submit 'Submit 360 Degree Feedback Question' %>
+  </p>
+<% end %>
+
+<h1>Essay/Short Answer Questions:</h1>
+
+<% @threesixty.threesixtytextqs.each do |f| %>
+	<p>
+	  <b>Question Text:</b>
+	  <%=h f.question_text %>
+	</p>
+	
+	<p>
+	  <b>Question Comment:</b>
+	  <%=h f.question_comment %>
+	</p>
+	
+	<p>
+	<%= link_to 'Edit Question', edit_threesixtytextq_path(f) %> |
+    <%= link_to 'Delete', f, :confirm => 'Are you sure?', :method => :delete %>
+	</p>	
+<% end %>
+
+<% form_for [@threesixty, Threesixtytextq.new] do |f| %>
+  <%= f.error_messages %>
+    <p>
+    <%= f.label :question_text %><br />
+    <%= f.text_area :question_text, :cols => "50", :rows => "3"   %>
+  </p>
+  <p>
+    <%= f.label :question_comment %><br />
+    <%= f.text_area :question_comment, :cols => "50", :rows => "3"   %>
+  </p>
+
+  <p>
+    <%= f.submit 'Submit Text Question' %>
+  </p>
+<% end %>
+
+
+
+<%= link_to 'Back', threesixties_path, :confirm => 'Have you answered all the questions?'%>
