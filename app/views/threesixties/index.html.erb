@@ -1,0 +1,28 @@
+<h1>List of 360 Feedback</h1>
+
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Date</th>
+    <th>Creator</th>
+  </tr>
+<% @threesixties.each do |t| %>
+  <tr>
+    <td><%=h t.threesixty_name %></td>
+    <td><%=h t.threesixty_date %></td>
+    <td><%=h t.threesixty_creator %></td>
+	<td><%= link_to 'Take', :action => 'take', :id => t%></td>
+    <td><%= link_to 'Design', t %></td>
+    <td><%= link_to 'Edit', edit_threesixty_path(t) %></td>
+	<td><%= link_to 'Results', :action => 'results', :id => t %></td>
+    <td><%= link_to 'Delete', t, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New 360 Feedback', new_threesixty_path %>
+
+
+<br />

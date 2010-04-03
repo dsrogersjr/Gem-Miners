@@ -1,4 +1,5 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :usersurveys
   map.resources :messages
 
   map.resources :topics
@@ -8,16 +9,22 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :groups
   map.resources :my
 
-
-  map.resources :tsanswers
   map.resources :textanswers
   map.resources :mcanswers
-  map.resources :surveys, :has_many => :tsquestions
+  map.resources :threesixtyas
+  map.resources :threesixtytextas
+  
+  map.resources :threesixties, :has_many => :threesixtyqs
+  map.resources :threesixties, :has_many => :threesixtytextqs
   map.resources :surveys, :has_many => :textquestions
   map.resources :surveys, :has_many => :mcquestions
-  map.resources :tsquestions, :has_many => :tsanswers
+  
+
   map.resources :mcquestions, :has_many => :mcanswers
   map.resources :textquestions, :has_many => :textanswers
+  map.resources :threesixtytextqs, :has_many => :threesixtytextas
+  map.resources :threesixtyqs, :has_many => :threesixtyanswers
+
   map.resources :documents
   
   map.resources :posts, :has_many => :comments

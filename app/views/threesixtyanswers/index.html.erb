@@ -1,0 +1,30 @@
+<h1>Listing threesixtyanswers</h1>
+
+<table>
+  <tr>
+    <th>Theanswer 1</th>
+    <th>Theanswer 2</th>
+    <th>Theanswer 3</th>
+    <th>Theanswer 4</th>
+    <th>User</th>
+    <th>Threesixtyq</th>
+  </tr>
+
+<% @threesixtyanswers.each do |threesixtyanswer| %>
+  <tr>
+    <td><%=h threesixtyanswer.theanswer_1 %></td>
+    <td><%=h threesixtyanswer.theanswer_2 %></td>
+    <td><%=h threesixtyanswer.theanswer_3 %></td>
+    <td><%=h threesixtyanswer.theanswer_4 %></td>
+    <td><%=h threesixtyanswer.user %></td>
+    <td><%=h threesixtyanswer.threesixtyq %></td>
+    <td><%= link_to 'Show', threesixtyanswer %></td>
+    <td><%= link_to 'Edit', edit_threesixtyanswer_path(threesixtyanswer) %></td>
+    <td><%= link_to 'Destroy', threesixtyanswer, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New threesixtyanswer', new_threesixtyanswer_path %>
