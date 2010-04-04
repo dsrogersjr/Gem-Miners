@@ -27,7 +27,7 @@ class SurveysController < ApplicationController
   # GET /surveys.xml
   def index
     @user = current_user
-    @surveys = Survey.all
+    @surveys = Survey.find(:all, :conditions => "survey_creator" == @user )
     @doclink = "http://docs.google.com/Doc?docid=0AQmrXbrAVr9xZGhnOGpnc18yMWQzcDNraGNy&hl=en"
 
     respond_to do |format|
@@ -50,7 +50,7 @@ class SurveysController < ApplicationController
   # GET /surveys/new
   # GET /surveys/new.xml
   def new
-
+    @user = current_user
     @survey = Survey.new
 
     respond_to do |format|

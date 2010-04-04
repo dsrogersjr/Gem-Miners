@@ -10,7 +10,7 @@
 </p>
 <p>
 	<b>360 Feedback Form Creator:</b>
-	<%= @threesixty.threesixty_creator%>
+	<%=h User.find(@threesixty.threesixty_creator).name %>
 </p>
 
 

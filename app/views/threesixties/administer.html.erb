@@ -1,0 +1,91 @@
+<h2>Administer 360 Feedback Form</h2>
+Assign who you want this 360 Feedback Form to be taken by.
+<hr>
+
+
+<p>
+  <b>360 Feedback Form name:</b>
+  <%=h @threesixty.threesixty_name %>
+</p>
+
+<p>
+  <b>360 Feedback Form date:</b>
+  <%=h @threesixty.threesixty_date %>
+</p>
+
+<p>
+  <b>360 Feedback Form creator:</b>
+  <%=h User.find(@threesixty.threesixty_creator).name %>
+</p>
+<p>
+	<b>360 Feedback Form Intro</b>
+	<%= @threesixty.threesixty_intro %>
+</p>
+
+<h1>Administer this 360 Feedback Form</h1>
+<hr>
+These are the users you can currently administer the 360 Feedback Form to. 
+<br />
+<br />
+<table>
+  <tr>
+    <th>User Name</th>
+	<th>Administer 360 Feedback Form</th>
+  </tr>
+<% @users.each do |s| %>
+	<% unless Userthreesixty.exists?({:user_id => s.id, :threesixty_id => @threesixty.id})%>
+	  <tr>
+	    <td><%=h s.name %></td>
+		<td>
+			<% form_for [@threesixty, Userthreesixty.new] do |f| %>
+			  <%= f.error_messages %>
+			
+			  <p>
+				<%= f.hidden_field( "taken", :value => false )%>
+			  </p>
+			  <p>
+			  	<%= f.hidden_field("user_id", :value => s.id )%>
+			  </p>
+			  <p>
+			  	<%= f.hidden_field("threesixty_id", :value => @threesixty.id)%>
+			  </p>
+			  <p>
+			    <%= f.submit 'Administer to this User' %>
+			  </p>
+			<% end %>
+		</td>
+	  </tr>
+	<% end %>
+<% end %>
+</table>
+<br />
+
+<h1>Remove 360 Feedback Form Taker</h1>
+<hr>
+<p>
+	If you administered a survey to the wrong person, or do not want
+	a previously assigned user to take a 360 Feedback Form you can revoke their access to
+	the 360 Feedback Form here: 
+</p>
+
+<table>
+  <tr>
+    <th>User Name</th>
+	<th>Revoke 360 Feedback Form</th>
+  </tr>
+  <% @users.each do |s|%>
+  	<% if Userthreesixty.exists?({:user_id => s.id, :threesixty_id => @threesixty.id})%>
+		<% @userthreesixty = Userthreesixty.find(:first, :conditions => {:user_id => s.id, :threesixty_id => @threesixty.id})%>
+		<tr>
+	    	<td><%=h s.name %></td>
+			<td><%= link_to 'Revoke', @userthreesixty, :confirm => 'Are you sure?', :method => :delete %></td>
+	  	</tr>
+	<% end %>
+  <% end%>
+</table>
+
+
+<br />
+	
+<hr>	
+<%= button_to 'Back', "/threesixties/index" %>

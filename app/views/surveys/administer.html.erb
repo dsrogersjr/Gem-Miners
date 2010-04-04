@@ -1,3 +1,8 @@
+<h2>Administer Survey</h2>
+Assign who you want this survey to be taken by.
+<hr>
+
+
 <p>
   <b>Survey name:</b>
   <%=h @survey.survey_name %>
@@ -17,24 +22,71 @@
 	<%= @survey.survey_intro %>
 </p>
 
-<h1>List of Users</h1>
-	<hr>
-	These are the users you can currently administer the survey to. 
-	<br />
-	<br />
-	<table>
+<h1>Administer this survey</h1>
+<hr>
+These are the users you can currently administer the survey to. 
+<br />
+<br />
+<table>
+  <tr>
+    <th>User Name</th>
+	<th>Administer Survey</th>
+  </tr>
+<% @users.each do |s| %>
+	<% unless Usersurvey.exists?({:user_id => s.id, :survey_id => @survey.id})%>
 	  <tr>
-	    <th>User Name | </th>
-	    <th>User Email</th>
-		<th>Administer Survey</th>
-	  </tr>
-	<% @users.each do |s| %>
-	  <tr>
-	    <td><%=h s.login %></td>
-	    <td><%=h s.email %></td>
+	    <td><%=h s.name %></td>
 		<td>
+			<% form_for [@survey, Usersurvey.new] do |f| %>
+			  <%= f.error_messages %>
 			
+			  <p>
+				<%= f.hidden_field( "taken", :value => false )%>
+			  </p>
+			  <p>
+			  	<%= f.hidden_field("user_id", :value => s.id )%>
+			  </p>
+			  <p>
+			  	<%= f.hidden_field("survey_id", :value => @survey.id)%>
+			  </p>
+			  <p>
+			    <%= f.submit 'Administer to this User' %>
+			  </p>
+			<% end %>
 		</td>
 	  </tr>
 	<% end %>
-	</table>
+<% end %>
+</table>
+<br />
+
+<h1>Remove Survey Taker</h1>
+<hr>
+<p>
+	If you administered a survey to the wrong person, or do not want
+	a previously assigned user to take a survey you can revoke their access here
+	the survey here: 
+</p>
+
+<table>
+  <tr>
+    <th>User Name</th>
+	<th>Revoke Survey</th>
+  </tr>
+  <% @users.each do |s|%>
+  	<% if Usersurvey.exists?({:user_id => s.id, :survey_id => @survey.id})%>
+		<% @usersurvey = Usersurvey.find(:first, :conditions => {:user_id => s.id, :survey_id => @survey.id})%>
+		<tr>
+	    	<td><%=h s.name %></td>
+			<td><%= link_to 'Revoke', @usersurvey, :confirm => 'Are you sure?', :method => :delete %></td>
+	  	</tr>
+	<% end %>
+  <% end%>
+</table>
+
+
+<br />
+	
+<hr>	
+<%= button_to 'Back', "/surveys/index" %>
+	

@@ -12,6 +12,12 @@ class ThreesixtiesController < ApplicationController
     end
   end
   
+  def administer
+    @threesixty = Threesixty.find(params[:id])
+    @user = current_user
+    @users = User.all
+  end
+  
   # GET /threesixties
   # GET /threesixties.xml
   def index
@@ -38,6 +44,7 @@ class ThreesixtiesController < ApplicationController
   # GET /threesixties/new
   # GET /threesixties/new.xml
   def new
+    @user = current_user
     @threesixty = Threesixty.new
 
     respond_to do |format|

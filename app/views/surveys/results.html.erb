@@ -6,7 +6,7 @@
 	<%= t.question_text%>
 	<h4>Question Answer(s):</h4>
 	<% if Mcanswer.exists?(:mcquestion_id => t)%>
-		<% @showanswer = Mcanswer.find(:first, :conditions => {:mcquestion_id => t.id})%>
+		<% @showanswer = Mcanswer.find(:last, :conditions => {:mcquestion_id => t.id})%>
 		<% if @showanswer.theanswer_1%>
 			<p>
 			  <%=h t.answer_1 %>
