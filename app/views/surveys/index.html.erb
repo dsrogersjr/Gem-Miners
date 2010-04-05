@@ -1,4 +1,5 @@
 <h2>Surveys</h2>
+<hr>
 
 <body>
 	<h1>Surveys for you to Take</h1>	
@@ -10,12 +11,14 @@
 	    <th>Survey creator</th>
 	  </tr>
 	<% @surveys.each do |survey| %>
-	  <tr>
-	    <td><%=h survey.survey_name %></td>
-	    <td><%=h survey.survey_date %></td>
-	    <td><%=h survey.survey_creator %></td>
-		<td><%= button_to 'Take Survey', :action => 'take', :id => survey%> </td>
-	  </tr>
+		<% if Usersurvey.exists?({:user_id => @user.id, :survey_id => survey.id})%>
+		  <tr>
+		    <td><%=h survey.survey_name %></td>
+		    <td><%=h survey.survey_date %></td>
+		    <td><%=h User.find(survey.survey_creator).name %></td>
+			<td><%= button_to 'Take Survey', :action => 'take', :id => survey%> </td>
+		  </tr>
+		<% end %>
 	<% end %>
 	</table>
 	
@@ -28,17 +31,20 @@
 	    <th>Survey date</th>
 	    <th>Survey creator</th>
 	  </tr>
+	
 	<% @surveys.each do |survey| %>
-	  <tr>
-	    <td><%=h survey.survey_name %></td>
-	    <td><%=h survey.survey_date %></td>
-	    <td><%=h survey.survey_creator %></td>
-	    <td><%= link_to 'Design', survey %></td>
-		<td><%= link_to 'Administer', :action => 'administer', :id => survey %></td>
-	    <td><%= link_to 'Edit', edit_survey_path(survey) %></td>
-		<td><%= link_to 'Results', :action => 'results', :id => survey %></td>
-	    <td><%= link_to 'Delete', survey, :confirm => 'Are you sure?', :method => :delete %></td>
-	  </tr>
+	  <% if survey.survey_creator.to_s == @user.id.to_s %>
+		  <tr>
+		    <td><%=h survey.survey_name %></td>
+		    <td><%=h survey.survey_date %></td>
+		    <td><%=h User.find(survey.survey_creator).name %></td>
+		    <td><%= link_to 'Design', survey %></td>
+			<td><%= link_to 'Administer', :action => 'administer', :id => survey %></td>
+		    <td><%= link_to 'Edit', edit_survey_path(survey) %></td>
+			<td><%= link_to 'Results', :action => 'results', :id => survey %></td>
+		    <td><%= link_to 'Delete', survey, :confirm => 'Are you sure?', :method => :delete %></td>
+		  </tr>
+	  <% end %>
 	<% end %>
 	</table>
 	

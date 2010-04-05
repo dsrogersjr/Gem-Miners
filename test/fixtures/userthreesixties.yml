@@ -1,0 +1,21 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+
+one:
+
+  taken: false
+
+  user: 
+
+  threesixty: 
+
+
+two:
+
+  taken: false
+
+  user: 
+
+  threesixty: 
+
+

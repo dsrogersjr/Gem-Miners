@@ -12,8 +12,7 @@
     <%= f.date_select :survey_date %>
   </p>
   <p>
-    <%= f.label :survey_creator%><br />
-    <%= f.text_field :survey_creator %>
+  	<%= f.hidden_field("survey_creator", :value => @user.id)%>
   </p>
   <p>
     <%= f.submit 'Create' %>

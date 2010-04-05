@@ -21,17 +21,6 @@ class UsersurveysController < ApplicationController
     end
   end
 
-  # GET /usersurveys/new
-  # GET /usersurveys/new.xml
-  def new
-    @usersurvey = Usersurvey.new
-
-    respond_to do |format|
-      format.html # new.html.erb
-      format.xml  { render :xml => @usersurvey }
-    end
-  end
-
   # GET /usersurveys/1/edit
   def edit
     @usersurvey = Usersurvey.find(params[:id])
@@ -40,18 +29,11 @@ class UsersurveysController < ApplicationController
   # POST /usersurveys
   # POST /usersurveys.xml
   def create
-    @usersurvey = Usersurvey.new(params[:usersurvey])
+    # @usersurvey = Usersurvey.new(params[:usersurvey])
+    @survey = Survey.find(params[:survey_id])
+    @usersurvey = @survey.usersurveys.create!(params[:usersurvey])
+    redirect_to '/surveys/administer/' + @survey.id.to_s
 
-    respond_to do |format|
-      if @usersurvey.save
-        flash[:notice] = 'Usersurvey was successfully created.'
-        format.html { redirect_to(@usersurvey) }
-        format.xml  { render :xml => @usersurvey, :status => :created, :location => @usersurvey }
-      else
-        format.html { render :action => "new" }
-        format.xml  { render :xml => @usersurvey.errors, :status => :unprocessable_entity }
-      end
-    end
   end
 
   # PUT /usersurveys/1
@@ -75,11 +57,9 @@ class UsersurveysController < ApplicationController
   # DELETE /usersurveys/1.xml
   def destroy
     @usersurvey = Usersurvey.find(params[:id])
+    @survey = Survey.find(@usersurvey.survey_id)
     @usersurvey.destroy
+    redirect_to '/surveys/administer/' + @survey.id.to_s
 
-    respond_to do |format|
-      format.html { redirect_to(usersurveys_url) }
-      format.xml  { head :ok }
-    end
   end
 end

@@ -15,9 +15,9 @@
   </p>
   
   <p>
-    360 Form Creator <br />
-    <%= f.text_field :threesixty_creator %>
+  	<%= f.hidden_field("threesixty_creator", :value => @user.id)%>
   </p>
+  
   <p>
     <%= f.submit 'Create' %>
   </p>

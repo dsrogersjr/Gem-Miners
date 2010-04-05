@@ -1,5 +1,9 @@
 ActionController::Routing::Routes.draw do |map|
+  map.resources :userthreesixties
+
   map.resources :usersurveys
+  
+  
   map.resources :messages
 
   map.resources :topics
@@ -16,9 +20,10 @@ ActionController::Routing::Routes.draw do |map|
   
   map.resources :threesixties, :has_many => :threesixtyqs
   map.resources :threesixties, :has_many => :threesixtytextqs
+  map.resources :threesixties, :has_many => :userthreesixties
   map.resources :surveys, :has_many => :textquestions
   map.resources :surveys, :has_many => :mcquestions
-  
+  map.resources :surveys, :has_many => :usersurveys
 
   map.resources :mcquestions, :has_many => :mcanswers
   map.resources :textquestions, :has_many => :textanswers

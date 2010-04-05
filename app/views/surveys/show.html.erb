@@ -11,7 +11,7 @@
 
 <p>
   <b>Survey creator:</b>
-  <%=h @survey.survey_creator %>
+  <%=h User.find(@survey.survey_creator).name %>
 </p>
 
 <% form_for(@survey) do |f| %>
@@ -148,7 +148,7 @@
     <%= f.text_area :question_comment, :cols => "50", :rows => "3"  %>
   </p>
   <p>
-  <%= f.submit 'Submit Text/360 Question' %>
+  <%= f.submit 'Submit Essay/Short Answer Question' %>
   </p>
 <% end %>
 
