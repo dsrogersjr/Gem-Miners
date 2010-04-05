@@ -1,4 +1,4 @@
-<h1>Editing mcquestion</h1>
+<h1>Editing Multiple Choice Question</h1>
 
 <% form_for(@mcquestion) do |f| %>
   <%= f.error_messages %>
@@ -39,6 +39,3 @@
     <%= f.submit 'Update' %>
   </p>
 <% end %>
-
-
-<%= link_to 'Back', :controller => "surveys", :action => @mcquestion.survey_id %>

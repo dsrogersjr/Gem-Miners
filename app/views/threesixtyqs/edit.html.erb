@@ -1,39 +1,33 @@
-<h1>Editing threesixtyq</h1>
+<h1>Editing 360 Scale Question</h1>
 
 <% form_for(@threesixtyq) do |f| %>
   <%= f.error_messages %>
 
   <p>
     <%= f.label :question_text %><br />
-    <%= f.text_area :question_text %>
+    <%= f.text_area :question_text, :cols => "50", :rows => "3" %>
   </p>
   <p>
     <%= f.label :question_comment %><br />
-    <%= f.text_area :question_comment %>
+    <%= f.text_area :question_comment, :cols => "50", :rows => "3" %>
   </p>
   <p>
     <%= f.label :answer_1 %><br />
-    <%= f.text_area :answer_1 %>
+    <%= f.text_area :answer_1, :cols => "1", :rows => "1" %>
   </p>
   <p>
     <%= f.label :answer_2 %><br />
-    <%= f.text_area :answer_2 %>
+    <%= f.text_area :answer_2, :cols => "1", :rows => "1" %>
   </p>
   <p>
     <%= f.label :answer_3 %><br />
-    <%= f.text_area :answer_3 %>
+    <%= f.text_area :answer_3, :cols => "1", :rows => "1" %>
   </p>
   <p>
     <%= f.label :answer_4 %><br />
-    <%= f.text_area :answer_4 %>
-  </p>
-  <p>
-    <%= f.label :threesixty %><br />
-    <%= f.text_field :threesixty %>
+    <%= f.text_area :answer_4, :cols => "1", :rows => "1" %>
   </p>
   <p>
     <%= f.submit 'Update' %>
   </p>
 <% end %>
-
-<%= link_to 'Back', :controller => "threesixties", :action => @threesixtyq.threesixty_id %>

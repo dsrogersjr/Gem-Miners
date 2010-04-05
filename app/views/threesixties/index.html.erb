@@ -35,9 +35,8 @@
 			    <td><%=h t.threesixty_name %></td>
 			    <td><%=h t.threesixty_date %></td>
 			    <td><%=h User.find(t.threesixty_creator).name %></td>
-			    <td><%= link_to 'Design', t %></td>
+				<td><%= link_to 'Edit', edit_threesixty_path(t) %></td>
 				<td><%= link_to 'Administer', :action => 'administer', :id => t %></td>
-			    <td><%= link_to 'Edit', edit_threesixty_path(t) %></td>
 				<td><%= link_to 'Results', :action => 'results', :id => t %></td>
 			    <td><%= link_to 'Delete', t, :confirm => 'Are you sure?', :method => :delete %></td>
 			  </tr>

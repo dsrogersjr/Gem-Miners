@@ -1,4 +1,5 @@
-<h2>Design 360 Feedback Form</h2>
+<h2>Editing 360 Feedback Form</h2>
+<hr>
 
 <p>
   <b>360 Feedback Form Name:</b>
@@ -35,6 +36,7 @@
 <% @countert = 0 %>
 
 <h1>360 Feedback Scale Questions:</h1>
+<hr>
 
 <% @threesixty.threesixtyqs.each do |f| %>
 	<p>
@@ -43,7 +45,7 @@
 	</p>
 	
 	<p>
-	  <b>Question comment:</b>
+	  <b>Question Instructions and Additional Comments:</b>
 	  <%=h f.question_comment %>
 	</p>
 	
@@ -80,7 +82,7 @@
     <%= f.text_area :question_text, :cols => "50", :rows => "3" %>
   </p>
   <p>
-    <%= f.label :question_comment %><br />
+    <%= f.label :question_comment, "Question Instructions and Additional Comments:" %><br />
     <%= f.text_area :question_comment, :cols => "50", :rows => "1" %>
   </p>
   <p>
@@ -105,6 +107,7 @@
 <% end %>
 
 <h1>Essay/Short Answer Questions:</h1>
+<hr>
 
 <% @threesixty.threesixtytextqs.each do |f| %>
 	<p>
@@ -113,7 +116,7 @@
 	</p>
 	
 	<p>
-	  <b>Question Comment:</b>
+	  <b>Question Instructions and Additional Comments:</b>
 	  <%=h f.question_comment %>
 	</p>
 	
@@ -130,7 +133,7 @@
     <%= f.text_area :question_text, :cols => "50", :rows => "3"   %>
   </p>
   <p>
-    <%= f.label :question_comment %><br />
+    <%= f.label :question_comment, "Question Instructions and Additional Comments:" %><br />
     <%= f.text_area :question_comment, :cols => "50", :rows => "3"   %>
   </p>
 
@@ -139,6 +142,6 @@
   </p>
 <% end %>
 
-
+<hr>
 
 <%= link_to 'Back', threesixties_path%>

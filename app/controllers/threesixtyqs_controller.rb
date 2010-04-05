@@ -1,4 +1,6 @@
 class ThreesixtyqsController < ApplicationController
+    layout 'private'
+  
   # GET /threesixtyqs
   # GET /threesixtyqs.xml
   def index
@@ -49,11 +51,12 @@ class ThreesixtyqsController < ApplicationController
   # PUT /threesixtyqs/1.xml
   def update
     @threesixtyq = Threesixtyq.find(params[:id])
+    @threesixty = Threesixty.find(@threesixtyq.threesixty_id);
 
     respond_to do |format|
       if @threesixtyq.update_attributes(params[:threesixtyq])
         flash[:notice] = 'Threesixtyq was successfully updated.'
-        format.html { redirect_to(@threesixtyq) }
+        format.html { redirect_to(@threesixty) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

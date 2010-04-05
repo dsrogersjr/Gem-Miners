@@ -15,7 +15,7 @@ Assign who you want this survey to be taken by.
 
 <p>
   <b>Survey creator:</b>
-  <%=h @survey.survey_creator %>
+  <%=h User.find(@survey.survey_creator).name %>
 </p>
 <p>
 	<b>Survey Intro</b>
@@ -64,7 +64,7 @@ These are the users you can currently administer the survey to.
 <hr>
 <p>
 	If you administered a survey to the wrong person, or do not want
-	a previously assigned user to take a survey you can revoke their access here
+	a previously assigned user to take a survey you can revoke their access to the
 	the survey here: 
 </p>
 

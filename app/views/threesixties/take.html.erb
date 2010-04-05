@@ -4,10 +4,11 @@
 
 <body>
 	<h2>
-		You are Taking 360 Feedback Form:
-		<%= @threesixty.threesixty_name %>
-		<hr>
+		<p>You are Taking 360 Feedback Form:<h1><%= @threesixty.threesixty_name %></h1></p>
+		
 	</h2>
+		<hr>
+	
 	<p> 
 		<%= @threesixty.threesixty_intro %> 
 	</p
@@ -24,6 +25,7 @@
 	
 		<% @threesixty.threesixtyqs.each do |g| %>
 			<h1>Question: <%= @countert += 1 %></h1>
+			
 			<h3>Question Text:</h3>
 			<p><%= g.question_text %></p>
 			<% if g.question_comment.length >= 1 %>
@@ -83,8 +85,10 @@
 				<% end %>
 				<%= button_to 'Redo', @showanswer, :confirm => 'Are you sure?', :method => :delete %>
 			<% end %>
+			<hr>
 		<% end %>
 	<% end %>
+	<br />
 	<% if @threesixty.threesixtytextqs.exists? %>
 		<h1>Essay/Short Answer Questions:</h1>
 		<hr>
@@ -125,12 +129,11 @@
 				  </p>
 				<% end %>
 			<% end %>
+			<hr>
 		<% end %>
 	<% end %>
 	
-	<hr>
-	
 	<p>
-		<%= button_to 'Finish and Submit Survey', "/threesixties/index", :confirm => 'Have you answered all the questions?' %>
+		<%= button_to 'Finish and Submit 360 Feedback', "/threesixties/index", :confirm => 'Have you answered all the questions?' %>
 	</p>
 </body>

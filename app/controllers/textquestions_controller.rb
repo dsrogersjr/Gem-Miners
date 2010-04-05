@@ -51,11 +51,12 @@ class TextquestionsController < ApplicationController
   # PUT /textquestions/1.xml
   def update
     @textquestion = Textquestion.find(params[:id])
+    @survey = Survey.find(@textquestion.survey_id)
 
     respond_to do |format|
       if @textquestion.update_attributes(params[:textquestion])
         flash[:notice] = 'Textquestion was successfully updated.'
-        format.html { redirect_to(@textquestion) }
+        format.html { redirect_to(@survey) }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

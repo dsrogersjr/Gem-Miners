@@ -1,5 +1,7 @@
 <h1>Editing survey</h1>
 
+You can edit this survey's content and questions after you click 'Update and Continue'
+
 <% form_for(@survey) do |f| %>
   <%= f.error_messages %>
 
@@ -12,7 +14,7 @@
     <%= f.date_select :survey_date %>
   </p>
   <p>
-    <%= f.submit 'Update' %>
+    <%= f.submit 'Update and Continue' %>
   </p>
 <% end %>
 

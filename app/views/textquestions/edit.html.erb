@@ -1,4 +1,4 @@
-<h1>Editing textquestion</h1>
+<h1>Editing Text Question</h1>
 
 <% form_for(@textquestion) do |f| %>
   <%= f.error_messages %>
@@ -15,5 +15,3 @@
     <%= f.submit 'Update' %>
   </p>
 <% end %>
-
-<%= link_to 'Back', :controller => "surveys", :action => @textquestion.survey_id %>

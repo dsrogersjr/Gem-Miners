@@ -1,4 +1,5 @@
-<h2>Design Survey</h2>
+<h2>Editing Survey</h2>
+<hr>
 <p>
   <b>Survey name:</b>
   <%=h @survey.survey_name %>
@@ -17,7 +18,7 @@
 <% form_for(@survey) do |f| %>
   <%= f.error_messages %>
   <p>
-  	<b>360 Feedback Form Information and Instructions:</b><br />
+  	<b>Survey Information and Instructions:</b><br />
     <%= f.text_area :survey_intro, :cols => "50", :rows => "3" %>
   </p>
   <% if @survey.survey_intro == "" %>
@@ -32,6 +33,7 @@
 <% end %>
 
 <h1>Multiple Choice Questions:</h1>
+<hr>
 
 <% @survey.mcquestions.each do |mcquestion| %>
 	<p>
@@ -40,7 +42,7 @@
 	</p>
 	
 	<p>
-	  <b>Question comment:</b>
+	  <b>Question Instructions and Additional Comments:</b>
 	  <%=h mcquestion.question_comment %>
 	</p>
 	
@@ -71,14 +73,20 @@
 	
 	<p>
 	  <b>Allow Multiple Answers:</b>
-	  <%=h mcquestion.multipleanswers %>
+	  <% if(mcquestion.multipleanswers == false) %>
+	  	No
+	  <% else %>
+	    Yes
+	  <% end %>
 	</p>
 	
 	<%= link_to 'Edit Question', edit_mcquestion_path(mcquestion) %> |
     <%= link_to 'Delete', mcquestion, :confirm => 'Are you sure?', :method => :delete %>
-	</p>	
+	</p>
+	<hr>	
 <% end %>
 
+<h1>New Multiple Choice Question</h1>
 <% form_for [@survey, Mcquestion.new] do |f| %>
 	<%= f.error_messages %>
 
@@ -87,7 +95,7 @@
 		<%= f.text_area :question_text, :cols => "50", :rows => "3" %>
 	</p>
 	<p>
-		<%= f.label :question_comment %><br />
+		<%= f.label :question_comment, "Question Instructions and Additional Comments" %><br />
 		<%= f.text_area :question_comment, :cols => "50", :rows => "3" %>
 	</p>
 	<p>
@@ -119,7 +127,11 @@
 	</p>
 <% end %>
 
+<br />
+
 <h1>Essay/Short Answer Questions:</h1>
+<hr>
+
 <% @survey.textquestions.each do |textquestion| %>
 	<p>
 	  <b>Question Text:</b>
@@ -127,7 +139,7 @@
 	</p>
 	
 	<p>
-	  <b>Question Comment:</b>
+	  <b>Question Instructions and Additional Comments:</b>
 	  <%=h textquestion.question_comment %>
 	</p>
 	
@@ -135,8 +147,10 @@
 	<%= link_to 'Edit Question', edit_textquestion_path(textquestion) %> |
     <%= link_to 'Delete', textquestion, :confirm => 'Are you sure?', :method => :delete %>
 	</p>	
+	<hr>
 <% end %>
 
+<h1>New Essay/Short Answer Question</h1>
 <% form_for [@survey, Textquestion.new] do |f| %>
   <%= f.error_messages %>
   <p>
@@ -144,7 +158,7 @@
     <%= f.text_area :question_text, :cols => "50", :rows => "3"  %>
   </p>
   <p>
-    <%= f.label :question_comment %><br />
+    <%= f.label :question_comment, "Question Instructions and Additional Comments" %><br />
     <%= f.text_area :question_comment, :cols => "50", :rows => "3"  %>
   </p>
   <p>
