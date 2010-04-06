@@ -8,7 +8,11 @@
 		
 	</h2>
 		<hr>
-	
+
+	<p>
+	  <b>360 Feedback Form Due Date:</b>
+	  <%= @threesixty.threesixty_date%>
+	</p>
 	<p> 
 		<%= @threesixty.threesixty_intro %> 
 	</p
@@ -134,6 +138,6 @@
 	<% end %>
 	
 	<p>
-		<%= button_to 'Finish and Submit 360 Feedback', "/threesixties/index", :confirm => 'Have you answered all the questions?' %>
+		<%= button_to 'Finish and Submit 360 Feedback', "/threesixties/index" %>
 	</p>
 </body>

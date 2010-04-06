@@ -6,9 +6,9 @@
 	<hr>
 	<table>
 	  <tr>
-	    <th>Survey name</th>
-	    <th>Survey date</th>
-	    <th>Survey creator</th>
+	    <th>Name</th>
+	    <th>Due Date</th>
+	    <th>Creator</th>
 	  </tr>
 	<% @surveys.each do |survey| %>
 		<% if Usersurvey.exists?({:user_id => @user.id, :survey_id => survey.id})%>
@@ -27,9 +27,9 @@
 	<hr>
 	<table>
 	  <tr>
-	    <th>Survey name</th>
-	    <th>Survey date</th>
-	    <th>Survey creator</th>
+	    <th>Name</th>
+	    <th>Due Date</th>
+	    <th>Creator</th>
 	  </tr>
 	
 	<% @surveys.each do |survey| %>

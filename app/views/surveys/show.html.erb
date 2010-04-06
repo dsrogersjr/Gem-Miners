@@ -6,7 +6,7 @@
 </p>
 
 <p>
-  <b>Survey date:</b>
+  <b>Survey due date:</b>
   <%=h @survey.survey_date %>
 </p>
 
@@ -27,7 +27,7 @@
 	  </p>
   <% else %>
 	  <p>
-	    <%= f.submit 'Update Intro' %>
+	    <%= f.submit 'Update Intro', :message => 'Survey Information and Instructions Updated' %>
 	  </p>
   <% end %>
 <% end %>
@@ -86,6 +86,11 @@
 	<hr>	
 <% end %>
 
+<b>You can add as many multiple choice questions as you want.  Fill out the form below to
+add a new question.</b>
+
+<hr>
+
 <h1>New Multiple Choice Question</h1>
 <% form_for [@survey, Mcquestion.new] do |f| %>
 	<%= f.error_messages %>
@@ -123,7 +128,7 @@
 		<%= f.label :multipleanswers, "Allow multiple answers?" %><br />
 	</p>
 	<p>
-	<%= f.submit 'Submit Multiple Choice Question' %>
+	<%= f.submit 'Submit Multiple Choice Question'%>
 	</p>
 <% end %>
 
@@ -150,6 +155,11 @@
 	<hr>
 <% end %>
 
+<b>You can add as many essay/short answer questions as you want.  Fill out the form below to
+add a new question.</b>
+
+<hr>
+
 <h1>New Essay/Short Answer Question</h1>
 <% form_for [@survey, Textquestion.new] do |f| %>
   <%= f.error_messages %>
@@ -170,5 +180,5 @@
 
 <p>
 	<hr>
-	<%= button_to 'Back', "/surveys/index" %>
+	<%= button_to 'Back to Survey List', "/surveys/index" %>
 </p>

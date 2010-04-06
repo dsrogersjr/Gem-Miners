@@ -10,13 +10,12 @@ You can edit this 360 Feedback Form's content and questions after you click 'Upd
     <%= f.text_field :threesixty_name %>
   </p>
   <p>
-    <%= f.label :threesixty_date %><br />
+    <%= f.label :threesixty_date, "Form Due Date" %><br />
     <%= f.date_select :threesixty_date %>
   </p>
   <p>
     <%= f.submit 'Update and Continue' %>
   </p>
 <% end %>
-
-<%= link_to 'Show', @threesixty %> |
-<%= link_to 'Back', threesixties_path %>
+<hr>
+<%= button_to 'Back to 360 Form List', "/threesixties/index" %>

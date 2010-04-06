@@ -6,7 +6,7 @@
   <%= @threesixty.threesixty_name %>
 </p>
 <p>
-  <b>360 Feedback Form Date:</b>
+  <b>360 Feedback Form Due Date:</b>
   <%= @threesixty.threesixty_date%>
 </p>
 <p>
@@ -74,6 +74,11 @@
 	</p>	
 <% end %>
 
+<b>You can add as many 360 scale questions as you want.  Fill out the form below to
+add a new question.</b>
+
+<hr>
+
 <% form_for [@threesixty, Threesixtyq.new] do |f| %>
   <%= f.error_messages %>
 
@@ -126,6 +131,11 @@
 	</p>	
 <% end %>
 
+<b>You can add as many text questions as you want.  Fill out the form below to
+add a new question.</b>
+
+<hr>
+
 <% form_for [@threesixty, Threesixtytextq.new] do |f| %>
   <%= f.error_messages %>
     <p>
@@ -144,4 +154,4 @@
 
 <hr>
 
-<%= link_to 'Back', threesixties_path%>
+<%= button_to 'Back to 360 Form List', "/threesixties/index"%>

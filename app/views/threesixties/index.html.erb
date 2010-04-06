@@ -7,7 +7,7 @@
 <table>
   <tr>
     <th>Name</th>
-    <th>Date</th>
+    <th>Due Date</th>
   </tr>
 <% @threesixties.each do |t| %>
 	<% if Userthreesixty.exists?({:user_id => @user.id, :threesixty_id => t.id})%>
@@ -26,7 +26,7 @@
 	<table>
 	  <tr>
 	    <th>Name</th>
-	    <th>Date</th>
+	    <th>Due Date</th>
 	    <th>Creator</th>
 	  </tr>
 	<% @threesixties.each do |t| %>

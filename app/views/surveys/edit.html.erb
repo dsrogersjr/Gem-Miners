@@ -6,16 +6,17 @@ You can edit this survey's content and questions after you click 'Update and Con
   <%= f.error_messages %>
 
   <p>
-    <%= f.label :survey_name %><br />
+    <%= f.label :survey_name, "Survey Name" %><br />
     <%= f.text_field :survey_name %>
   </p>
   <p>
-    <%= f.label :survey_date %><br />
+    <%= f.label :survey_date, "Survey Due Date" %><br />
     <%= f.date_select :survey_date %>
   </p>
   <p>
     <%= f.submit 'Update and Continue' %>
   </p>
 <% end %>
+<hr>
 
-<%= link_to 'Back', @survey %>
+<%= button_to 'Back to Survey List', "/surveys/index" %>

@@ -3,8 +3,25 @@
 	the first iteration out the door. %>
 
 <body>
+	<h2>
+		<p>You are Taking Survey:<h1><%= @survey.survey_name %></h1></p>
+		
+	</h2>
+	<hr>
 	
+	<p>
+	  <b>Survey Due Date:</b>
+	  <%=h @survey.survey_date %>
+	</p>
 	
+	<p>
+	  <b>Survey Creator:</b>
+	  <%=h User.find(@survey.survey_creator).name %>
+	</p>
+	<p>
+		<b>Survey Intro</b>
+		<%= @survey.survey_intro %>
+	</p>
 	
 	
 	<% @countert = 0 %>
@@ -182,6 +199,6 @@
 	<hr>
 	
 	<p>
-		<%= button_to 'Finish and Submit Survey', "/surveys/index", :confirm => 'Have you answered all the questions?' %>
+		<%= button_to 'Finish and Submit Survey', "/surveys/index" %>
 	</p>
 </body>
