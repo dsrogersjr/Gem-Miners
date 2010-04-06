@@ -2,10 +2,10 @@ development:
   adapter: mysql
   encoding: utf8
   reconnect: false
-  database: TheMine
+  database: mis438
   pool: 5
   username: root
-  password:
+  password: root
   socket: /tmp/mysql.sock
  
 test:

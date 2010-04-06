@@ -12,8 +12,11 @@ class UsersurveysController < ApplicationController
 
   # GET /usersurveys/1
   # GET /usersurveys/1.xml
-  def show
+  def results
     @usersurvey = Usersurvey.find(params[:id])
+    @survey = Survey.find(@usersurvey.survey_id)
+    @user = User.find(@usersurvey.user_id)
+    @mcquestions = Mcquestion.all(:conditions => {:survey_id => @survey.id})
 
     respond_to do |format|
       format.html # show.html.erb

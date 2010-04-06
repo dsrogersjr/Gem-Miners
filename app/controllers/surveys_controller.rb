@@ -2,6 +2,7 @@ class SurveysController < ApplicationController
   
   def results
     @survey = Survey.find(params[:id])
+    @usersurveys = Usersurvey.all
   end
   
   def administer

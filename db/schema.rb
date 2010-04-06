@@ -201,7 +201,7 @@ ActiveRecord::Schema.define(:version => 20100404202900) do
   add_index "users", ["login"], :name => "index_users_on_login", :unique => true
 
   create_table "usersurveys", :force => true do |t|
-    t.boolean  "taken"
+    t.boolean  "taken",      :default => false
     t.integer  "user_id"
     t.integer  "survey_id"
     t.datetime "created_at"
