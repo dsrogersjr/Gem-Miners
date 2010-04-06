@@ -1,5 +1,5 @@
 class ForumsController < ApplicationController
-  layout 'private'
+
   require_role 'admin', :except => [:index, :show]
   # GET /forums
   # GET /forums.xml

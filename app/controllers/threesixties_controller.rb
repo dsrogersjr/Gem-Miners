@@ -1,6 +1,4 @@
-class ThreesixtiesController < ApplicationController
-  layout 'private'
-    
+class ThreesixtiesController < ApplicationController    
     
   def take
     @threesixty = Threesixty.find(params[:id])

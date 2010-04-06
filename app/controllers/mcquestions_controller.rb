@@ -1,5 +1,4 @@
 class McquestionsController < ApplicationController
-  layout 'private'
   
   def create
     @survey = Survey.find(params[:survey_id])

@@ -50,6 +50,29 @@
 					<% if logged_in? %>
 						<ul>
 							<li>
+								<h2>Private Links</h2>
+									<% if current_user.has_role?("admin") %>
+									<ul>
+										<li><%= link_to 'My Account', :controller => 'my', :action => 'show' %></li>
+										<li><%= link_to 'Groups', :controller => 'groups', :action => 'index' %></li>
+										<li><%= link_to 'Users', :controller => 'users', :action => 'index' %></li>
+										<li><%= link_to 'Surveys', :controller => 'surveys', :action => 'index' %></li>
+										<li><%= link_to '360 Feedback', :controller => 'threesixties', :action => 'index' %></li>
+										<li><%= link_to 'Files', :controller => 'documents', :action => 'index' %></li>
+										<li><%= link_to 'News and Alerts', :controller => 'posts', :action => 'index' %></li>
+										<li><%= link_to 'Forums', :controller => 'forums', :action => 'index' %></li>
+									</ul>
+									<% else %>
+									<ul>
+										<li><%= link_to 'My Account', :controller => 'my', :action => 'show' %></li>
+										<li><%= link_to 'Surveys', :controller => 'surveys', :action => 'index' %></li>
+										<li><%= link_to '360 Feedback', :controller => 'threesixties', :action => 'index' %></li>
+										<li><%= link_to 'Files', :controller => 'documents', :action => 'index' %></li>
+										<li><%= link_to 'Forums', :controller => 'forums', :action => 'index' %></li>
+									</ul>
+									<% end %>
+							</li>
+							<li>
 								<h2>Signed In</h2>
 								<ul>
 									<li>
@@ -59,16 +82,6 @@
 									<li>
 										<%= link_to 'Logout', logout_path %>
 									</li>
-								</ul>
-							</li>
-							<li>
-								<h2> Private Course Site</h2>
-								<ul>
-								<% if current_user.has_role?('admin') %>
-									<li><%= link_to 'Private Section', :controller => 'private', :action => 'admin' %></li>
-								<% else %>	
-									<li><%= link_to 'Private Section', :controller => 'private', :action => 'group' %></li>
-								<% end %>
 								</ul>
 							</li>
 						</ul>

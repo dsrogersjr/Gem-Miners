@@ -1,5 +1,4 @@
 class ThreesixtyqsController < ApplicationController
-    layout 'private'
   
   # GET /threesixtyqs
   # GET /threesixtyqs.xml

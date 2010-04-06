@@ -1,5 +1,4 @@
 class TopicsController < ApplicationController
-  layout 'private'
   require_role 'admin', :only => :destroy
 
   # GET /topics/1

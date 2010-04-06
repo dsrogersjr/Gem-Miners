@@ -1,5 +1,4 @@
 class DocumentsController < ApplicationController
-  layout 'private'
 
 #  def index
 #    @documents = Document.all

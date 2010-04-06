@@ -1,5 +1,4 @@
 class MessagesController < ApplicationController
-  layout 'private'
 
   # GET /messages/new
   # GET /messages/new.xml

@@ -1,6 +1,5 @@
 class PostsController < ApplicationController
   require_role "admin", :for_all_except => [ :show]
-	layout 'private'
 	
   # GET /posts
   # GET /posts.xml

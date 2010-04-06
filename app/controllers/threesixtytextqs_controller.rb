@@ -1,5 +1,4 @@
 class ThreesixtytextqsController < ApplicationController
-    layout 'private'
   # GET /threesixtytextqs
   # GET /threesixtytextqs.xml
   def index

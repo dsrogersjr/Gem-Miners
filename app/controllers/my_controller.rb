@@ -1,5 +1,4 @@
 class MyController < ApplicationController
-  layout 'private'
 
   # Edit user's account
   def show

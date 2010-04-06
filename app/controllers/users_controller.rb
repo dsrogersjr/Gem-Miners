@@ -1,5 +1,4 @@
 class UsersController < ApplicationController
-  # layout 'private'
   
   # render new.rhtml
   def new

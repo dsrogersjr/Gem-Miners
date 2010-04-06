@@ -1,5 +1,4 @@
 class TextquestionsController < ApplicationController
-  layout 'private'
   
   # GET /textquestions
   # GET /textquestions.xml

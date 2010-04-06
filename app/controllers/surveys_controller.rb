@@ -1,5 +1,4 @@
 class SurveysController < ApplicationController
-  layout 'private'
   
   def results
     @survey = Survey.find(params[:id])
