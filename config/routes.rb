@@ -9,9 +9,13 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :topics
 
   map.resources :forums
+  map.resources :forums, :has_many => :topics
 
   map.resources :groups
   map.resources :my
+  
+  map.resources :topics, :member => {:rate => :post}
+  map.resources :messages, :member => {:rate => :post}
 
   map.resources :textanswers
   map.resources :mcanswers

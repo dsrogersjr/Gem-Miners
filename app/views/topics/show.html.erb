@@ -1,14 +1,31 @@
-<% @topic.name %>  
+<h2><%= @topic.name %> </h2> 
+<hr>
   
 <% for message in @topic.messages %>  
 <div class="post">  
-  <span class="left"><%= link_to message.user.login, user_url(message.user) %><br /><%= link_to "Edit", edit_message_path(message) %><br /><%= link_to "Delete", message, :confirm => 'Are you sure?', :method => :delete %></span>  
-  <span class="right"><%= message.content %></span>  
+	<table>
+		
+		<tr>
+			<th>User</th>
+			<th width="70%">Message <%= ratings_for message %></th>
+			<th>Edit</th>
+			<th>Delete</th>
+		</tr>
+		
+		<tr>
+			<td><%= link_to message.user.login, user_url(message.user) %></td>
+			<td><%= message.content %></td>
+			<td><%= link_to "Edit", edit_message_path(message) %></td>
+			<td><%= link_to "Delete", message, :confirm => 'Are you sure?', :method => :delete %></td>
+		</tr>
+		
+	</table>
 </div>  
 <% end %>  
-  
 <p>  
-  <%= link_to "Reply", "#{new_message_path}?topic=#{@topic.id}" %> |  
-   <% if current_user.has_role?("admin") %><%= link_to "Destroy Topic", @topic, :confirm => 'Are you sure?', :method => :delete %><% end %> |  
-  <%= link_to "View All", forum_path(@topic.forum_id) %>  
+  <%= button_to "Reply", "#{new_message_path}?topic=#{@topic.id}" %>
+  <hr>  
+   <% if current_user.has_role?("admin") %><%= button_to "Destroy Topic", @topic, :confirm => 'Are you sure?', :method => :delete %><% end %> 
+  <hr>
+  <%= link_to "Back to Topics", forum_path(@topic.forum_id) %>  
 </p>

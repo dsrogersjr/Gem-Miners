@@ -10,6 +10,11 @@ class MessagesController < ApplicationController
       format.xml  { render :xml => @message }
     end
   end
+  
+  def rate
+    @message = Message.find(params[:id])
+    @message.rate(params[:stars], current_user, params[:dimension])
+  end
 
   # GET /messages/1/edit
   def edit

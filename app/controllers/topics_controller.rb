@@ -11,6 +11,11 @@ class TopicsController < ApplicationController
       format.xml  { render :xml => @topic }
     end
   end
+  
+  def rate
+    @topic = Topic.find(params[:id])
+    @topic.rate(params[:stars], current_user, params[:dimension])
+  end
 
   # GET /topics/new
   # GET /topics/new.xml

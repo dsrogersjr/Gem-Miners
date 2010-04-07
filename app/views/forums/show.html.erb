@@ -5,14 +5,16 @@
     <th width="60%">Topic Title</th>  
     <th width="10%">Replies</th>  
     <th width="30%">Last Post</th>  
+	<th>Topic Rating</th>
   </tr>  
   <% for topic in @forum.topics %>  
     <tr>  
       <td><%= link_to h(topic.name), topic_path(topic.id) %>  
       <td><%= topic.messages.count %></td>  
       <td class="right"><%= distance_of_time_in_words_to_now topic.last_post_at %> ago by <%= link_to topic.user.login, "/users/#{topic.last_poster_id}" %></td>    
-       <% if current_user.has_role?("admin") %><td><%= link_to "Destroy", topic, :confirm => 'Are you sure?', :method => :delete %></td><% end %>
-    </tr>  
+      <td><%= ratings_for topic, @user %></td>
+	   <% if current_user.has_role?("admin") %><td><%= link_to "Destroy", topic, :confirm => 'Are you sure?', :method => :delete %></td><% end %>
+	</tr>  
   <% end %>  
 </table>  
   
