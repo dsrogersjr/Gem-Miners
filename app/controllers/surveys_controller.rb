@@ -3,6 +3,7 @@ class SurveysController < ApplicationController
   def results
     @survey = Survey.find(params[:id])
     @usersurveys = Usersurvey.all
+    @mcquestions = Mcquestion.all(:conditions => {:survey_id => @survey.id})
   end
   
   def administer

@@ -38,7 +38,7 @@
 		<% @survey.mcquestions.each do |mcquestion| %>
 			<h1>Question: <%= @countert += 1 %></h1>
 	
-			<% unless Mcanswer.exists?(:mcquestion_id => mcquestion)%>
+			<% unless Mcanswer.exists?(:mcquestion_id => mcquestion, :user_id => @user)%>
 				<% remote_form_for [mcquestion, Mcanswer.new] do |f| %>
 				  <%= f.error_messages %>
 	
@@ -110,7 +110,7 @@
 				  </p>
 				<% end %>
 			<% else %>
-				<% @showanswer = Mcanswer.find(:first, :conditions => {:mcquestion_id => mcquestion.id})%>
+				<% @showanswer = Mcanswer.find(:first, :conditions => {:mcquestion_id => mcquestion.id, :user_id => @user})%>
 				<p>
 					<%= mcquestion.question_text %>
 				</p>
@@ -168,9 +168,9 @@
 				  <%=h textquestion.question_comment %>
 				</p>
 			<% end %>
-			<% if Textanswer.exists?(:textquestion_id => textquestion)%>
+			<% if Textanswer.exists?(:textquestion_id => textquestion, :user_id => @user)%>
 				<p>
-				  <% @showanswer = Textanswer.find(:first, :conditions => {:textquestion_id => textquestion.id})%>
+				  <% @showanswer = Textanswer.find(:first, :conditions => {:textquestion_id => textquestion.id, :user_id => @user})%>
 				  
 				  <h3> Your Answer:</h3>
 				  <p>
