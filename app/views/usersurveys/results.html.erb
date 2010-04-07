@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" />
+		<title>Untitled Document</title>
+	</head>
+	<body>
+		<h2>Individual Survey Results for: <%= @user.name %></h2>
+		<hr>
+		<% @counter = 0 %>
+		<% @mcquestions.each do |t|%>
+			<h3>Question Number: <%=  @counter += 1%></h3>
+			<h4>Question Text:</h4> 
+			<%= t.question_text%>
+			<h4>Question Answer(s):</h4>
+			<% if Mcanswer.exists?(:mcquestion_id => t)%>
+				<% @showanswer = Mcanswer.find(:last, :conditions => {:mcquestion_id => t.id})%>
+				<% if @showanswer.theanswer_1%>
+					<p>
+					  <%=h t.answer_1 %>
+					</p>
+				<% end %>
+					
+				<% if @showanswer.theanswer_2%>
+					<p>
+					  <%=h t.answer_2 %>
+					</p>
+				<% end %>
+					
+				<% if @showanswer.theanswer_3%>
+					<p>
+					  <%=h t.answer_3 %>
+					</p>
+				<% end %>
+					
+				<% if @showanswer.theanswer_4%>
+					<p>
+					  <%=h t.answer_4 %>
+					</p>
+				<% end %>
+					
+				<% if @showanswer.theanswer_5%>
+					<p>
+					  <%=h t.answer_5 %>
+					</p>
+				<% end %>
+			<% else %>
+				<h3>The user has not answered this question yet.</h3>
+			<% end %>
+			<hr>
+		<% end %>
+		<% @survey.textquestions.each do |t|%>
+			<h3>Question Number: <%=  @counter += 1%></h3>
+			<h4>Question Text:</h4> 
+			<%= t.question_text%>
+			<h4>Question Answer:</h4>
+			<% if Textanswer.exists?(:textquestion_id => t)%>
+				<% @showanswer = Textanswer.find(:first, :conditions => {:textquestion_id => t.id})%>
+				<%= @showanswer.theanswer %>
+			<% else %>
+				<h3>The user has not answered this question yet.</h3>
+			<% end %>
+			<hr>
+		<% end %>
+		
+		<%= button_to "Back to Cumulative Results", "/surveys/results/" + @survey.id.to_s %>
+	</body>
+</html>

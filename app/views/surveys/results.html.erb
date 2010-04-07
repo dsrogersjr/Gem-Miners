@@ -1,57 +1,122 @@
-<h2>Survey Results</h2>
+<h2>
+	Cumulative Survey Results for: <br />
+	<i><%= @survey.survey_name %></i>
+</h2>
+
+<p>
+	At the top of this page you will find statistics for the multiple choice
+	questions on the survey.  Past this information, towards the bottom, you
+	can view the individual answers for each person the survey was administered
+	to.
+</p>
+<br />
+
 <% @counter = 0 %>
+<h1>Multiple Choice Question Statistics</h1>
+<hr>
+<table>
+		<tr>
+			<th>Question Number</th>
+			<th>Question Text</th>
+			<th>Most Common Answer</th>
+		</tr>
+		
 <% @survey.mcquestions.each do |t|%>
-	<h1>Question Number: <%=  @counter += 1%></h1>
-	<h4>Question Text:</h4> 
-	<%= t.question_text%>
-	<h4>Question Answer(s):</h4>
-	<% if Mcanswer.exists?(:mcquestion_id => t)%>
+	<% t.mcanswers.each do |a| %>
+		<% @mcanswers%>
+		
+		<% @counter1 = 0 %>
+		<% @counter2 = 0 %>
+		<% @counter3 = 0 %>
+		<% @counter4 = 0 %>
+		<% @counter5 = 0 %>
 		<% @showanswer = Mcanswer.find(:last, :conditions => {:mcquestion_id => t.id})%>
 		<% if @showanswer.theanswer_1%>
 			<p>
-			  <%=h t.answer_1 %>
+			  <% @counter1 += 1 %>
 			</p>
 		<% end %>
 			
 		<% if @showanswer.theanswer_2%>
 			<p>
-			  <%=h t.answer_2 %>
+			  <% @counter2+= 1 %>
 			</p>
 		<% end %>
 			
 		<% if @showanswer.theanswer_3%>
 			<p>
-			  <%=h t.answer_3 %>
+			  <% @counter3 += 1 %>
 			</p>
 		<% end %>
 			
 		<% if @showanswer.theanswer_4%>
 			<p>
-			  <%=h t.answer_4 %>
+			  <% @counter4 += 1 %>
 			</p>
 		<% end %>
 			
 		<% if @showanswer.theanswer_5%>
 			<p>
-			  <%=h t.answer_5 %>
+			  <%= @counter5 += 1 %>
 			</p>
 		<% end %>
-	<% else %>
-		<h3>The user has not answered this question yet.</h3>
 	<% end %>
+	<% @answerarray = Array.[](@counter1, @counter2, @counter3, @counter4, @counter5)%>
+	<% @sortedarray = @answerarray.sort %>
+	
+		<tr>
+			<td><%=  @counter += 1%></td>
+			<td><%= t.question_text%></td>
+			<td>
+				<% if @sortedarray.fetch(4) == @counter1 %>
+					<%= t.answer_1  %>
+				<% elsif @sortedarray.fetch(4) == @counter2 %>
+					<%= t.answer_2 %>
+				<% elsif @sortedarray.fetch(4) == @counter3 %>
+					<%= t.answer_3 %>
+				<% elsif @sortedarray.fetch(4) == @counter4 %>
+					<%= t.answer_4 %>
+				<% elsif @sortedarray.fetch(4) == @counter5 %>
+					<%= t.answer_5 %>
+				<% end %>
+			</td>
+		</tr>
 <% end %>
-<% @survey.textquestions.each do |t|%>
-	<h1>Question Number: <%=  @counter += 1%></h1>
-	<h4>Question Text:</h4> 
-	<%= t.question_text%>
-	<h4>Question Answer:</h4>
-	<% if Textanswer.exists?(:textquestion_id => t)%>
-		<% @showanswer = Textanswer.find(:first, :conditions => {:textquestion_id => t.id})%>
-		<%= @showanswer.theanswer %>
-	<% else %>
-		<h3>The user has not answered this question yet.</h3>
-	<% end %>
+</table>
+
+<br />
+
+<h1>Individual Results</h1>
+<hr>
+<table>
+	<tr>
+	    <th>Survey Taker</th>
+		<th>Survey Status*</th>
+	    <th>View Individual Results</th>
+	</tr>
+	<% @survey.usersurveys.each do |t| %>
+	<tr>
+  		<td><%= User.find(t.user_id.to_int).name %></td>
+		<td>
+			<% if t.taken %>
+				Completed
+			<% else %>
+				Incomplete
+			<% end %>
+		</td>
+		<td><%= button_to "View", "/usersurveys/results/" + t.id.to_s %></td>
+  	</tr>
+	
 <% end %>
+</table>
 <p>
-	<%= link_to 'Back', surveys_path %>
+	*Complete means the survey has been filled out and submitted by the user.
+	Incomplete means the survey has not yet been filled out by the user.
+</p>
+<p>
+	
+</p>
+
+<p>
+	<%= button_to 'Back to List of Surveys', "/surveys/index"%>
 </p>
