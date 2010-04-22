@@ -46,8 +46,8 @@ class UsersController < ApplicationController
 
      respond_to do |format|
        if @user.update_attributes(params[:user])
-         flash[:notice] = 'Post was successfully updated.'
-         format.html { redirect_to(@user) }
+         flash[:notice] = 'User was successfully updated.'
+         format.html { render :action => "edit"  }
          format.xml  { head :ok }
        else
          format.html { render :action => "edit" }

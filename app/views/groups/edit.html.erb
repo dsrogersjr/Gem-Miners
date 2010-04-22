@@ -14,11 +14,13 @@
 		<% if @group.users.any? %>
 		<table>
 			<tr>
-				<th>User</th>
+				<th>User Id</th>
+				<th>Name</th>
 			</tr>
 			<% @group.users.each do |user| %>
 			<tr>
 				<td><%= user.login %></td>
+				<td><%= user.name  %></td>
 				<td>
 				   	<%= link_to 'Delete', :controller => 'groups', :action => 'remove_user', :id => @group, :user_id => user %>
 				</td>
@@ -36,7 +38,8 @@
 		<% for user in User.find(:all) - @group.users %>
 		<div>
 			<%= check_box_tag "group[user_ids][]", user.id, @group.users.include?(user) %>
-			<%= user.login %>
+			<b>User Id: </b><%= user.login %>
+			<b>User Name: </b><%= user.name %>
 		</div>
 		<% end %>
 	</p>
