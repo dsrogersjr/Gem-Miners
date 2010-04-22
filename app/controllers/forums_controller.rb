@@ -1,4 +1,5 @@
 class ForumsController < ApplicationController
+before_filter :sideposts_updates
 
   require_role 'admin', :except => [:index, :show]
   # GET /forums

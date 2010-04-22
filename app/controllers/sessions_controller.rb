@@ -40,4 +40,28 @@ protected
     flash[:error] = "Couldn't log you in as '#{params[:login]}'"
     logger.warn "Failed login for '#{params[:login]}' from #{request.remote_ip} at #{Time.now.utc}"
   end
+  
+  # Returns true or false if the user is logged in.
+  def logged_in?
+    current_user ? true : false
+  end
+  
+  # Filter method to enforce a login requirement.
+  #
+  # To require logins for all actions, use this in your controllers:
+  #
+  #   before_filter :login_required
+  #
+  # To require logins for specific actions, use this in your controllers:
+  #
+  #   before_filter :login_required, :only => [ :edit, :update ]
+  #
+  # To skip this in a subclassed controller:
+  #
+  #   skip_before_filter :login_required
+  #
+  def login_required
+    store_location
+    logged_in? && authorized? ? true : access_denied
+  end
 end

@@ -15,6 +15,12 @@ class ApplicationController < ActionController::Base
   # Scrub sensitive parameters from your log
   # filter_parameter_logging :password
   
+  # Global Variable to make sideposts available to all pages
+   def sideposts_updates
+       @posts = Post.find(:all)
+   end
+
+  
   # not working at the moment
   def admin_or_owner_required(id)  
     unless current_user.id == id || current_user.has_role?('admin')

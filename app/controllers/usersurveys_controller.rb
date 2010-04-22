@@ -1,4 +1,6 @@
 class UsersurveysController < ApplicationController
+  before_filter :sideposts_updates
+  
   # GET /usersurveys
   # GET /usersurveys.xml
   def index

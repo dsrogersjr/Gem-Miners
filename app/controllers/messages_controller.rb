@@ -1,5 +1,6 @@
 class MessagesController < ApplicationController
-
+  before_filter :sideposts_updates
+  
   # GET /messages/new
   # GET /messages/new.xml
   def new

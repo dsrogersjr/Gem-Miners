@@ -1,8 +1,10 @@
 class DocumentsController < ApplicationController
-
+before_filter :sideposts_updates
+before_filter :login_required
 #  def index
 #    @documents = Document.all
 #  end
+  
   
   def index
       @documents = Document.all

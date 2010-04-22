@@ -1,4 +1,6 @@
 class McanswersController < ApplicationController
+before_filter :sideposts_updates
+
   # GET /mcanswers
   # GET /mcanswers.xml
   def index

@@ -1,6 +1,7 @@
 class TopicsController < ApplicationController
   require_role 'admin', :only => :destroy
-
+  before_filter :sideposts_updates
+  
   # GET /topics/1
   # GET /topics/1.xml
   def show

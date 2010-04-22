@@ -1,5 +1,6 @@
 class MyController < ApplicationController
-
+  before_filter :sideposts_updates
+  
   # Edit user's account
   def show
        @user = current_user

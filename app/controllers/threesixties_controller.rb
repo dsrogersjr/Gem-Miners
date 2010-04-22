@@ -1,5 +1,6 @@
 class ThreesixtiesController < ApplicationController    
-    
+  before_filter :sideposts_updates
+  
   def take
     @threesixty = Threesixty.find(params[:id])
     @user = current_user

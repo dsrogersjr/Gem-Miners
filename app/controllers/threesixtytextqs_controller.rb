@@ -1,4 +1,6 @@
 class ThreesixtytextqsController < ApplicationController
+  before_filter :sideposts_updates
+  
   # GET /threesixtytextqs
   # GET /threesixtytextqs.xml
   def index

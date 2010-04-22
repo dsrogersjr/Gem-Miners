@@ -1,4 +1,6 @@
 class UserthreesixtiesController < ApplicationController
+  before_filter :sideposts_updates
+  
   # GET /userthreesixties
   # GET /userthreesixties.xml
   def index

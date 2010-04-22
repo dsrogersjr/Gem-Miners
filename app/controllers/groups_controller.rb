@@ -1,5 +1,7 @@
 class GroupsController < ApplicationController
-  
+before_filter :sideposts_updates
+before_filter :login_required
+
   # GET /groups
   # GET /groups.xml
   def index
