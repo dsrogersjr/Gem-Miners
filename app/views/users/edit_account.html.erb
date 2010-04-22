@@ -1,5 +1,5 @@
-<h1>My Account</h1>
-<h2>Information</h2>
+<h1>Profile</h1>
+<h2>General Information</h2>
 <%  form_for :user, @user do |f| %>
 <p>
 	<%= f.label :name %> <br />
@@ -22,7 +22,5 @@
 		<%= password_field_tag 'new_password_confirmation', nil, :size => 25 %></p>
 	</div>
 	
-	<p>
-    <%= f.submit 'Update' %>
-  	</p>
+    <p><%= submit_tag 'Sign up' %></p>
 <% end %>

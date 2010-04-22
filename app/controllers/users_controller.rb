@@ -8,7 +8,7 @@ class UsersController < ApplicationController
   end
  
   def create
-    logout_keeping_session!
+    #logout_keeping_session!
     @user = User.new(params[:user])
     @user.role_ids = params[:user][:role_ids]
     success = @user && @user.save
@@ -67,6 +67,30 @@ class UsersController < ApplicationController
    
    def index
     @users = User.all
+   end
+   
+   # methods to use with profile
+   def edit_account
+     @user             = current_user
+     @is_current_user  = true
+   end
+
+   def update_account
+     @user             = current_user
+     @user.attributes  = params[:user]
+
+     if @user.save
+       flash[:notice] = :your_changes_were_saved.l
+       respond_to do |format|
+         format.html {redirect_to user_path(@user)}
+         format.js
+       end      
+     else
+       respond_to do |format|
+         format.html {render :action => 'edit_account'}
+         format.js
+       end
+     end
    end
 
 end
