@@ -1,13 +1,10 @@
 class DocumentsController < ApplicationController
 before_filter :sideposts_updates
 before_filter :login_required
-#  def index
-#    @documents = Document.all
-#  end
   
   
   def index
-      @documents = Document.all
+      @document = Document.all
   end
 
   # GET /documents/1
@@ -62,7 +59,7 @@ before_filter :login_required
     respond_to do |format|
       if @document.update_attributes(params[:document])
         flash[:notice] = 'Document was successfully updated.'
-        format.html { redirect_to(@document) }
+        format.html { redirect_to documents_path }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

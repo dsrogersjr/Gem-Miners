@@ -7,7 +7,7 @@ before_filter :sideposts_updates
   end
   
   def team
-  
+    @document = Document.new
   end
 
 end

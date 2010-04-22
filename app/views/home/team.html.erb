@@ -1,0 +1,11 @@
+<h1>Upload a File for the Team</h1>
+
+<% form_for @document, :html => { :multipart => true } do |f| %>
+  <%= f.error_messages %>
+  <p>
+	<%=  f.file_field :file %>
+  </p>
+  <p>
+    <%= f.submit 'Upload' %>
+  </p>
+<% end %>

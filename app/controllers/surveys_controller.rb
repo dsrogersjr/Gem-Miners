@@ -1,4 +1,5 @@
 class SurveysController < ApplicationController
+  before_filter :sideposts_updates
   
   def results
     @survey = Survey.find(params[:id])

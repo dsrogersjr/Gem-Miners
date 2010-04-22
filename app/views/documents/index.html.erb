@@ -1,10 +1,10 @@
-<h1>Milestone Documents</h1>
+<h1>Team Documents</h1>
 
 <table>
   <tr>
   </tr>
 
-<% @documents.each do |document| %>
+<% @document.each do |document| %>
   <tr>
   	<td><%= document.file_file_name %></td>
    	<td><%= link_to 'Open', document.file.url %></td>
@@ -13,7 +13,3 @@
   </tr>
 <% end %>
 </table>
-
-<br />
-
-<%= link_to 'New document', new_document_path %>
