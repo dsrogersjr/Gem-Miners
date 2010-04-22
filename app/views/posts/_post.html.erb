@@ -2,7 +2,7 @@
 
 	<div class="post">
 		<div class="header">
-			<h2><%= link_to post.title, :controller => 'posts', :action => 'show' %></h2>
+			<h2><%= link_to post.title, :controller => 'posts', :action => 'show', :id => post %></h2>
 			<div class="date"><%= display_date(post.created_at) %></div>
 		</div>
 		<div class="content">

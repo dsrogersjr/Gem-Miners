@@ -46,7 +46,7 @@ class GroupsController < ApplicationController
     respond_to do |format|
       if @group.save
         flash[:notice] = 'Group was successfully created.'
-        format.html { redirect_to(@group) }
+        format.html { render :action => 'edit' }
         format.xml  { render :xml => @group, :status => :created, :location => @group }
       else
         format.html { render :action => "new" }
@@ -63,7 +63,7 @@ class GroupsController < ApplicationController
     respond_to do |format|
       if @group.update_attributes(params[:group])
         flash[:notice] = 'Group was successfully updated.'
-        format.html { redirect_to(@group) }
+        format.html { render :action => 'edit' }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

@@ -21,4 +21,12 @@ class ApplicationController < ActionController::Base
       redirect_to '/'  
     end  
   end
+  
+  def require_current_users_group(id)
+    @group ||= Group.find(params[:group_id] || params[:id] )
+    unless group.id == id || current_user.has_role?('admin')
+      redirect_to '/'
+    end
+  end
+
 end
