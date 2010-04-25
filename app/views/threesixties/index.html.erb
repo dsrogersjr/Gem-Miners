@@ -10,7 +10,7 @@
     <th>Due Date</th>
   </tr>
 <% @threesixties.each do |t| %>
-	<% if Userthreesixty.exists?({:user_id => @user.id, :threesixty_id => t.id})%>
+	<% if Userthreesixty.exists?({:user_id => @user.id, :threesixty_id => t.id, :taken => false })%>
 	  <tr>
 	    <td><%=h t.threesixty_name %></td>
 	    <td><%=h t.threesixty_date %></td>
@@ -30,7 +30,7 @@
 	    <th>Creator</th>
 	  </tr>
 	<% @threesixties.each do |t| %>
-		<% if t.threesixty_creator.to_s == @user.id.to_s %>
+		<% if t.threesixty_creator.to_s == @user.id.to_s || (current_user.has_role?("admin") && User.find(t.threesixty_creator).has_role?("admin")) %>
 			  <tr>
 			    <td><%=h t.threesixty_name %></td>
 			    <td><%=h t.threesixty_date %></td>

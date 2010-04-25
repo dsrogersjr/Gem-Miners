@@ -1,6 +1,4 @@
 class ThreesixtyanswersController < ApplicationController
-  before_filter :sideposts_updates
-  
   # GET /threesixtyanswers
   # GET /threesixtyanswers.xml
   def index

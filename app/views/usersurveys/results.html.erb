@@ -13,8 +13,8 @@
 			<h4>Question Text:</h4> 
 			<%= t.question_text%>
 			<h4>Question Answer(s):</h4>
-			<% if Mcanswer.exists?(:mcquestion_id => t)%>
-				<% @showanswer = Mcanswer.find(:last, :conditions => {:mcquestion_id => t.id})%>
+			<% if Mcanswer.exists?(:mcquestion_id => t, :user_id => @user )%>
+				<% @showanswer = Mcanswer.find(:last, :conditions => {:mcquestion_id => t.id, :user_id => @user})%>
 				<% if @showanswer.theanswer_1%>
 					<p>
 					  <%=h t.answer_1 %>
@@ -54,8 +54,8 @@
 			<h4>Question Text:</h4> 
 			<%= t.question_text%>
 			<h4>Question Answer:</h4>
-			<% if Textanswer.exists?(:textquestion_id => t)%>
-				<% @showanswer = Textanswer.find(:first, :conditions => {:textquestion_id => t.id})%>
+			<% if Textanswer.exists?(:textquestion_id => t, :user_id => @user)%>
+				<% @showanswer = Textanswer.find(:first, :conditions => {:textquestion_id => t.id, :user_id => @user})%>
 				<%= @showanswer.theanswer %>
 			<% else %>
 				<h3>The user has not answered this question yet.</h3>

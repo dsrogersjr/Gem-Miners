@@ -1,6 +1,4 @@
 class UsersurveysController < ApplicationController
-  before_filter :sideposts_updates
-  
   # GET /usersurveys
   # GET /usersurveys.xml
   def index
@@ -49,7 +47,7 @@ class UsersurveysController < ApplicationController
     respond_to do |format|
       if @usersurvey.update_attributes(params[:usersurvey])
         flash[:notice] = 'Usersurvey was successfully updated.'
-        format.html { redirect_to(@usersurvey) }
+        format.html { redirect_to '/surveys/' }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

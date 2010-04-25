@@ -11,12 +11,12 @@
 	    <th>Creator</th>
 	  </tr>
 	<% @surveys.each do |survey| %>
-		<% if Usersurvey.exists?({:user_id => @user.id, :survey_id => survey.id})%>
+		<% if Usersurvey.exists?({:user_id => @user.id, :survey_id => survey.id, :taken => false})%>
 		  <tr>
 		    <td><%=h survey.survey_name %></td>
 		    <td><%=h survey.survey_date %></td>
 		    <td><%=h User.find(survey.survey_creator).name %></td>
-			<td><%= button_to 'Take Survey', :action => 'take', :id => survey%> </td>
+			<td><%= button_to 'Take Survey', :action => 'take', :id => survey %> </td>
 		  </tr>
 		<% end %>
 	<% end %>
@@ -33,7 +33,7 @@
 	  </tr>
 	
 	<% @surveys.each do |survey| %>
-	  <% if survey.survey_creator.to_s == @user.id.to_s %>
+	  <% if survey.survey_creator.to_s == @user.id.to_s  || (current_user.has_role?("admin") && User.find(survey.survey_creator).has_role?("admin"))%>
 		  <tr>
 		    <td><%=h survey.survey_name %></td>
 		    <td><%=h survey.survey_date %></td>

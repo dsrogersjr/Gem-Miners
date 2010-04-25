@@ -69,7 +69,7 @@
 				<% end %>
 			<% else %>
 				<h3>Your Answer: </h3>
-				<% @showanswer = Threesixtyanswer.find(:first, :conditions => {:threesixtyq_id => g.id})%>
+				<% @showanswer = Threesixtyanswer.find(:first, :conditions => {:threesixtyq_id => g.id, :user_id => @user.id})%>
 				<% if @showanswer.theanswer_1%>
 					<p>
 					  <%=h g.answer_1 %>
@@ -137,7 +137,24 @@
 		<% end %>
 	<% end %>
 	
-	<p>
-		<%= button_to 'Finish and Submit 360 Feedback', "/threesixties/index" %>
-	</p>
+	<hr>
+	
+	<% form_for @userthreesixty do |f| %>
+		  <%= f.error_messages %>
+		
+		  <p>
+			<%= f.hidden_field( "taken", :value => true )%>
+		  </p>
+		  <p>
+		  	<%= f.hidden_field("user_id", :value => @user.id )%>
+		  </p>
+		  <p>
+		  	<%= f.hidden_field("threesixty_id", :value => @threesixty.id)%>
+		  </p>
+		  <p>
+		  	Once you submit your 360 Feedback you may not take it again unless it is administered to you by the professor.
+			<hr>
+		    <%= f.submit 'Finish and Submit 360 Feedback' %>
+		  </p>
+	<% end %>
 </body>

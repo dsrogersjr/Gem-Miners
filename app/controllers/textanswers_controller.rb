@@ -1,6 +1,4 @@
 class TextanswersController < ApplicationController
-  before_filter :sideposts_updates
-  
   # GET /textanswers
   # GET /textanswers.xml
   def index

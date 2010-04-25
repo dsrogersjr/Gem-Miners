@@ -1,5 +1,4 @@
 class McquestionsController < ApplicationController
-  before_filter :sideposts_updates
   
   def create
     @survey = Survey.find(params[:survey_id])

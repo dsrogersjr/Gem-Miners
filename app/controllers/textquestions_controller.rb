@@ -1,5 +1,4 @@
 class TextquestionsController < ApplicationController
-  before_filter :sideposts_updates
   
   # GET /textquestions
   # GET /textquestions.xml
