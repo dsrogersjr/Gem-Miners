@@ -86,6 +86,8 @@
 <br />
 
 <h1>Individual Results</h1>
+<% @takencount = 0%>
+<% @totalcount = 0%>
 <hr>
 <table>
 	<tr>
@@ -94,10 +96,13 @@
 	    <th>View Individual Results</th>
 	</tr>
 	<% @survey.usersurveys.each do |t| %>
+	<% %>
 	<tr>
   		<td><%= User.find(t.user_id.to_int).name %></td>
+		<% @totalcount += 1 %>
 		<td>
 			<% if t.taken %>
+				<% @takencount += 1 %>
 				Completed
 			<% else %>
 				Incomplete
@@ -112,9 +117,29 @@
 	*Complete means the survey has been filled out and submitted by the user.
 	Incomplete means the survey has not yet been filled out by the user.
 </p>
-<p>
-	
-</p>
+
+
+<hr>
+<br />
+
+<h1>Survey Completion</h1>
+<p>Survey results are available as soon as the user has taken them. Some survey results
+may not be available at this time.  The following table shows you the
+surveys still pending completion and the total amount of users the survey was
+administered to.</p>
+<hr>
+<table>
+	<tr>
+		<th>Pending Surveys</th>
+		<th>Total Surveys Administered</th>
+	</tr>
+	<tr>
+		<td><%= @totalcount - @takencount %></td>
+		<td><%= @totalcount %></td>
+	</tr>
+</table>
+
+<hr>
 
 <p>
 	<%= button_to 'Back to List of Surveys', "/surveys/index"%>
