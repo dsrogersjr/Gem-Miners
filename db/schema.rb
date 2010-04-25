@@ -222,7 +222,7 @@ ActiveRecord::Schema.define(:version => 20100407035825) do
   end
 
   create_table "userthreesixties", :force => true do |t|
-    t.boolean  "taken"
+    t.boolean  "taken",         :default => false
     t.integer  "user_id"
     t.integer  "threesixty_id"
     t.datetime "created_at"

@@ -1,8 +1,15 @@
 class ThreesixtiesController < ApplicationController    
+  def results
+    @threesixty = Threesixty.find(params[:id])
+    @userthreesixties = Userthreesixty.all
+    @threesixtyqs = Threesixtyq.all(:conditions => {:threesixty_id => @threesixty.id})
+  end
+    
     
   def take
     @threesixty = Threesixty.find(params[:id])
     @user = current_user
+    @userthreesixty = Userthreesixty.first(:conditions => {:user_id => @user.id, :threesixty_id => @threesixty.id})
     
     respond_to do |format|
       format.html # show.html.erb

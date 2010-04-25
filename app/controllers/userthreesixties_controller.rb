@@ -1,4 +1,17 @@
 class UserthreesixtiesController < ApplicationController
+  
+  def results
+    @userthreesixty = Userthreesixty.find(params[:id])
+    @threesixty = Threesixty.find(@userthreesixty.threesixty_id)
+    @user = User.find(@userthreesixty.user_id)
+    @threesixtyqs = Threesixtyq.all(:conditions => {:threesixty_id => @threesixty.id})
+
+    respond_to do |format|
+      format.html # show.html.erb
+      format.xml  { render :xml => @userthreesixty }
+    end
+  end
+  
   # GET /userthreesixties
   # GET /userthreesixties.xml
   def index
@@ -54,7 +67,7 @@ class UserthreesixtiesController < ApplicationController
     respond_to do |format|
       if @userthreesixty.update_attributes(params[:userthreesixty])
         flash[:notice] = 'Userthreesixty was successfully updated.'
-        format.html { redirect_to(@userthreesixty) }
+        format.html { redirect_to '/threesixties/' }
         format.xml  { head :ok }
       else
         format.html { render :action => "edit" }

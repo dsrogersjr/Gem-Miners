@@ -16,6 +16,7 @@ class SurveysController < ApplicationController
   def take
     @survey = Survey.find(params[:id])
     @user = current_user
+    @usersurvey = Usersurvey.first(:conditions => {:user_id => @user.id, :survey_id => @survey.id})
     
     
     respond_to do |format|

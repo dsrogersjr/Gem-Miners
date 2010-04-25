@@ -21,6 +21,7 @@ ActionController::Routing::Routes.draw do |map|
   map.resources :mcanswers
   map.resources :threesixtyas
   map.resources :threesixtytextas
+  map.resources :threesixtyanswers
   
   map.resources :threesixties, :has_many => :threesixtyqs
   map.resources :threesixties, :has_many => :threesixtytextqs

@@ -198,7 +198,23 @@
 	
 	<hr>
 	
-	<p>
-		<%= button_to 'Finish and Submit Survey', "/surveys/index" %>
-	</p>
+	<% form_for @usersurvey do |f| %>
+		  <%= f.error_messages %>
+		
+		  <p>
+			<%= f.hidden_field( "taken", :value => true )%>
+		  </p>
+		  <p>
+		  	<%= f.hidden_field("user_id", :value => @user.id )%>
+		  </p>
+		  <p>
+		  	<%= f.hidden_field("survey_id", :value => @survey.id)%>
+		  </p>
+		  <p>
+		  	Once you submit your survey you may not take it again unless it is administered to you by the survey maker.
+			<hr>
+		    <%= f.submit 'Finish and Submit Survey' %>
+		  </p>
+	<% end %>
+
 </body>
