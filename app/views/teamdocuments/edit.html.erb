@@ -1,0 +1,11 @@
+<h1>Editing Team Document</h1>
+
+<% form_for @teamdocument, :html => { :multipart => true } do |f| %>
+  <%= f.error_messages %>
+  <p>
+	<%=  f.file_field :file %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>

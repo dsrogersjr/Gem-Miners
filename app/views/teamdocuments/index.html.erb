@@ -1,0 +1,18 @@
+<h1>Team Files</h1>
+
+<table>
+  <tr>
+  </tr>
+
+<% @teamdocument.each do |teamdocument| %>
+  <tr>
+	<td><%= teamdocument.file_file_name %></td>
+    <td><%= link_to 'Open', teamdocument.file.url %></td>
+    <td><%= link_to 'Edit', edit_teamdocument_path(teamdocument) %></td>
+    <td><%= link_to 'Destroy', teamdocument, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<br />
+
+<%= link_to 'New Team Document', new_teamdocument_path %>

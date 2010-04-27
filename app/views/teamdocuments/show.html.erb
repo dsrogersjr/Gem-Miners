@@ -1,0 +1,5 @@
+
+<%= link_to 'Edit', edit_teamdocument_path(@teamdocument) %> |
+<%= link_to 'Back', teamdocuments_path %>
+<%= link_to 'Open', @teamdocument.file.url %>
+<%= image_tag @teamdocument.file.url %>

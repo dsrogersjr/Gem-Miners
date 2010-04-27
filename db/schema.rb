@@ -9,7 +9,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100407035825) do
+ActiveRecord::Schema.define(:version => 20100427041642) do
 
   create_table "comments", :force => true do |t|
     t.string   "name"
@@ -124,6 +124,15 @@ ActiveRecord::Schema.define(:version => 20100407035825) do
     t.datetime "updated_at"
   end
 
+  create_table "teamdocuments", :force => true do |t|
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.string   "file_file_name"
+    t.string   "file_content_type"
+    t.integer  "file_file_size"
+    t.datetime "file_updated_at"
+  end
+
   create_table "textanswers", :force => true do |t|
     t.text     "theanswer"
     t.integer  "user_id"
@@ -222,7 +231,7 @@ ActiveRecord::Schema.define(:version => 20100407035825) do
   end
 
   create_table "userthreesixties", :force => true do |t|
-    t.boolean  "taken"
+    t.boolean  "taken",         :default => false
     t.integer  "user_id"
     t.integer  "threesixty_id"
     t.datetime "created_at"
