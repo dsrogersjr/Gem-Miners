@@ -38,8 +38,8 @@
 		<% for user in User.find(:all) - @group.users %>
 		<div>
 			<%= check_box_tag "group[user_ids][]", user.id, @group.users.include?(user) %>
-			<b>User Id: </b><%= user.login %>
-			<b>User Name: </b><%= user.name %>
+			<b>User Name: </b><%= user.login %>
+			<b>Name: </b><%= user.name %>
 		</div>
 		<% end %>
 	</p>

@@ -15,7 +15,13 @@
 <!-- start header -->
 <div id="header">
 	<div id="logo">
-		<h1><a href="#"><span>The Mine:</span></a>public</h1>
+		<% if logged_in? %>
+			<img alt="Sree" src="/images/sree_themine.png" width="100" height="100" />
+			<img alt="Andrea" src="/images/andrea.png" width="100" height="100" />
+			<img alt="James" src="/images/james.png" width="100" height="100" />
+		<% else %>
+			<img alt="BillyMays" src="/images/billy-mays.jpg" width="100" height="100" />
+		<% end %>
 	</div>
 </div>
 <!-- end header -->
@@ -55,28 +61,28 @@
 						<ul>
 							<li>
 								<h2>Private Links</h2>
-									<% if current_user.has_role?("admin") %>
-									<ul>
-										<li><%= link_to 'Profile', :controller => 'users', :action => 'edit_account' %></li>
-										<li><%= link_to 'Team Space', :controller => 'home', :action => 'team' %></li>
-										<li><%= link_to 'Groups', :controller => 'groups', :action => 'index' %></li>
-										<li><%= link_to 'Users', :controller => 'users', :action => 'index' %></li>
-										<li><%= link_to 'News and Alerts', :controller => 'posts', :action => 'index' %></li>
-										<li><%= link_to 'Surveys', :controller => 'surveys', :action => 'index' %></li>
-										<li><%= link_to '360 Feedback', :controller => 'threesixties', :action => 'index' %></li>
-										<li><%= link_to 'Files', :controller => 'documents', :action => 'index' %></li>
-										<li><%= link_to 'Forums', :controller => 'forums', :action => 'index' %></li>
-									</ul>
-									<% else %>
-									<ul>
-										<li><%= link_to 'My Account', :controller => 'my', :action => 'show' %></li>
-										<li><%= link_to 'Team Space', :controller => 'home', :action => 'team' %></li>
-										<li><%= link_to 'Surveys', :controller => 'surveys', :action => 'index' %></li>
-										<li><%= link_to '360 Feedback', :controller => 'threesixties', :action => 'index' %></li>
-										<li><%= link_to 'Files', :controller => 'documents', :action => 'index' %></li>
-										<li><%= link_to 'Forums', :controller => 'forums', :action => 'index' %></li>
-									</ul>
-									<% end %>
+								<% if current_user.has_role?("admin") %>
+								<ul>
+									<li><%= link_to '360 Feedback', :controller => 'threesixties', :action => 'index' %></li>
+									<li><%= link_to 'File Submission', :controller => 'documents', :action => 'index' %></li>
+									<li><%= link_to 'Forums', :controller => 'forums', :action => 'index' %></li>
+									<li><%= link_to 'Groups', :controller => 'groups', :action => 'index' %></li>
+									<li><%= link_to 'News and Alerts', :controller => 'posts', :action => 'index' %></li>
+									<li><%= link_to 'Profile', :controller => 'users', :action => 'edit_account' %></li>
+									<li><%= link_to 'Surveys', :controller => 'surveys', :action => 'index' %></li>
+									<li><%= link_to 'Team Space', :controller => 'home', :action => 'team' %></li>
+									<li><%= link_to 'Users', :controller => 'users', :action => 'index' %></li>
+								</ul>
+								<% else %>
+								<ul>
+									<li><%= link_to '360 Feedback', :controller => 'threesixties', :action => 'index' %></li>
+									<li><%= link_to 'File Submission', :controller => 'documents', :action => 'index' %></li>
+									<li><%= link_to 'Forums', :controller => 'forums', :action => 'index' %></li>
+									<li><%= link_to 'Profile', :controller => 'users', :action => 'edit_account' %></li>
+									<li><%= link_to 'Team Space', :controller => 'home', :action => 'team' %></li>
+									<li><%= link_to 'Surveys', :controller => 'surveys', :action => 'index' %></li>	
+								</ul>
+								<% end %>
 							</li>
 							<li>
 								<h2>Signed In</h2>

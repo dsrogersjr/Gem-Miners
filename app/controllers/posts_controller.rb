@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  before_filter :sideposts_updates
   require_role "admin", :for_all_except => [ :show]
 	
   # GET /posts
