@@ -20,33 +20,33 @@
 <% end %>
 </table>
 <br />
-<% if current_user.has_role?("admin")%>
-	<h1>360 Feedback you have Created</h1>	
-	<hr>
-	<table>
-	  <tr>
-	    <th>Name</th>
-	    <th>Due Date</th>
-	    <th>Creator</th>
-	  </tr>
-	<% @threesixties.each do |t| %>
-		<% if t.threesixty_creator.to_s == @user.id.to_s || (current_user.has_role?("admin") && User.find(t.threesixty_creator).has_role?("admin")) %>
-			  <tr>
-			    <td><%=h t.threesixty_name %></td>
-			    <td><%=h t.threesixty_date %></td>
-			    <td><%=h User.find(t.threesixty_creator).name %></td>
-				<td><%= link_to 'Edit', edit_threesixty_path(t) %></td>
-				<td><%= link_to 'Administer', :action => 'administer', :id => t %></td>
-				<td><%= link_to 'Results', :action => 'results', :id => t %></td>
-			    <td><%= link_to 'Delete', t, :confirm => 'Are you sure?', :method => :delete %></td>
-			  </tr>
-		<% end %>
+
+<h1>360 Feedback you have Created</h1>	
+<hr>
+<table>
+  <tr>
+    <th>Name</th>
+    <th>Due Date</th>
+    <th>Creator</th>
+  </tr>
+<% @threesixties.each do |t| %>
+	<% if t.threesixty_creator.to_s == @user.id.to_s || (current_user.has_role?("admin") && User.find(t.threesixty_creator).has_role?("admin")) %>
+		  <tr>
+		    <td><%=h t.threesixty_name %></td>
+		    <td><%=h t.threesixty_date %></td>
+		    <td><%=h User.find(t.threesixty_creator).name %></td>
+			<td><%= link_to 'Edit', edit_threesixty_path(t) %></td>
+			<td><%= link_to 'Administer', :action => 'administer', :id => t %></td>
+			<td><%= link_to 'Results', :action => 'results', :id => t %></td>
+		    <td><%= link_to 'Delete', t, :confirm => 'Are you sure?', :method => :delete %></td>
+		  </tr>
 	<% end %>
-	</table>
-	<br />
-	
-	<%= button_to 'New 360 Feedback', new_threesixty_path %>
 <% end %>
+</table>
+<br />
+
+<%= button_to 'New 360 Feedback', new_threesixty_path %>
+
 
 
 
